@@ -1,0 +1,12 @@
+# Local experimental logs
+samples/*
+!samples/.gitkeep
+
+# Build output
+target/
+*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/
