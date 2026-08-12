@@ -1,20 +1,16 @@
 # 项目进展
 
-## 目标
+## 技术大纲
+backend: Spring Boot
+- 扫描 logs/**/log.txt
+- 按 sampleN.mwe2 切片
+- 根据 日志分析.md 的规则解析阶段、异常、补全类、修复类
+- 提供 REST API 给前端
 
-构建日志仓库审查工具，分析 `logs/**/log.txt`。
-
-## 关键规定
-
-- 最小审查单位：一次 `sampleN.mwe2` 运行，不是一个 `log.txt` 文件。
-- 日志路径：`logs/<case>/<model>/<run>/log.txt`
-- sample ID：`<case>/<model>/<run>#sampleN.mwe2`
-- 一个 `log.txt` 可能包含一个或多个 sample。
-- `ERROR` 行不等于最终失败，需结合完成标记、`Workflow - Done.`、编译错误修复结果判断。
-
-## 当前数据上下文
-
-- `log.txt` 数量：50
-- case：`AI-Games-Hex`、`OLRS`、`R22_IPOApplication`
-- model：`deepseek-v4-flash`、`gemini-3.1-flash-lite`、`gpt-5.4-mini`、`minimax-m3`、`qwen3.6-flash`
-
+frontend: Vue 3 + Vite
+- 日志选择栏
+- sample 列表
+- 阶段行号展示
+- 异常提示
+- 代码补全/修复类列表
+- 后续可加原始日志片段、搜索、筛选、统计面板

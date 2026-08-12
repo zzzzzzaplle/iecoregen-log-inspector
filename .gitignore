@@ -5,8 +5,11 @@ samples/*
 # Build output
 target/
 *.class
+dist/
+node_modules/
 
 # IDE
 .idea/
 *.iml
 .vscode/
+.DS_Store
