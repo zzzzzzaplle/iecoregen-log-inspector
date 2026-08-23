@@ -29,6 +29,7 @@ import java.util.stream.Stream;
 @Service
 public class LogAnalysisService {
     private static final Pattern SAMPLE_START = Pattern.compile("\\[([^]]+)]\\s+正在启动\\s+(sample\\d+\\.mwe2)");
+    //  实际上正则表达式应该是 \[ 匹配左括号, [^...]	否定集合 所以[^]  ] 就是抓出所有不是]的字符，+是1或多,;带括号的：要"抓取"特定信息（
     private static final Pattern SAMPLE_END = Pattern.compile("^(sample\\d+\\.mwe2)\\s+启动完成");
     private static final Pattern CODE_COMPLETION = Pattern.compile("Code Completion for\\s+([A-Za-z_][A-Za-z0-9_]*)");
     private static final Pattern FIXING_CLASS = Pattern.compile("Fixing\\s+([A-Za-z_][A-Za-z0-9_]*)");

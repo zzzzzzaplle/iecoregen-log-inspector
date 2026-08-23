@@ -1,3 +1,4 @@
+所有阶段的prompt一览
 ## Prompt 1: Requirement From Class Diagram
 
 # Task
@@ -9,6 +10,7 @@ Finish this task by following the guidelines below.
 3. Make sure that the requirement is equivalent to the meaning of the class diagram.
 4. Make sure that the requirement covers all classes, attributes, references, enumerations, and operations.
 
+---
 
 ## Prompt 2: Annotate Operations With Specifications
 
@@ -57,6 +59,7 @@ class_1::operation_2
 ...
 ```
 
+---
 
 ## Prompt 3: Correct Operation Specifications
 
@@ -106,6 +109,8 @@ class_1::operation_2
 ...
 ```
 
+---
+
 
 ## Prompt 4: Implement Java Methods
 
@@ -142,6 +147,7 @@ Put the new Java class code into a single block as follows. You must keep the cl
 (completed Java class)
 ```
 
+---
 
 ## Prompt 5: Fix Compilation Errors
 

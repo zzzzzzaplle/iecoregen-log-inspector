@@ -1,5 +1,5 @@
 ======================================
-[qwen3.6-flash] 正在启动 sample1.mwe2...
+[qwen3.6-flash] 正在启动 sample5.mwe2...
 ======================================
 0    [main] WARN  pes.access.impl.DeclaredTypeFactory  - --- xtext.common.types ---------------------------------------------------
 1    [main] WARN  pes.access.impl.DeclaredTypeFactory  - ASM library is not available. Falling back to java.lang.reflect API.
@@ -19547,4 +19547,4 @@ public class Map extends MinimalEObjectImpl.Container implements EObject
 } // Map
 1097186 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Generating common infrastructure
 1097215 [main] INFO  .emf.mwe2.runtime.workflow.Workflow  - Done.
-sample1.mwe2 启动完成
+sample5.mwe2 启动完成

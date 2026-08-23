@@ -1,5 +1,5 @@
 ======================================
-[qwen3.6-flash] 正在启动 sample1.mwe2...
+[qwen3.6-flash] 正在启动 sample4.mwe2...
 ======================================
 0    [main] WARN  pes.access.impl.DeclaredTypeFactory  - --- xtext.common.types ---------------------------------------------------
 1    [main] WARN  pes.access.impl.DeclaredTypeFactory  - ASM library is not available. Falling back to java.lang.reflect API.
@@ -15846,4 +15846,4 @@ The import edu.pa19.Pa19Factory is never used
 775949 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - There is no more compilation error
 775955 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Generating common infrastructure
 775990 [main] INFO  .emf.mwe2.runtime.workflow.Workflow  - Done.
-sample1.mwe2 启动完成
+sample4.mwe2 启动完成
