@@ -12,6 +12,8 @@ const linePreview = ref(null);
 const previewLoading = ref(false);
 const activeAnnotationResponse = ref("");
 const activeVerificationResponse = ref("");
+const activeAnnotationOperation = ref("");
+const activeVerificationOperation = ref("");
 const activeCompletionClass = ref("");
 const activeFixingClass = ref("");
 
@@ -43,6 +45,12 @@ const groupedExceptions = computed(() => {
 });
 
 const logTitle = computed(() => selectedLog.value?.path || "请选择 log.txt");
+const activeAnnotationResponseItem = computed(() =>
+  selectedSample.value?.operationAnnotationResponses?.find((item) => item.label === activeAnnotationResponse.value) || null,
+);
+const activeVerificationResponseItem = computed(() =>
+  selectedSample.value?.operationVerificationResponses?.find((item) => item.label === activeVerificationResponse.value) || null,
+);
 
 const overview = computed(() => {
   if (!analysis.value) {
@@ -87,6 +95,8 @@ async function loadAnalysis() {
     selectedSampleId.value = firstSample?.id || "";
     activeAnnotationResponse.value = firstSample?.operationAnnotationResponses?.[0]?.label || "";
     activeVerificationResponse.value = firstSample?.operationVerificationResponses?.[0]?.label || "";
+    activeAnnotationOperation.value = firstSample?.operationAnnotationResponses?.[0]?.operations?.[0]?.name || "";
+    activeVerificationOperation.value = firstSample?.operationVerificationResponses?.[0]?.operations?.[0]?.name || "";
     activeCompletionClass.value = firstSample?.codeCompletionClasses?.[0]?.name || "";
     activeFixingClass.value = firstSample?.fixingClasses?.[0]?.name || "";
   } catch (err) {
@@ -129,6 +139,8 @@ function activateSample(sample) {
   selectedSampleId.value = sample.id;
   activeAnnotationResponse.value = sample.operationAnnotationResponses?.[0]?.label || "";
   activeVerificationResponse.value = sample.operationVerificationResponses?.[0]?.label || "";
+  activeAnnotationOperation.value = sample.operationAnnotationResponses?.[0]?.operations?.[0]?.name || "";
+  activeVerificationOperation.value = sample.operationVerificationResponses?.[0]?.operations?.[0]?.name || "";
   activeCompletionClass.value = sample.codeCompletionClasses?.[0]?.name || "";
   activeFixingClass.value = sample.fixingClasses?.[0]?.name || "";
   linePreview.value = null;
@@ -138,8 +150,20 @@ async function showStageResponse(item, mode) {
   if (!item) return;
   if (mode === "annotation") {
     activeAnnotationResponse.value = item.label;
+    activeAnnotationOperation.value = item.operations?.[0]?.name || "";
   } else {
     activeVerificationResponse.value = item.label;
+    activeVerificationOperation.value = item.operations?.[0]?.name || "";
+  }
+  await showLineContext(item.startLine, item.endLine);
+}
+
+async function showOperationSnippet(item, mode) {
+  if (!item) return;
+  if (mode === "annotation") {
+    activeAnnotationOperation.value = item.name;
+  } else {
+    activeVerificationOperation.value = item.name;
   }
   await showLineContext(item.startLine, item.endLine);
 }
@@ -301,6 +325,25 @@ onMounted(loadLogs);
                     <span class="class-row-meta">L{{ item.startLine }} - L{{ item.endLine }}</span>
                   </button>
                 </div>
+                <div
+                  v-if="activeAnnotationResponseItem && activeAnnotationResponseItem.operations && activeAnnotationResponseItem.operations.length > 0"
+                  class="nested-explorer"
+                >
+                  <div class="nested-title">Operation 列表</div>
+                  <div class="class-explorer">
+                    <button
+                      v-for="item in activeAnnotationResponseItem.operations"
+                      :key="item.name + item.line"
+                      type="button"
+                      class="class-row nested-row"
+                      :class="{ active: activeAnnotationOperation === item.name }"
+                      @click="showOperationSnippet(item, 'annotation')"
+                    >
+                      <span class="class-row-title">{{ item.name }}</span>
+                      <span class="class-row-meta">L{{ item.startLine }} - L{{ item.endLine }}</span>
+                    </button>
+                  </div>
+                </div>
                 <div v-if="stageByKey('operationAnnotation').events.length === 0" class="empty">无详细事件</div>
                 <table v-else>
                   <tbody>
@@ -340,6 +383,25 @@ onMounted(loadLogs);
                     <span class="class-row-title">{{ item.label }}</span>
                     <span class="class-row-meta">L{{ item.startLine }} - L{{ item.endLine }}</span>
                   </button>
+                </div>
+                <div
+                  v-if="activeVerificationResponseItem && activeVerificationResponseItem.operations && activeVerificationResponseItem.operations.length > 0"
+                  class="nested-explorer"
+                >
+                  <div class="nested-title">Operation 列表</div>
+                  <div class="class-explorer">
+                    <button
+                      v-for="item in activeVerificationResponseItem.operations"
+                      :key="item.name + item.line"
+                      type="button"
+                      class="class-row nested-row"
+                      :class="{ active: activeVerificationOperation === item.name }"
+                      @click="showOperationSnippet(item, 'verification')"
+                    >
+                      <span class="class-row-title">{{ item.name }}</span>
+                      <span class="class-row-meta">L{{ item.startLine }} - L{{ item.endLine }}</span>
+                    </button>
+                  </div>
                 </div>
                 <div v-if="stageByKey('operationVerification').events.length === 0" class="empty">无详细事件</div>
                 <table v-else>

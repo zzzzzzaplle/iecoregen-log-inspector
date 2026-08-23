@@ -369,6 +369,21 @@ th {
   gap: 8px;
 }
 
+.nested-explorer {
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--soft);
+}
+
+.nested-title {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .class-row {
   width: 100%;
   display: flex;
@@ -387,6 +402,10 @@ th {
 .class-row.active {
   border-color: #9fcfc8;
   background: var(--accent-soft);
+}
+
+.nested-row {
+  background: #fff;
 }
 
 .class-row-title {
