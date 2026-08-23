@@ -171,22 +171,30 @@ public class LogAnalysisService {
         List<LineEvent> iterableErrors = collectContains(entries, "iterable", ITERABLE_ERROR);
         Integer lastIterableLine = lastLine(iterableErrors);
 
-        Integer effectiveStartLine = lastIterableLine == null
-                ? findFirstContains(entries, ANNOTATING, range.startLine())
+        Integer firstAnnotationLine = findFirstContains(entries, ANNOTATING, range.startLine());
+        Integer annotationAfterLastIterableLine = lastIterableLine == null
+                ? null
                 : findFirstContains(entries, ANNOTATING, lastIterableLine + 1);
+        Integer effectiveStartLine = annotationAfterLastIterableLine != null
+                ? annotationAfterLastIterableLine
+                : firstAnnotationLine;
 
-        Integer verifyLine = findFirstContains(entries, VERIFY, effectiveStartLine);
-        Integer verificationEndLine = findFirstContains(entries, VERIFICATION_END, verifyLine);
-        Integer generatingCodeLine = findFirstContains(entries, GENERATING_CODE, verificationEndLine);
-        Integer codeFixingLine = findFirstContains(entries, CODE_FIXING, generatingCodeLine);
-        Integer noCompilationErrorLine = findFirstContains(entries, NO_COMPILATION_ERROR, codeFixingLine);
-        Integer workflowDoneLine = findFirstContains(entries, WORKFLOW_DONE, noCompilationErrorLine);
+        Integer verifyLine = findFirstContains(entries, VERIFY, firstPresent(effectiveStartLine, range.startLine()));
+        Integer verificationEndLine = findFirstContains(entries, VERIFICATION_END, firstPresent(verifyLine, effectiveStartLine, range.startLine()));
+        Integer generatingCodeLine = findFirstContains(entries, GENERATING_CODE, firstPresent(verificationEndLine, verifyLine, range.startLine()));
+        Integer codeFixingLine = findFirstContains(entries, CODE_FIXING, firstPresent(generatingCodeLine, verificationEndLine, range.startLine()));
+        Integer noCompilationErrorLine = findFirstContains(entries, NO_COMPILATION_ERROR, firstPresent(codeFixingLine, generatingCodeLine, range.startLine()));
+        Integer workflowDoneSearchStartLine = noCompilationErrorLine != null
+                ? noCompilationErrorLine
+                : codeFixingLine;
+        Integer workflowDoneLine = findFirstContains(entries, WORKFLOW_DONE, workflowDoneSearchStartLine);
+        Integer codeFixingEndLine = firstPresent(noCompilationErrorLine, workflowDoneLine, range.endLine());
 
         List<LineEvent> exceptions = collectExceptions(entries);
         List<ResponseSnippet> annotationResponses = collectResponseSnippets(entries, effectiveStartLine, verifyLine);
         List<ResponseSnippet> verificationResponses = collectResponseSnippets(entries, verifyLine, verificationEndLine);
         List<ClassEvent> completionClasses = collectClassEvents(entries, CODE_COMPLETION, generatingCodeLine, codeFixingLine);
-        List<ClassEvent> fixingClasses = collectClassEvents(entries, FIXING_CLASS, codeFixingLine, noCompilationErrorLine);
+        List<ClassEvent> fixingClasses = collectClassEvents(entries, FIXING_CLASS, codeFixingLine, codeFixingEndLine);
 
         List<StageAnalysis> stages = List.of(
                 stage("exceptions", "异常列表", range.startLine(), range.endLine(), !exceptions.isEmpty(), exceptions),
@@ -196,7 +204,7 @@ public class LogAnalysisService {
                         eventsBetween(entries, verifyLine, verificationEndLine, List.of(VERIFY, VERIFICATION_END))),
                 stage("codeCompletion", "代码补全阶段", generatingCodeLine, codeFixingLine, generatingCodeLine != null && codeFixingLine != null,
                         completionClasses.stream().map(item -> new LineEvent(item.line(), "class", "Code Completion for " + item.name())).toList()),
-                stage("codeFixing", "代码修复阶段", codeFixingLine, noCompilationErrorLine, codeFixingLine != null && noCompilationErrorLine != null,
+                stage("codeFixing", "代码修复阶段", codeFixingLine, codeFixingEndLine, codeFixingLine != null && codeFixingEndLine != null,
                         fixingClasses.stream().map(item -> new LineEvent(item.line(), "class", "Fixing " + item.name())).toList()),
                 stage("finalStatus", "最终状态", noCompilationErrorLine, range.endLine(), noCompilationErrorLine != null && !range.unclosed(),
                         finalEvents(entries, noCompilationErrorLine, workflowDoneLine, range.endLine()))
@@ -274,9 +282,18 @@ public class LogAnalysisService {
     }
 
     private List<ClassEvent> collectClassEvents(List<LineEntry> entries, Pattern pattern, Integer startLine, Integer endLine) {
+        if (startLine == null) {
+            return List.of();
+        }
+
+        Integer effectiveEndLine = endLine != null ? endLine : lastEntryLine(entries);
+        if (effectiveEndLine == null) {
+            return List.of();
+        }
+
         List<LineEntry> filteredEntries = entries.stream()
-                .filter(entry -> startLine == null || entry.lineNumber() >= startLine)
-                .filter(entry -> endLine == null || entry.lineNumber() <= endLine)
+                .filter(entry -> entry.lineNumber() >= startLine)
+                .filter(entry -> entry.lineNumber() <= effectiveEndLine)
                 .toList();
 
         List<LineEntry> markerEntries = filteredEntries.stream()
@@ -286,12 +303,32 @@ public class LogAnalysisService {
         List<ClassEvent> result = new ArrayList<>();
         for (int index = 0; index < markerEntries.size(); index++) {
             LineEntry markerEntry = markerEntries.get(index);
-            Integer nextMarkerLine = index + 1 < markerEntries.size() ? markerEntries.get(index + 1).lineNumber() : endLine;
+            Integer nextMarkerLine = index + 1 < markerEntries.size()
+                    ? markerEntries.get(index + 1).lineNumber()
+                    : effectiveEndLine;
             classEvent(markerEntry, pattern)
-                    .map(event -> enrichClassEvent(event, filteredEntries, nextMarkerLine, endLine))
+                    .map(event -> enrichClassEvent(event, filteredEntries, nextMarkerLine, effectiveEndLine))
                     .ifPresent(result::add);
         }
         return result;
+    }
+
+    private Integer firstPresent(Integer first, Integer second, int fallback) {
+        if (first != null) {
+            return first;
+        }
+        return second != null ? second : fallback;
+    }
+
+    private Integer firstPresent(Integer first, int fallback) {
+        return first != null ? first : fallback;
+    }
+
+    private Integer lastEntryLine(List<LineEntry> entries) {
+        if (entries.isEmpty()) {
+            return null;
+        }
+        return entries.get(entries.size() - 1).lineNumber();
     }
 
     private Optional<ClassEvent> classEvent(LineEntry entry, Pattern pattern) {
@@ -381,9 +418,14 @@ public class LogAnalysisService {
         for (LineEntry entry : responseEntries) {
             String line = entry.text();
             Matcher matcher = OPERATION_MARKER.matcher(line);
-            if (matcher.find()) {
+            List<OperationMatch> matches = new ArrayList<>();
+            while (matcher.find()) {
+                matches.add(new OperationMatch(matcher.group(1).trim(), matcher.start()));
+            }
+
+            if (!matches.isEmpty()) {
                 if (currentContent != null) {
-                    String prefix = line.substring(0, matcher.start());
+                    String prefix = line.substring(0, matches.getFirst().startIndex());
                     if (!prefix.isBlank()) {
                         appendContentLine(currentContent, prefix);
                         currentEndLine = entry.lineNumber();
@@ -397,11 +439,27 @@ public class LogAnalysisService {
                     ));
                 }
 
-                currentName = matcher.group(1).trim();
-                currentStartLine = entry.lineNumber();
-                currentEndLine = entry.lineNumber();
-                currentContent = new StringBuilder();
-                appendContentLine(currentContent, line.substring(matcher.start()));
+                for (int index = 0; index < matches.size(); index++) {
+                    OperationMatch match = matches.get(index);
+                    int nextStartIndex = index + 1 < matches.size()
+                            ? matches.get(index + 1).startIndex()
+                            : line.length();
+                    currentName = match.name();
+                    currentStartLine = entry.lineNumber();
+                    currentEndLine = entry.lineNumber();
+                    currentContent = new StringBuilder();
+                    appendContentLine(currentContent, line.substring(match.startIndex(), nextStartIndex));
+                    if (index + 1 < matches.size()) {
+                        operations.add(new OperationSnippet(
+                                currentName,
+                                currentStartLine,
+                                currentStartLine,
+                                currentEndLine,
+                                currentContent.toString()
+                        ));
+                        currentContent = null;
+                    }
+                }
                 continue;
             }
 
@@ -488,6 +546,9 @@ public class LogAnalysisService {
     }
 
     private record LineEntry(int lineNumber, String text) {
+    }
+
+    private record OperationMatch(String name, int startIndex) {
     }
 
     private record OpenSample(String name, int startIndex, LogFileSummary summary) {
