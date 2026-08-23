@@ -5,6 +5,7 @@ import com.iecoregen.loginspector.model.LineEvent;
 import com.iecoregen.loginspector.model.LogAnalysisResponse;
 import com.iecoregen.loginspector.model.LogFileSummary;
 import com.iecoregen.loginspector.model.LogLinesResponse;
+import com.iecoregen.loginspector.model.OperationSnippet;
 import com.iecoregen.loginspector.model.ResponseSnippet;
 import com.iecoregen.loginspector.model.SampleAnalysis;
 import com.iecoregen.loginspector.model.StageAnalysis;
@@ -35,6 +36,7 @@ public class LogAnalysisService {
     private static final Pattern COMPILER_ERROR = Pattern.compile("ERROR in .*\\.java");
     private static final Pattern COMPILER_WARNING = Pattern.compile("WARNING in .*\\.java");
     private static final Pattern PROBLEM_SUMMARY = Pattern.compile("\\d+ problems? \\(\\d+ (?:errors?|warnings?)\\)");
+    private static final Pattern OPERATION_MARKER = Pattern.compile("org\\.eclipse\\.emf\\.ecore\\.impl\\.EOperationImpl@\\S+\\s+\\(name:\\s*([^)]+)\\)");
 
     private static final String ITERABLE_ERROR = "Cannot invoke \"java.lang.Iterable.iterator()\" because \"iterable\" is null";
     private static final String REACTOR = "reactor.util.Loggers -- Using Slf4j logging framework";
@@ -353,14 +355,79 @@ public class LogAnalysisService {
                     : endLine;
             int responseStartLine = responseContentStartsInline(marker) ? marker.lineNumber() : marker.lineNumber() + 1;
             int responseEndLine = findResponseEnd(entries, responseStartLine, searchEnd);
+            List<OperationSnippet> operations = collectOperationSnippets(entries, responseStartLine, responseEndLine);
             result.add(new ResponseSnippet(
                     "LLM Response" + (index + 1),
                     marker.lineNumber(),
                     responseStartLine,
-                    responseEndLine
+                    responseEndLine,
+                    operations
             ));
         }
         return result;
+    }
+
+    private List<OperationSnippet> collectOperationSnippets(List<LineEntry> entries, int startLine, int endLine) {
+        List<LineEntry> responseEntries = entries.stream()
+                .filter(entry -> entry.lineNumber() >= startLine && entry.lineNumber() <= endLine)
+                .toList();
+        List<OperationSnippet> operations = new ArrayList<>();
+        String currentName = null;
+        int currentStartLine = 0;
+        int currentEndLine = 0;
+        StringBuilder currentContent = null;
+
+        for (LineEntry entry : responseEntries) {
+            String line = entry.text();
+            Matcher matcher = OPERATION_MARKER.matcher(line);
+            if (matcher.find()) {
+                if (currentContent != null) {
+                    String prefix = line.substring(0, matcher.start());
+                    if (!prefix.isBlank()) {
+                        appendContentLine(currentContent, prefix);
+                        currentEndLine = entry.lineNumber();
+                    }
+                    operations.add(new OperationSnippet(
+                            currentName,
+                            currentStartLine,
+                            currentStartLine,
+                            currentEndLine,
+                            currentContent.toString()
+                    ));
+                }
+
+                currentName = matcher.group(1).trim();
+                currentStartLine = entry.lineNumber();
+                currentEndLine = entry.lineNumber();
+                currentContent = new StringBuilder();
+                appendContentLine(currentContent, line.substring(matcher.start()));
+                continue;
+            }
+
+            if (currentContent != null) {
+                appendContentLine(currentContent, line);
+                currentEndLine = entry.lineNumber();
+            }
+        }
+
+        if (currentContent != null) {
+            operations.add(new OperationSnippet(
+                    currentName,
+                    currentStartLine,
+                    currentStartLine,
+                    currentEndLine,
+                    currentContent.toString()
+            ));
+        }
+
+        return operations;
+    }
+
+    private void appendContentLine(StringBuilder builder, String line) {
+        if (builder.length() > 0) {
+            builder.append('\n');
+        }
+        builder.append(line);
     }
 
     private boolean responseContentStartsInline(LineEntry entry) {
