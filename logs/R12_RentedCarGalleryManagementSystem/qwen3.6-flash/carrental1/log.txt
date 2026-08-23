@@ -1,0 +1,2530 @@
+======================================
+[qwen3.6-flash] 正在启动 sample1.mwe2...
+======================================
+0    [main] WARN  pes.access.impl.DeclaredTypeFactory  - --- xtext.common.types ---------------------------------------------------
+1    [main] WARN  pes.access.impl.DeclaredTypeFactory  - ASM library is not available. Falling back to java.lang.reflect API.
+1    [main] WARN  pes.access.impl.DeclaredTypeFactory  - Please note that no information about compile time constants is available.
+1    [main] WARN  pes.access.impl.DeclaredTypeFactory  - It's recommended to use org.objectweb.asm 9.9.0 or better (Maven group id: org.ow2.asm).
+2    [main] WARN  pes.access.impl.DeclaredTypeFactory  - --------------------------------------------------------------------------
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+1208 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Initializing Xtext generator
+17:42:06.460 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.osgi.annotation.versioning_1.1.2.202109301733.jar
+17:42:06.463 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.osgi.annotation.versioning at 'archive:file:/E:/eclipse-dsl/plugins/org.osgi.annotation.versioning_1.1.2.202109301733.jar!/'
+17:42:06.463 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.osgi.annotation.bundle_2.0.0.202202082230.jar
+17:42:06.464 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.osgi.annotation.bundle at 'archive:file:/E:/eclipse-dsl/plugins/org.osgi.annotation.bundle_2.0.0.202202082230.jar!/'
+17:42:06.464 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.osgi.service.component.annotations_1.5.1.202212101352.jar
+17:42:06.464 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.osgi.service.component.annotations at 'archive:file:/E:/eclipse-dsl/plugins/org.osgi.service.component.annotations_1.5.1.202212101352.jar!/'
+17:42:06.464 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.osgi.service.metatype.annotations_1.4.1.202109301733.jar
+17:42:06.465 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.osgi.service.metatype.annotations at 'archive:file:/E:/eclipse-dsl/plugins/org.osgi.service.metatype.annotations_1.4.1.202109301733.jar!/'
+17:42:06.465 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.swt_3.132.0.v20251124-0642.jar
+17:42:06.465 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.swt at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.swt_3.132.0.v20251124-0642.jar!/'
+17:42:06.466 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.swt.svg_3.131.0.v20251009-2047.jar
+17:42:06.466 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.swt.svg at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.swt.svg_3.131.0.v20251009-2047.jar!/'
+17:42:06.466 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.swt.win32.win32.x86_64_3.132.0.v20251124-0642.jar
+17:42:06.467 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.swt.win32.win32.x86_64 at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.swt.win32.win32.x86_64_3.132.0.v20251124-0642.jar!/'
+17:42:06.469 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.jface_3.38.100.v20251108-1551.jar
+17:42:06.469 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.jface at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.jface_3.38.100.v20251108-1551.jar!/'
+17:42:06.469 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.core.commands_3.12.500.v20251103-0733.jar
+17:42:06.470 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.core.commands at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.core.commands_3.12.500.v20251103-0733.jar!/'
+17:42:06.470 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\biz.aQute.bnd.util_7.1.0.202411251545.jar
+17:42:06.470 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project biz.aQute.bnd.util at 'archive:file:/E:/eclipse-dsl/plugins/biz.aQute.bnd.util_7.1.0.202411251545.jar!/'
+17:42:06.470 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.mwe2.launch_2.24.0.v20251122-0744.jar
+17:42:06.472 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.mwe2.launch at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.mwe2.launch_2.24.0.v20251122-0744.jar!/'
+17:42:06.472 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.mwe2.language_2.24.0.v20251122-0744.jar
+17:42:06.473 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.mwe2.language at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.mwe2.language_2.24.0.v20251122-0744.jar!/'
+17:42:06.473 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.xtext.common.types_2.41.0.v20251124-0739.jar
+17:42:06.474 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.xtext.common.types at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.xtext.common.types_2.41.0.v20251124-0739.jar!/'
+17:42:06.475 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.mwe2.runtime_2.24.0.v20251122-0744.jar
+17:42:06.475 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.mwe2.runtime at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.mwe2.runtime_2.24.0.v20251122-0744.jar!/'
+17:42:06.475 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.xtext_2.41.0.v20251124-0739.jar
+17:42:06.478 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.xtext at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.xtext_2.41.0.v20251124-0739.jar!/'
+17:42:06.478 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.ecore.xmi_2.39.0.v20250910-1205.jar
+17:42:06.480 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.ecore.xmi at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.ecore.xmi_2.39.0.v20250910-1205.jar!/'
+17:42:06.480 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.ecore_2.41.0.v20251025-0946.jar
+17:42:06.481 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.ecore at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.ecore_2.41.0.v20251025-0946.jar!/'
+17:42:06.481 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.common_2.44.0.v20251025-0946.jar
+17:42:06.483 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.common at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.common_2.44.0.v20251025-0946.jar!/'
+17:42:06.483 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.antlr.runtime_3.2.0.v20230929-1400.jar
+17:42:06.484 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.antlr.runtime at 'archive:file:/E:/eclipse-dsl/plugins/org.antlr.runtime_3.2.0.v20230929-1400.jar!/'
+17:42:06.484 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.mwe.core_1.18.0.v20251122-0744.jar
+17:42:06.485 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.mwe.core at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.mwe.core_1.18.0.v20251122-0744.jar!/'
+17:42:06.485 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.apache.commons.cli_1.11.0.jar
+17:42:06.486 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.commons.cli at 'archive:file:/E:/eclipse-dsl/plugins/org.apache.commons.cli_1.11.0.jar!/'
+17:42:06.486 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.mwe.utils_1.18.0.v20251122-0744.jar
+17:42:06.487 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.mwe.utils at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.mwe.utils_1.18.0.v20251122-0744.jar!/'
+17:42:06.487 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.xtext.util_2.41.0.v20251124-0739.jar
+17:42:06.488 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.xtext.util at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.xtext.util_2.41.0.v20251124-0739.jar!/'
+17:42:06.488 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\com.google.guava_33.5.0.jre.jar
+17:42:06.489 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.google.guava at 'archive:file:/E:/eclipse-dsl/plugins/com.google.guava_33.5.0.jre.jar!/'
+17:42:06.489 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\com.google.inject_7.0.0.jar
+17:42:06.489 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.google.inject at 'archive:file:/E:/eclipse-dsl/plugins/com.google.inject_7.0.0.jar!/'
+17:42:06.489 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\com.google.guava.failureaccess_1.0.3.jar
+17:42:06.491 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.google.guava.failureaccess at 'archive:file:/E:/eclipse-dsl/plugins/com.google.guava.failureaccess_1.0.3.jar!/'
+17:42:06.491 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\jakarta.inject.jakarta.inject-api_2.0.1.jar
+17:42:06.492 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project jakarta.inject.jakarta.inject-api at 'archive:file:/E:/eclipse-dsl/plugins/jakarta.inject.jakarta.inject-api_2.0.1.jar!/'
+17:42:06.494 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.mwe2.lib_2.24.0.v20251122-0744.jar
+17:42:06.494 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.mwe2.lib at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.mwe2.lib_2.24.0.v20251122-0744.jar!/'
+17:42:06.494 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.xtext.xbase_2.41.0.v20251124-0739.jar
+17:42:06.498 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.xtext.xbase at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.xtext.xbase_2.41.0.v20251124-0739.jar!/'
+17:42:06.498 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.xtend.lib_2.41.0.v20251124-0739.jar
+17:42:06.499 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.xtend.lib at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.xtend.lib_2.41.0.v20251124-0739.jar!/'
+17:42:06.499 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.xtext.xbase.lib_2.41.0.v20251124-0739.jar
+17:42:06.499 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.xtext.xbase.lib at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.xtext.xbase.lib_2.41.0.v20251124-0739.jar!/'
+17:42:06.500 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.xtend.lib.macro_2.41.0.v20251124-0739.jar
+17:42:06.500 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.xtend.lib.macro at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.xtend.lib.macro_2.41.0.v20251124-0739.jar!/'
+17:42:06.500 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.apache.log4j_1.2.26.jar
+17:42:06.500 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.log4j at 'archive:file:/E:/eclipse-dsl/plugins/org.apache.log4j_1.2.26.jar!/'
+17:42:06.502 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.jdt.core_3.44.0.v20251118-1842.jar
+17:42:06.505 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.jdt.core at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.jdt.core_3.44.0.v20251118-1842.jar!/'
+17:42:06.505 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.jdt.core.compiler.batch_3.44.0.v20251118-1623.jar
+17:42:06.506 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.jdt.core.compiler.batch at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.jdt.core.compiler.batch_3.44.0.v20251118-1623.jar!/'
+17:42:06.507 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.apache.commons.logging_1.2.0.jar
+17:42:06.507 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.commons.logging at 'archive:file:/E:/eclipse-dsl/plugins/org.apache.commons.logging_1.2.0.jar!/'
+17:42:06.507 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.core.runtime_3.34.100.v20251111-1421.jar
+17:42:06.509 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.core.runtime at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.core.runtime_3.34.100.v20251111-1421.jar!/'
+17:42:06.509 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.osgi_3.24.0.v20251126-0427.jar
+17:42:06.511 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.osgi at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.osgi_3.24.0.v20251126-0427.jar!/'
+17:42:06.511 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.osgi.compatibility.state_1.3.0.v20251022-1724.jar
+17:42:06.512 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.osgi.compatibility.state at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.osgi.compatibility.state_1.3.0.v20251022-1724.jar!/'
+17:42:06.512 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.equinox.common_3.20.300.v20251111-0312.jar
+17:42:06.513 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.equinox.common at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.equinox.common_3.20.300.v20251111-0312.jar!/'
+17:42:06.513 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.core.jobs_3.15.700.v20250725-1147.jar
+17:42:06.514 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.core.jobs at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.core.jobs_3.15.700.v20250725-1147.jar!/'
+17:42:06.514 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.equinox.registry_3.12.600.v20250906-0651.jar
+17:42:06.514 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.equinox.registry at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.equinox.registry_3.12.600.v20250906-0651.jar!/'
+17:42:06.514 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.equinox.preferences_3.12.100.v20251111-0704.jar
+17:42:06.516 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.equinox.preferences at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.equinox.preferences_3.12.100.v20251111-0704.jar!/'
+17:42:06.516 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.osgi.service.prefs_1.1.2.202109301733.jar
+17:42:06.516 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.osgi.service.prefs at 'archive:file:/E:/eclipse-dsl/plugins/org.osgi.service.prefs_1.1.2.202109301733.jar!/'
+17:42:06.517 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.core.contenttype_3.9.800.v20251105-1620.jar
+17:42:06.517 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.core.contenttype at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.core.contenttype_3.9.800.v20251105-1620.jar!/'
+17:42:06.518 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.equinox.app_1.7.500.v20250629-0337.jar
+17:42:06.518 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.equinox.app at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.equinox.app_1.7.500.v20250629-0337.jar!/'
+17:42:06.518 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.xtext.xtext.generator_2.41.0.v20251124-0739.jar
+17:42:06.519 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.xtext.xtext.generator at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.xtext.xtext.generator_2.41.0.v20251124-0739.jar!/'
+17:42:06.520 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.codegen.ecore_2.44.0.v20251025-0946.jar
+17:42:06.521 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.codegen.ecore at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.codegen.ecore_2.44.0.v20251025-0946.jar!/'
+17:42:06.521 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.codegen_2.27.0.v20250910-1205.jar
+17:42:06.522 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.codegen at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.codegen_2.27.0.v20250910-1205.jar!/'
+17:42:06.522 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.jdt_3.19.1100.v20251201-0920.jar
+17:42:06.523 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.jdt at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.jdt_3.19.1100.v20251201-0920.jar!/'
+17:42:06.638 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project edu.ustb.sei.mde.mwe2 at 'file:/E:/E-Workspace/iecoregen/edu.ustb.sei.mde.mwe2/'
+17:42:06.639 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.core.resources_3.23.100.v20251106-1705.jar
+17:42:06.640 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.core.resources at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.core.resources_3.23.100.v20251106-1705.jar!/'
+17:42:06.640 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.jface.text_3.29.0.v20251112-0859.jar
+17:42:06.641 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.jface.text at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.jface.text_3.29.0.v20251112-0859.jar!/'
+17:42:06.642 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.text_3.14.500.v20251103-0730.jar
+17:42:06.643 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.text at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.text_3.14.500.v20251103-0730.jar!/'
+17:42:06.643 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.ui_3.207.400.v20251015-1301.jar
+17:42:06.643 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.ui at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.ui_3.207.400.v20251015-1301.jar!/'
+17:42:06.645 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.ui.workbench_3.137.0.v20251114-0005.jar
+17:42:06.649 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.ui.workbench at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.ui.workbench_3.137.0.v20251114-0005.jar!/'
+17:42:06.650 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.e4.ui.workbench3_0.17.600.v20250918-0518.jar
+17:42:06.652 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.e4.ui.workbench3 at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.e4.ui.workbench3_0.17.600.v20250918-0518.jar!/'
+17:42:06.673 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project edu.ustb.sei.ai at 'file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai/'
+17:42:06.673 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai\lib\jackson-core-2.19.2.jar
+17:42:06.674 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.fasterxml.jackson.core.jackson-core at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai/lib/jackson-core-2.19.2.jar!/'
+17:42:06.675 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai\lib\jackson-databind-2.19.2.jar
+17:42:06.676 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.fasterxml.jackson.core.jackson-databind at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai/lib/jackson-databind-2.19.2.jar!/'
+17:42:06.676 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\antlr4-runtime-4.13.1.jar
+17:42:06.677 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.antlr.antlr4-runtime at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/antlr4-runtime-4.13.1.jar!/'
+17:42:06.677 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\antlr-runtime-3.5.3.jar
+17:42:06.678 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\antlr-runtime-3.5.3.jar
+17:42:06.678 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project antlr-runtime at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/antlr-runtime-3.5.3.jar!/'
+17:42:06.678 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\classmate-1.7.1.jar
+17:42:06.679 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.fasterxml.classmate at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/classmate-1.7.1.jar!/'
+17:42:06.680 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\commons-codec-1.17.1.jar
+17:42:06.681 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.commons.commons-codec at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/commons-codec-1.17.1.jar!/'
+17:42:06.681 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\commons-collections4-4.3.jar
+17:42:06.682 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.commons.commons-collections4 at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/commons-collections4-4.3.jar!/'
+17:42:06.683 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\commons-compress-1.27.1.jar
+17:42:06.683 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.commons.commons-compress at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/commons-compress-1.27.1.jar!/'
+17:42:06.684 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\commons-io-2.16.1.jar
+17:42:06.684 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.commons.commons-io at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/commons-io-2.16.1.jar!/'
+17:42:06.684 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\commons-lang3-3.17.0.jar
+17:42:06.685 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.commons.lang3 at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/commons-lang3-3.17.0.jar!/'
+17:42:06.686 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\commons-logging-1.3.5.jar
+17:42:06.686 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.commons.commons-logging at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/commons-logging-1.3.5.jar!/'
+17:42:06.686 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\commons-text-1.10.0.jar
+17:42:06.686 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.commons.commons-text at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/commons-text-1.10.0.jar!/'
+17:42:06.687 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\gson-2.13.2.jar
+17:42:06.687 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.google.gson at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/gson-2.13.2.jar!/'
+17:42:06.687 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\guava-32.0.1-jre.jar
+17:42:06.687 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.google.guava at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/guava-32.0.1-jre.jar!/'
+17:42:06.688 [main] WARN org.eclipse.emf.mwe.utils.StandaloneSetup -- Skipping conflicting project com.google.guava at 'archive:file:/E:/eclipse-dsl/plugins/com.google.guava_33.5.0.jre.jar!/' and using 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/guava-32.0.1-jre.jar!/' instead.
+17:42:06.688 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jackson-annotations-2.19.4.jar
+17:42:06.688 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.fasterxml.jackson.core.jackson-annotations at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jackson-annotations-2.19.4.jar!/'
+17:42:06.689 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jackson-core-2.19.2.jar
+17:42:06.689 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.fasterxml.jackson.core.jackson-core at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jackson-core-2.19.2.jar!/'
+17:42:06.689 [main] WARN org.eclipse.emf.mwe.utils.StandaloneSetup -- Skipping conflicting project com.fasterxml.jackson.core.jackson-core at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai/lib/jackson-core-2.19.2.jar!/' and using 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jackson-core-2.19.2.jar!/' instead.
+17:42:06.689 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jackson-databind-2.19.4.jar
+17:42:06.689 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.fasterxml.jackson.core.jackson-databind at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jackson-databind-2.19.4.jar!/'
+17:42:06.689 [main] WARN org.eclipse.emf.mwe.utils.StandaloneSetup -- Skipping conflicting project com.fasterxml.jackson.core.jackson-databind at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai/lib/jackson-databind-2.19.2.jar!/' and using 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jackson-databind-2.19.4.jar!/' instead.
+17:42:06.689 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jackson-module-jsonSchema-2.19.4.jar
+17:42:06.689 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.fasterxml.jackson.module.jackson-module-jsonSchema at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jackson-module-jsonSchema-2.19.4.jar!/'
+17:42:06.691 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\javax.annotation-api-1.3.2.jar
+17:42:06.691 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project javax.annotation-api at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/javax.annotation-api-1.3.2.jar!/'
+17:42:06.691 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jna-5.14.0.jar
+17:42:06.692 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.sun.jna at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jna-5.14.0.jar!/'
+17:42:06.692 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jsonschema-generator-4.38.0.jar
+17:42:06.693 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jsonschema-generator-4.38.0.jar
+17:42:06.693 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project jsonschema-generator at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jsonschema-generator-4.38.0.jar!/'
+17:42:06.693 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jsonschema-module-jackson-4.38.0.jar
+17:42:06.693 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jsonschema-module-jackson-4.38.0.jar
+17:42:06.694 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project jsonschema-module-jackson at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jsonschema-module-jackson-4.38.0.jar!/'
+17:42:06.694 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jsonschema-module-swagger-2-4.38.0.jar
+17:42:06.694 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jsonschema-module-swagger-2-4.38.0.jar
+17:42:06.695 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project jsonschema-module-swagger-2 at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jsonschema-module-swagger-2-4.38.0.jar!/'
+17:42:06.695 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\json-schema-validator-2.0.0.jar
+17:42:06.695 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.networknt.json-schema-validator at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/json-schema-validator-2.0.0.jar!/'
+17:42:06.696 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jtokkit-1.1.0.jar
+17:42:06.696 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jtokkit-1.1.0.jar
+17:42:06.697 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project jtokkit at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jtokkit-1.1.0.jar!/'
+17:42:06.697 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jul-to-slf4j-2.0.17.jar
+17:42:06.698 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project jul.to.slf4j at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jul-to-slf4j-2.0.17.jar!/'
+17:42:06.698 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\log4j-api-2.24.3.jar
+17:42:06.698 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.logging.log4j.api at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/log4j-api-2.24.3.jar!/'
+17:42:06.698 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\log4j-to-slf4j-2.24.3.jar
+17:42:06.699 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.logging.log4j.to.slf4j at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/log4j-to-slf4j-2.24.3.jar!/'
+17:42:06.699 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\logback-classic-1.5.32.jar
+17:42:06.699 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project ch.qos.logback.classic at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/logback-classic-1.5.32.jar!/'
+17:42:06.700 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\logback-core-1.5.32.jar
+17:42:06.700 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project ch.qos.logback.core at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/logback-core-1.5.32.jar!/'
+17:42:06.701 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\micrometer-commons-1.15.9.jar
+17:42:06.701 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project micrometer-commons at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/micrometer-commons-1.15.9.jar!/'
+17:42:06.701 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\micrometer-core-1.15.9.jar
+17:42:06.703 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project micrometer-core at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/micrometer-core-1.15.9.jar!/'
+17:42:06.703 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\micrometer-observation-1.15.9.jar
+17:42:06.703 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project micrometer-observation at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/micrometer-observation-1.15.9.jar!/'
+17:42:06.704 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\reactive-streams-1.0.4.jar
+17:42:06.704 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project reactive-streams at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/reactive-streams-1.0.4.jar!/'
+17:42:06.705 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\reactor-core-3.7.16.jar
+17:42:06.705 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project io.projectreactor.reactor-core at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/reactor-core-3.7.16.jar!/'
+17:42:06.706 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\slf4j-api-2.0.17.jar
+17:42:06.707 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project slf4j.api at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/slf4j-api-2.0.17.jar!/'
+17:42:06.707 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-client-chat-1.1.4.jar
+17:42:06.707 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-client-chat-1.1.4.jar
+17:42:06.707 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-ai-client-chat at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-ai-client-chat-1.1.4.jar!/'
+17:42:06.707 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-commons-1.1.4.jar
+17:42:06.707 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-commons-1.1.4.jar
+17:42:06.707 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-ai-commons at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-ai-commons-1.1.4.jar!/'
+17:42:06.709 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-deepseek-1.1.4.jar
+17:42:06.709 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-deepseek-1.1.4.jar
+17:42:06.709 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-ai-deepseek at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-ai-deepseek-1.1.4.jar!/'
+17:42:06.710 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-jsoup-document-reader-1.1.0.jar
+17:42:06.710 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-jsoup-document-reader-1.1.0.jar
+17:42:06.710 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-ai-jsoup-document-reader at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-ai-jsoup-document-reader-1.1.0.jar!/'
+17:42:06.711 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-markdown-document-reader-1.1.0.jar
+17:42:06.711 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-markdown-document-reader-1.1.0.jar
+17:42:06.711 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-ai-markdown-document-reader at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-ai-markdown-document-reader-1.1.0.jar!/'
+17:42:06.711 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-model-1.1.4.jar
+17:42:06.711 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-model-1.1.4.jar
+17:42:06.711 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-ai-model at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-ai-model-1.1.4.jar!/'
+17:42:06.713 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-openai-1.1.4.jar
+17:42:06.713 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-openai-1.1.4.jar
+17:42:06.713 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-ai-openai at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-ai-openai-1.1.4.jar!/'
+17:42:06.714 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-rag-1.1.4.jar
+17:42:06.714 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-rag-1.1.4.jar
+17:42:06.714 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-ai-rag at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-ai-rag-1.1.4.jar!/'
+17:42:06.714 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-retry-1.1.4.jar
+17:42:06.714 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-retry-1.1.4.jar
+17:42:06.715 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-ai-retry at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-ai-retry-1.1.4.jar!/'
+17:42:06.715 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-template-st-1.1.4.jar
+17:42:06.715 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-template-st-1.1.4.jar
+17:42:06.715 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-ai-template-st at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-ai-template-st-1.1.4.jar!/'
+17:42:06.716 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-vector-store-1.1.4.jar
+17:42:06.716 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-vector-store-1.1.4.jar
+17:42:06.716 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-ai-vector-store at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-ai-vector-store-1.1.4.jar!/'
+17:42:06.716 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-aop-6.2.16.jar
+17:42:06.716 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-aop-6.2.16.jar
+17:42:06.717 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-aop at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-aop-6.2.16.jar!/'
+17:42:06.717 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-beans-6.2.16.jar
+17:42:06.717 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-beans-6.2.16.jar
+17:42:06.718 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-beans at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-beans-6.2.16.jar!/'
+17:42:06.718 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-context-6.2.16.jar
+17:42:06.718 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-context-6.2.16.jar
+17:42:06.718 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-context at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-context-6.2.16.jar!/'
+17:42:06.718 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-context-support-6.2.16.jar
+17:42:06.718 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-context-support-6.2.16.jar
+17:42:06.719 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-context-support at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-context-support-6.2.16.jar!/'
+17:42:06.719 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-core-6.2.16.jar
+17:42:06.719 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-core-6.2.16.jar
+17:42:06.719 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-core at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-core-6.2.16.jar!/'
+17:42:06.719 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-data-commons-3.5.5.jar
+17:42:06.719 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-data-commons-3.5.5.jar
+17:42:06.719 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-data-commons at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-data-commons-3.5.5.jar!/'
+17:42:06.721 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-data-keyvalue-3.5.5.jar
+17:42:06.721 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-data-keyvalue-3.5.5.jar
+17:42:06.721 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-data-keyvalue at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-data-keyvalue-3.5.5.jar!/'
+17:42:06.722 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-expression-6.2.16.jar
+17:42:06.722 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-expression-6.2.16.jar
+17:42:06.723 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-expression at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-expression-6.2.16.jar!/'
+17:42:06.723 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-jcl-6.2.16.jar
+17:42:06.723 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-jcl-6.2.16.jar
+17:42:06.724 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-jcl at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-jcl-6.2.16.jar!/'
+17:42:06.724 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-messaging-6.2.16.jar
+17:42:06.724 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-messaging-6.2.16.jar
+17:42:06.724 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-messaging at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-messaging-6.2.16.jar!/'
+17:42:06.724 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-retry-2.0.12.jar
+17:42:06.725 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-retry-2.0.12.jar
+17:42:06.726 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-retry at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-retry-2.0.12.jar!/'
+17:42:06.726 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-web-6.2.16.jar
+17:42:06.726 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-web-6.2.16.jar
+17:42:06.727 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-web at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-web-6.2.16.jar!/'
+17:42:06.727 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-webflux-6.2.16.jar
+17:42:06.727 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-webflux-6.2.16.jar
+17:42:06.727 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-webflux at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-webflux-6.2.16.jar!/'
+17:42:06.728 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\ST4-4.3.4.jar
+17:42:06.728 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\ST4-4.3.4.jar
+17:42:06.728 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project ST4 at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/ST4-4.3.4.jar!/'
+17:42:06.728 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\swagger-annotations-2.0.0.jar
+17:42:06.729 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project io.swagger.core.v3.swagger-annotations at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/swagger-annotations-2.0.0.jar!/'
+17:42:06.729 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\swagger-annotations-jakarta-2.2.38.jar
+17:42:06.729 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project io.swagger.core.v3.swagger-annotations.jakarta at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/swagger-annotations-jakarta-2.2.38.jar!/'
+17:42:06.729 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\utils-2.36.3.jar
+17:42:06.731 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\utils-2.36.3.jar
+17:42:06.731 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project utils at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/utils-2.36.3.jar!/'
+17:42:06.732 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\validation-api-1.1.0.Final.jar
+17:42:06.732 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project javax.validation.api at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/validation-api-1.1.0.Final.jar!/'
+17:42:06.748 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project edu.ustb.sei.ai.spring.port at 'file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/'
+17:42:06.748 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.mde.eecg\lib\commons-cli-1.6.0.jar
+17:42:06.749 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.commons.cli at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.mde.eecg/lib/commons-cli-1.6.0.jar!/'
+17:42:06.749 [main] WARN org.eclipse.emf.mwe.utils.StandaloneSetup -- Skipping conflicting project org.apache.commons.cli at 'archive:file:/E:/eclipse-dsl/plugins/org.apache.commons.cli_1.11.0.jar!/' and using 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.mde.eecg/lib/commons-cli-1.6.0.jar!/' instead.
+17:42:06.749 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.mde.eecg\lib\commons-cli-1.6.0-javadoc.jar
+17:42:06.749 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.mde.eecg\lib\commons-cli-1.6.0-javadoc.jar
+17:42:06.750 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project commons-cli at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.mde.eecg/lib/commons-cli-1.6.0-javadoc.jar!/'
+17:42:06.750 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.mde.eecg\lib\commons-cli-1.6.0-sources.jar
+17:42:06.750 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.mde.eecg\lib\commons-cli-1.6.0-sources.jar
+17:42:06.750 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project commons-cli at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.mde.eecg/lib/commons-cli-1.6.0-sources.jar!/'
+17:42:06.750 [main] WARN org.eclipse.emf.mwe.utils.StandaloneSetup -- Skipping conflicting project commons-cli at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.mde.eecg/lib/commons-cli-1.6.0-javadoc.jar!/' and using 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.mde.eecg/lib/commons-cli-1.6.0-sources.jar!/' instead.
+17:42:06.769 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project edu.ustb.sei.mde.eecg at 'file:/E:/E-Workspace/iecoregen/edu.ustb.sei.mde.eecg/'
+17:42:06.769 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.jface.databinding_1.15.400.v20250925-0701.jar
+17:42:06.770 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.jface.databinding at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.jface.databinding_1.15.400.v20250925-0701.jar!/'
+17:42:06.770 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.jface.notifications_0.7.500.v20250919-0627.jar
+17:42:06.770 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.jface.notifications at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.jface.notifications_0.7.500.v20250919-0627.jar!/'
+17:42:06.770 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.jdt.ui_3.36.0.v20251114-2328.jar
+17:42:06.776 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.jdt.ui at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.jdt.ui_3.36.0.v20251114-2328.jar!/'
+17:42:06.776 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf_2.9.0.v20230211-1150.jar
+17:42:06.777 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf_2.9.0.v20230211-1150.jar!/'
+17:42:06.777 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.ecore.change_2.17.0.v20250910-1205.jar
+17:42:06.777 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.ecore.change at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.ecore.change_2.17.0.v20250910-1205.jar!/'
+17:42:06.777 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.ecore.edit_2.15.0.v20250910-1205.jar
+17:42:06.777 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.ecore.edit at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.ecore.edit_2.15.0.v20250910-1205.jar!/'
+17:42:06.778 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.edit_2.23.0.v20250910-1205.jar
+17:42:06.778 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.edit at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.edit_2.23.0.v20250910-1205.jar!/'
+17:42:06.778 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.junit_4.13.2.v20240929-1000.jar
+17:42:06.779 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.junit at 'archive:file:/E:/eclipse-dsl/plugins/org.junit_4.13.2.v20240929-1000.jar!/'
+17:42:06.779 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.hamcrest_3.0.0.jar
+17:42:06.779 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.hamcrest at 'archive:file:/E:/eclipse-dsl/plugins/org.hamcrest_3.0.0.jar!/'
+17:42:06.780 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\aQute.libg_7.1.0.202411251545.jar
+17:42:06.780 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project aQute.libg at 'archive:file:/E:/eclipse-dsl/plugins/aQute.libg_7.1.0.202411251545.jar!/'
+17:42:06.780 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.jdt.core.manipulation_1.23.200.v20251125-1647.jar
+17:42:06.782 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.jdt.core.manipulation at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.jdt.core.manipulation_1.23.200.v20251125-1647.jar!/'
+17:42:06.798 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project R12_RentedCarGalleryManagementSystem at 'file:/E:/E-Workspace/R12_RentedCarGalleryManagementSystem/'
+17:42:06.799 [main] INFO org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project R12_RentedCarGalleryManagementSystem at 'file:/E:/E-Workspace/R12_RentedCarGalleryManagementSystem/'
+17:42:07.832 [main] DEBUG reactor.util.Loggers -- Using Slf4j logging framework
+17:42:07.885 [main] WARN org.springframework.ai.openai.OpenAiChatOptions -- Both maxTokens and maxCompletionTokens are set. OpenAI API does not support setting both parameters simultaneously. The previously set maxTokens (65536) will be cleared and maxCompletionTokens (32768) will be used.
+17:42:07.913 [main] WARN org.springframework.ai.openai.OpenAiChatOptions -- Both maxTokens and maxCompletionTokens are set. OpenAI API does not support setting both parameters simultaneously. The previously set maxTokens (65536) will be cleared and maxCompletionTokens (32768) will be used.
+17:42:08.133 [main] INFO org.eclipse.emf.mwe.utils.StandaloneSetup -- Using resourceSet registry. The registered Packages will not be registered in the global EPackage.Registry.INSTANCE!
+17:42:08.220 [main] DEBUG org.eclipse.emf.mwe.utils.DirectoryCleaner -- Cleaning folder ..\R12_RentedCarGalleryManagementSystem\src-gen
+17:42:08.220 [main] DEBUG org.eclipse.emf.mwe.utils.DirectoryCleaner -- Cleaning folder ..\R12_RentedCarGalleryManagementSystem\src-gen
+17:42:08.220 [main] DEBUG org.eclipse.emf.mwe.utils.DirectoryCleaner -- Cleaning folder ..\R12_RentedCarGalleryManagementSystem\src-gen\edu
+17:42:08.220 [main] DEBUG org.eclipse.emf.mwe.utils.DirectoryCleaner -- Cleaning folder ..\R12_RentedCarGalleryManagementSystem\src-gen\edu\cinemas
+17:42:08.221 [main] DEBUG org.eclipse.emf.mwe.utils.DirectoryCleaner -- Cleaning folder ..\R12_RentedCarGalleryManagementSystem\src-gen\edu\company
+17:42:08.221 [main] DEBUG org.eclipse.emf.mwe.utils.DirectoryCleaner -- Cleaning folder ..\R12_RentedCarGalleryManagementSystem\src-gen\edu\footballteam
+17:42:08.221 [main] DEBUG org.eclipse.emf.mwe.utils.DirectoryCleaner -- Cleaning folder ..\R12_RentedCarGalleryManagementSystem\src-gen\edu\library
+17:42:08.222 [main] DEBUG org.eclipse.emf.mwe.utils.DirectoryCleaner -- Cleaning folder ..\R12_RentedCarGalleryManagementSystem\model\generated
+17:42:08.222 [main] DEBUG org.eclipse.emf.mwe.utils.DirectoryCleaner -- Cleaning folder ..\R12_RentedCarGalleryManagementSystem\model\generated
+3010 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Generating edu.ustb.sei.mde.mwe2.EcoreLanguage@4262fdeb
+3010 [main] INFO  .sei.mde.mwe2.EMFGeneratorFragment2  - Enhancing Ecore model
+3024 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Annotating EOperations
+3069 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Prompt:
+# Task
+You will be given a **Requirement** and a **Class Diagram** in PlantUML. Your task is to annotate every operation listed in **Operations** with a specification.
+
+An operation specification must describe the following sections about the operation:
+1. Summary: the summary of functionality;
+2. Algorithm: algorithm or pseudo code;
+3. Related Features: a list of structural or behavior features within this class that shall be accessed;
+4. Related Classes: a list of classes and data types defined in **Class Diagram** that shall be accessed, in the format of `Related Classes: ClsA, CLsB, ...` or `Related Classes: None`;
+5. Input: the input parameters, including the meaning, the format, and the value ranges if necessary;
+6. Output: output value, including the meaning, the format, and the value ranges if necessary;
+7. Pre-condition: the condition that the system and the input must satisfy before the operation is executed;
+8. Post-condition: the condition that the system and the output must satisfy after the operation is executed.
+
+Finish this task by following the guidelines below.
+1. Take the principle of modularization into account.
+2. For each operation, determine its functional boundary based on the given requirement. Ensure high cohesion and low coupling.
+3. If there is any unspecified details, such as undefined constants, rates, and ratios, then you must infer them.
+4. Make sure that all requirements can be covered.
+
+# Requirement
+```text
+Store assistants manage a rented-car gallery for each store. Each store keeps a store name together with the car records, rental records, and overdue-notice records that belong to that location. Every car record stores a plate number, model, and daily price. Customer records store the renter's name, surname, and address. Rental records store the rental date, due date, return date, total price, and leasing terms, and connect the rented car with the customer who rents it. When a customer wants to rent a car, the system shows the cars that are currently available and sorts them by daily price. The system records each rental, calculates total rental revenue, lists overdue customers when the current date passes a due date and the car has not been returned, computes the average daily price of all cars in the store, and counts how many rentals each customer has made. The main office issues overdue notices for late returns, and every overdue notice keeps a notice number so the notice can be tracked for the target customer.
+Function Requirement:
+1. Identify the cars that are currently available in the store. A car is available when it is not tied to an active rental whose return date is still empty. Return the available cars in ascending order of daily price, or return an empty list when none are available.
+2. Calculate the total revenue generated by all rental records stored in the store.
+3. List the customers whose rentals are overdue. A rental is overdue when its return date is empty and the current date is later than the due date. Return an empty list when no overdue customers exist, or when the current date input is null.
+4. Determine the average daily price of all cars stored in the store. Return 0.0 when the store has no car records.
+5. Count how many rental records belong to each customer and return the result as a customer-to-count mapping. Return an empty map when the store has no rental records for any customer.
+```
+
+# Class Diagram
+```plantuml
+@startuml
+
+title carrental Model
+
+class Car {
+    dailyPrice : double
+    model : String
+    plate : String
+}
+class Customer {
+    address : String
+    name : String
+    surname : String
+}
+class OverdueNotice {
+    noticeId : String
+    customer : Customer
+    sendNoticeTo(customer : Customer) : String
+}
+class Rental {
+    backDate : EDate
+    dueDate : EDate
+    leasingTerms : String
+    rentalDate : EDate
+    totalPrice : double
+    car : Car
+    customer : Customer
+}
+class Store {
+    name : String
+    cars : List<Car>
+    notices : List<OverdueNotice>
+    rentals : List<Rental>
+    calculateTotalRevenue() : double
+    countCarsRentedPerCustomer() : EMap
+    determineAverageDailyPrice() : double
+    findCustomersWithOverdueRentals(currentDate : EDate) : List<Customer>
+    identifyAvailableCars() : List<Car>
+}
+
+OverdueNotice --> Customer : customer
+Rental --> Car : car
+Rental --> Customer : customer
+Store *-- "*" Car : cars
+Store *-- "*" OverdueNotice : notices
+Store *-- "*" Rental : rentals
+@enduml
+```
+
+# Operations
++ OverdueNotice::sendNoticeTo
++ Store::calculateTotalRevenue
++ Store::countCarsRentedPerCustomer
++ Store::determineAverageDailyPrice
++ Store::findCustomersWithOverdueRentals
++ Store::identifyAvailableCars
+
+# Output Format
+Put all your results in a single block as illustrated below:
+
+```result
+
+class_1::operation_1
+/*
+ * your description for operation_1
+ */
+
+class_1::operation_2
+/*
+ * your description for this operation_2
+ */
+
+...
+```
+
+17:42:08.301 [main] DEBUG io.micrometer.common.util.internal.logging.InternalLoggerFactory -- Using SLF4J as the default logging framework
+17:42:08.557 [main] DEBUG org.springframework.retry.support.RetryTemplate -- Retry: count=0
+17:42:08.620 [main] DEBUG org.springframework.web.client.DefaultRestClient -- Writing [ChatCompletionRequest[messages=[ChatCompletionMessage[rawContent=# Task
+You will be given a **Requirement** and a **Class Diagram** in PlantUML. Your task is to annotate every operation listed in **Operations** with a specification.
+
+An operation specification must describe the following sections about the operation:
+1. Summary: the summary of functionality;
+2. Algorithm: algorithm or pseudo code;
+3. Related Features: a list of structural or behavior features within this class that shall be accessed;
+4. Related Classes: a list of classes and data types defined in **Class Diagram** that shall be accessed, in the format of `Related Classes: ClsA, CLsB, ...` or `Related Classes: None`;
+5. Input: the input parameters, including the meaning, the format, and the value ranges if necessary;
+6. Output: output value, including the meaning, the format, and the value ranges if necessary;
+7. Pre-condition: the condition that the system and the input must satisfy before the operation is executed;
+8. Post-condition: the condition that the system and the output must satisfy after the operation is executed.
+
+Finish this task by following the guidelines below.
+1. Take the principle of modularization into account.
+2. For each operation, determine its functional boundary based on the given requirement. Ensure high cohesion and low coupling.
+3. If there is any unspecified details, such as undefined constants, rates, and ratios, then you must infer them.
+4. Make sure that all requirements can be covered.
+
+# Requirement
+```text
+Store assistants manage a rented-car gallery for each store. Each store keeps a store name together with the car records, rental records, and overdue-notice records that belong to that location. Every car record stores a plate number, model, and daily price. Customer records store the renter's name, surname, and address. Rental records store the rental date, due date, return date, total price, and leasing terms, and connect the rented car with the customer who rents it. When a customer wants to rent a car, the system shows the cars that are currently available and sorts them by daily price. The system records each rental, calculates total rental revenue, lists overdue customers when the current date passes a due date and the car has not been returned, computes the average daily price of all cars in the store, and counts how many rentals each customer has made. The main office issues overdue notices for late returns, and every overdue notice keeps a notice number so the notice can be tracked for the target customer.
+Function Requirement:
+1. Identify the cars that are currently available in the store. A car is available when it is not tied to an active rental whose return date is still empty. Return the available cars in ascending order of daily price, or return an empty list when none are available.
+2. Calculate the total revenue generated by all rental records stored in the store.
+3. List the customers whose rentals are overdue. A rental is overdue when its return date is empty and the current date is later than the due date. Return an empty list when no overdue customers exist, or when the current date input is null.
+4. Determine the average daily price of all cars stored in the store. Return 0.0 when the store has no car records.
+5. Count how many rental records belong to each customer and return the result as a customer-to-count mapping. Return an empty map when the store has no rental records for any customer.
+```
+
+# Class Diagram
+```plantuml
+@startuml
+
+title carrental Model
+
+class Car {
+    dailyPrice : double
+    model : String
+    plate : String
+}
+class Customer {
+    address : String
+    name : String
+    surname : String
+}
+class OverdueNotice {
+    noticeId : String
+    customer : Customer
+    sendNoticeTo(customer : Customer) : String
+}
+class Rental {
+    backDate : EDate
+    dueDate : EDate
+    leasingTerms : String
+    rentalDate : EDate
+    totalPrice : double
+    car : Car
+    customer : Customer
+}
+class Store {
+    name : String
+    cars : List<Car>
+    notices : List<OverdueNotice>
+    rentals : List<Rental>
+    calculateTotalRevenue() : double
+    countCarsRentedPerCustomer() : EMap
+    determineAverageDailyPrice() : double
+    findCustomersWithOverdueRentals(currentDate : EDate) : List<Customer>
+    identifyAvailableCars() : List<Car>
+}
+
+OverdueNotice --> Customer : customer
+Rental --> Car : car
+Rental --> Customer : customer
+Store *-- "*" Car : cars
+Store *-- "*" OverdueNotice : notices
+Store *-- "*" Rental : rentals
+@enduml
+```
+
+# Operations
++ OverdueNotice::sendNoticeTo
++ Store::calculateTotalRevenue
++ Store::countCarsRentedPerCustomer
++ Store::determineAverageDailyPrice
++ Store::findCustomersWithOverdueRentals
++ Store::identifyAvailableCars
+
+# Output Format
+Put all your results in a single block as illustrated below:
+
+```result
+
+class_1::operation_1
+/*
+ * your description for operation_1
+ */
+
+class_1::operation_2
+/*
+ * your description for this operation_2
+ */
+
+...
+```
+, role=USER, name=null, toolCallId=null, toolCalls=null, refusal=null, audioOutput=null, annotations=null, reasoningContent=null]], model=qwen3.6-flash, store=null, metadata=null, frequencyPenalty=null, logitBias=null, logprobs=null, topLogprobs=null, maxTokens=null, maxCompletionTokens=32768, n=null, outputModalities=null, audioParameters=null, presencePenalty=null, responseFormat=null, seed=null, serviceTier=null, stop=null, stream=false, streamOptions=null, temperature=0.7, topP=null, tools=null, toolChoice=null, parallelToolCalls=null, user=null, reasoningEffort=null, webSearchOptions=null, verbosity=null, promptCacheKey=null, safetyIdentifier=null, extraBody={}]] as "application/json" with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+17:42:41.891 [main] DEBUG org.springframework.web.client.DefaultRestClient -- Reading to [org.springframework.ai.openai.api.OpenAiApi$ChatCompletion]
+36743 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - LLM Response:
+{org.eclipse.emf.ecore.impl.EOperationImpl@519c6fcc (name: sendNoticeTo) (ordered: true, unique: true, lowerBound: 0, upperBound: 1)=Summary: Records and tracks an overdue notice for a specified customer, returning a tracking identifier.
+Algorithm: 
+Related Features: noticeId, customer
+Related Classes: Customer
+Input: customer : Customer - The target customer who received the overdue notice.
+Output: String - A tracking confirmation string containing the noticeId and customer reference.
+Pre-condition: The OverdueNotice object is instantiated with a valid, non-null noticeId. The customer parameter is not null.
+Post-condition: The notice is successfully linked to the provided customer. A non-null tracking string is returned. Internal state reflects the notice as issued/tracked., org.eclipse.emf.ecore.impl.EOperationImpl@202d9236 (name: identifyAvailableCars) (ordered: true, unique: true, lowerBound: 0, upperBound: -1)=Summary: Filters and sorts cars that are not currently tied to an active (unreturned) rental, ordered by price.
+Algorithm: 
+Related Features: cars, rentals, Car.dailyPrice, Rental.car, Rental.backDate
+Related Classes: Car, Rental
+Input: None
+Output: List<Car> - Available cars sorted by dailyPrice ascending. Empty list if all cars are rented or no cars exist.
+Pre-condition: The Store instance exists. Both cars and rentals collections are initialized.
+Post-condition: Returns a correctly filtered and sorted list of available vehicles. Original collections remain unmodified., org.eclipse.emf.ecore.impl.EOperationImpl@f5a7226 (name: countCarsRentedPerCustomer) (ordered: true, unique: true, lowerBound: 0, upperBound: 1)=Summary: Generates a mapping of each customer to the number of rental records they have made.
+Algorithm: 
+Related Features: rentals, Rental.customer
+Related Classes: Customer, Rental
+Input: None
+Output: EMap<Customer, Integer> - A mapping where keys are unique Customers and values are their respective rental counts. Empty if no rentals exist.
+Pre-condition: The Store instance exists and the rentals collection is initialized.
+Post-condition: Returns a complete mapping reflecting accurate rental counts per customer. If rentals is empty, returns an empty map. Store state is unmodified., org.eclipse.emf.ecore.impl.EOperationImpl@6d6ac396 (name: findCustomersWithOverdueRentals) (ordered: true, unique: true, lowerBound: 0, upperBound: -1)=Summary: Identifies customers with active rentals that have passed their due date without being returned.
+Algorithm: 
+Related Features: rentals, Rental.backDate, Rental.dueDate, Rental.customer
+Related Classes: Customer, Rental
+Input: currentDate : EDate - The reference date used to evaluate overdue status.
+Output: List<Customer> - A list of unique customers with overdue rentals. Empty if none qualify or if currentDate is null.
+Pre-condition: The Store instance exists. currentDate can be null or a valid date.
+Post-condition: Returns a list of distinct customers meeting the overdue criteria. Order is typically insertion-based. Store state remains unmodified., org.eclipse.emf.ecore.impl.EOperationImpl@1f782c05 (name: calculateTotalRevenue) (ordered: true, unique: true, lowerBound: 0, upperBound: 1)=Summary: Computes the cumulative revenue generated from all rental records in the store.
+Algorithm: 
+Related Features: rentals, Rental.totalPrice
+Related Classes: Rental
+Input: None
+Output: double - The sum of totalPrice values across all rental records. Non-negative.
+Pre-condition: The Store instance exists and the rentals collection is initialized (may be empty).
+Post-condition: Returns the exact arithmetic sum of all rental totalPrice fields. The store's internal state remains unchanged., org.eclipse.emf.ecore.impl.EOperationImpl@432af457 (name: determineAverageDailyPrice) (ordered: true, unique: true, lowerBound: 0, upperBound: 1)=Summary: Calculates the arithmetic mean of the daily prices of all cars in the store.
+Algorithm: 
+Related Features: cars, Car.dailyPrice
+Related Classes: Car
+Input: None
+Output: double - The average daily price of all cars. >= 0.0.
+Pre-condition: The Store instance exists and the cars collection is initialized.
+Post-condition: Returns the precise average. If no cars exist, returns 0.0. No modifications to store state.}
+36749 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Verify Annotations
+36753 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Prompt:
+# Task
+You will be given a **Requirement**, a **Class Diagram** in PlantUML, and a list of operation specifications. Your task is to correct the specifications that are inconsistent with the requirement.
+
+An operation specification must describe the following sections about the operation:
+1. Summary: the summary of functionality;
+2. Algorithm: algorithm or pseudo code;
+3. Related Features: a list of structural or behavior features within this class that shall be accessed;
+4. Related Classes: a list of classes and data types defined in **Class Diagram** that shall be accessed, in the format of `Related Classes: ClsA, CLsB, ...` or `Related Classes: None`;
+5. Input: the input parameters, including the meaning, the format, and the value ranges if necessary;
+6. Output: output value, including the meaning, the format, and the value ranges if necessary;
+7. Pre-condition: the condition that the system and the input must satisfy before the operation is executed;
+8. Post-condition: the condition that the system and the output must satisfy after the operation is executed.
+
+Finish this task by following the guidelines below.
+1. Read the requirement and the class diagram.
+2. For each operation specification, determine whether it is complete and consistent with the requirement.
+3. If there is any error, correct the erroneous specification.
+4. Follow the specification format. Output changed specifications only; OMIT unchanged specifications.
+
+# Requirement
+```text
+Store assistants manage a rented-car gallery for each store. Each store keeps a store name together with the car records, rental records, and overdue-notice records that belong to that location. Every car record stores a plate number, model, and daily price. Customer records store the renter's name, surname, and address. Rental records store the rental date, due date, return date, total price, and leasing terms, and connect the rented car with the customer who rents it. When a customer wants to rent a car, the system shows the cars that are currently available and sorts them by daily price. The system records each rental, calculates total rental revenue, lists overdue customers when the current date passes a due date and the car has not been returned, computes the average daily price of all cars in the store, and counts how many rentals each customer has made. The main office issues overdue notices for late returns, and every overdue notice keeps a notice number so the notice can be tracked for the target customer.
+Function Requirement:
+1. Identify the cars that are currently available in the store. A car is available when it is not tied to an active rental whose return date is still empty. Return the available cars in ascending order of daily price, or return an empty list when none are available.
+2. Calculate the total revenue generated by all rental records stored in the store.
+3. List the customers whose rentals are overdue. A rental is overdue when its return date is empty and the current date is later than the due date. Return an empty list when no overdue customers exist, or when the current date input is null.
+4. Determine the average daily price of all cars stored in the store. Return 0.0 when the store has no car records.
+5. Count how many rental records belong to each customer and return the result as a customer-to-count mapping. Return an empty map when the store has no rental records for any customer.
+```
+
+# Class Diagram
+```plantuml
+@startuml
+
+title carrental Model
+
+class Car {
+    dailyPrice : double
+    model : String
+    plate : String
+}
+class Customer {
+    address : String
+    name : String
+    surname : String
+}
+class OverdueNotice {
+    noticeId : String
+    customer : Customer
+    sendNoticeTo(customer : Customer) : String
+}
+class Rental {
+    backDate : EDate
+    dueDate : EDate
+    leasingTerms : String
+    rentalDate : EDate
+    totalPrice : double
+    car : Car
+    customer : Customer
+}
+class Store {
+    name : String
+    cars : List<Car>
+    notices : List<OverdueNotice>
+    rentals : List<Rental>
+    calculateTotalRevenue() : double
+    countCarsRentedPerCustomer() : EMap
+    determineAverageDailyPrice() : double
+    findCustomersWithOverdueRentals(currentDate : EDate) : List<Customer>
+    identifyAvailableCars() : List<Car>
+}
+
+OverdueNotice --> Customer : customer
+Rental --> Car : car
+Rental --> Customer : customer
+Store *-- "*" Car : cars
+Store *-- "*" OverdueNotice : notices
+Store *-- "*" Rental : rentals
+@enduml
+```
+
+# Operation Specifications
+OverdueNotice::sendNoticeTo
+Summary: Records and tracks an overdue notice for a specified customer, returning a tracking identifier.
+Algorithm: 
+Related Features: noticeId, customer
+Related Classes: Customer
+Input: customer : Customer - The target customer who received the overdue notice.
+Output: String - A tracking confirmation string containing the noticeId and customer reference.
+Pre-condition: The OverdueNotice object is instantiated with a valid, non-null noticeId. The customer parameter is not null.
+Post-condition: The notice is successfully linked to the provided customer. A non-null tracking string is returned. Internal state reflects the notice as issued/tracked.
+
+# Output Format
+Put the revised specifications in a single block as illustrated below:
+
+```result
+
+class_1::operation_1
+/*
+ * revised description for operation_1
+ */
+
+class_1::operation_2
+/*
+ * revised description for this operation_2
+ */
+
+...
+```
+
+17:42:41.971 [main] DEBUG org.springframework.retry.support.RetryTemplate -- Retry: count=0
+17:42:41.973 [main] DEBUG org.springframework.web.client.DefaultRestClient -- Writing [ChatCompletionRequest[messages=[ChatCompletionMessage[rawContent=# Task
+You will be given a **Requirement**, a **Class Diagram** in PlantUML, and a list of operation specifications. Your task is to correct the specifications that are inconsistent with the requirement.
+
+An operation specification must describe the following sections about the operation:
+1. Summary: the summary of functionality;
+2. Algorithm: algorithm or pseudo code;
+3. Related Features: a list of structural or behavior features within this class that shall be accessed;
+4. Related Classes: a list of classes and data types defined in **Class Diagram** that shall be accessed, in the format of `Related Classes: ClsA, CLsB, ...` or `Related Classes: None`;
+5. Input: the input parameters, including the meaning, the format, and the value ranges if necessary;
+6. Output: output value, including the meaning, the format, and the value ranges if necessary;
+7. Pre-condition: the condition that the system and the input must satisfy before the operation is executed;
+8. Post-condition: the condition that the system and the output must satisfy after the operation is executed.
+
+Finish this task by following the guidelines below.
+1. Read the requirement and the class diagram.
+2. For each operation specification, determine whether it is complete and consistent with the requirement.
+3. If there is any error, correct the erroneous specification.
+4. Follow the specification format. Output changed specifications only; OMIT unchanged specifications.
+
+# Requirement
+```text
+Store assistants manage a rented-car gallery for each store. Each store keeps a store name together with the car records, rental records, and overdue-notice records that belong to that location. Every car record stores a plate number, model, and daily price. Customer records store the renter's name, surname, and address. Rental records store the rental date, due date, return date, total price, and leasing terms, and connect the rented car with the customer who rents it. When a customer wants to rent a car, the system shows the cars that are currently available and sorts them by daily price. The system records each rental, calculates total rental revenue, lists overdue customers when the current date passes a due date and the car has not been returned, computes the average daily price of all cars in the store, and counts how many rentals each customer has made. The main office issues overdue notices for late returns, and every overdue notice keeps a notice number so the notice can be tracked for the target customer.
+Function Requirement:
+1. Identify the cars that are currently available in the store. A car is available when it is not tied to an active rental whose return date is still empty. Return the available cars in ascending order of daily price, or return an empty list when none are available.
+2. Calculate the total revenue generated by all rental records stored in the store.
+3. List the customers whose rentals are overdue. A rental is overdue when its return date is empty and the current date is later than the due date. Return an empty list when no overdue customers exist, or when the current date input is null.
+4. Determine the average daily price of all cars stored in the store. Return 0.0 when the store has no car records.
+5. Count how many rental records belong to each customer and return the result as a customer-to-count mapping. Return an empty map when the store has no rental records for any customer.
+```
+
+# Class Diagram
+```plantuml
+@startuml
+
+title carrental Model
+
+class Car {
+    dailyPrice : double
+    model : String
+    plate : String
+}
+class Customer {
+    address : String
+    name : String
+    surname : String
+}
+class OverdueNotice {
+    noticeId : String
+    customer : Customer
+    sendNoticeTo(customer : Customer) : String
+}
+class Rental {
+    backDate : EDate
+    dueDate : EDate
+    leasingTerms : String
+    rentalDate : EDate
+    totalPrice : double
+    car : Car
+    customer : Customer
+}
+class Store {
+    name : String
+    cars : List<Car>
+    notices : List<OverdueNotice>
+    rentals : List<Rental>
+    calculateTotalRevenue() : double
+    countCarsRentedPerCustomer() : EMap
+    determineAverageDailyPrice() : double
+    findCustomersWithOverdueRentals(currentDate : EDate) : List<Customer>
+    identifyAvailableCars() : List<Car>
+}
+
+OverdueNotice --> Customer : customer
+Rental --> Car : car
+Rental --> Customer : customer
+Store *-- "*" Car : cars
+Store *-- "*" OverdueNotice : notices
+Store *-- "*" Rental : rentals
+@enduml
+```
+
+# Operation Specifications
+OverdueNotice::sendNoticeTo
+Summary: Records and tracks an overdue notice for a specified customer, returning a tracking identifier.
+Algorithm: 
+Related Features: noticeId, customer
+Related Classes: Customer
+Input: customer : Customer - The target customer who received the overdue notice.
+Output: String - A tracking confirmation string containing the noticeId and customer reference.
+Pre-condition: The OverdueNotice object is instantiated with a valid, non-null noticeId. The customer parameter is not null.
+Post-condition: The notice is successfully linked to the provided customer. A non-null tracking string is returned. Internal state reflects the notice as issued/tracked.
+
+# Output Format
+Put the revised specifications in a single block as illustrated below:
+
+```result
+
+class_1::operation_1
+/*
+ * revised description for operation_1
+ */
+
+class_1::operation_2
+/*
+ * revised description for this operation_2
+ */
+
+...
+```
+, role=USER, name=null, toolCallId=null, toolCalls=null, refusal=null, audioOutput=null, annotations=null, reasoningContent=null]], model=qwen3.6-flash, store=null, metadata=null, frequencyPenalty=null, logitBias=null, logprobs=null, topLogprobs=null, maxTokens=null, maxCompletionTokens=32768, n=null, outputModalities=null, audioParameters=null, presencePenalty=null, responseFormat=null, seed=null, serviceTier=null, stop=null, stream=false, streamOptions=null, temperature=0.7, topP=null, tools=null, toolChoice=null, parallelToolCalls=null, user=null, reasoningEffort=null, webSearchOptions=null, verbosity=null, promptCacheKey=null, safetyIdentifier=null, extraBody={}]] as "application/json" with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+17:43:04.766 [main] DEBUG org.springframework.web.client.DefaultRestClient -- Reading to [org.springframework.ai.openai.api.OpenAiApi$ChatCompletion]
+59556 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - LLM Response:
+{org.eclipse.emf.ecore.impl.EOperationImpl@519c6fcc (name: sendNoticeTo) (ordered: true, unique: true, lowerBound: 0, upperBound: 1)=Summary: Links a target customer to the overdue notice and returns a tracking identifier.
+Algorithm: 
+  1. Validate that the input customer parameter is not null.
+  2. Assign the input customer to the instance variable 'customer'.
+  3. Return the 'noticeId' as the tracking confirmation string.
+Related Features: noticeId, customer
+Related Classes: Customer
+Input: customer : Customer - The target customer to whom the overdue notice is issued. Must not be null.
+Output: String - A tracking confirmation string containing the noticeId for identification and tracking purposes.
+Pre-condition: The OverdueNotice object is instantiated with a valid, non-null noticeId. The customer parameter is not null.
+Post-condition: The customer attribute is successfully linked to the provided customer object. A non-null tracking string is returned. Internal state reflects the notice as issued/tracked.}
+59557 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Prompt:
+# Task
+You will be given a **Requirement**, a **Class Diagram** in PlantUML, and a list of operation specifications. Your task is to correct the specifications that are inconsistent with the requirement.
+
+An operation specification must describe the following sections about the operation:
+1. Summary: the summary of functionality;
+2. Algorithm: algorithm or pseudo code;
+3. Related Features: a list of structural or behavior features within this class that shall be accessed;
+4. Related Classes: a list of classes and data types defined in **Class Diagram** that shall be accessed, in the format of `Related Classes: ClsA, CLsB, ...` or `Related Classes: None`;
+5. Input: the input parameters, including the meaning, the format, and the value ranges if necessary;
+6. Output: output value, including the meaning, the format, and the value ranges if necessary;
+7. Pre-condition: the condition that the system and the input must satisfy before the operation is executed;
+8. Post-condition: the condition that the system and the output must satisfy after the operation is executed.
+
+Finish this task by following the guidelines below.
+1. Read the requirement and the class diagram.
+2. For each operation specification, determine whether it is complete and consistent with the requirement.
+3. If there is any error, correct the erroneous specification.
+4. Follow the specification format. Output changed specifications only; OMIT unchanged specifications.
+
+# Requirement
+```text
+Store assistants manage a rented-car gallery for each store. Each store keeps a store name together with the car records, rental records, and overdue-notice records that belong to that location. Every car record stores a plate number, model, and daily price. Customer records store the renter's name, surname, and address. Rental records store the rental date, due date, return date, total price, and leasing terms, and connect the rented car with the customer who rents it. When a customer wants to rent a car, the system shows the cars that are currently available and sorts them by daily price. The system records each rental, calculates total rental revenue, lists overdue customers when the current date passes a due date and the car has not been returned, computes the average daily price of all cars in the store, and counts how many rentals each customer has made. The main office issues overdue notices for late returns, and every overdue notice keeps a notice number so the notice can be tracked for the target customer.
+Function Requirement:
+1. Identify the cars that are currently available in the store. A car is available when it is not tied to an active rental whose return date is still empty. Return the available cars in ascending order of daily price, or return an empty list when none are available.
+2. Calculate the total revenue generated by all rental records stored in the store.
+3. List the customers whose rentals are overdue. A rental is overdue when its return date is empty and the current date is later than the due date. Return an empty list when no overdue customers exist, or when the current date input is null.
+4. Determine the average daily price of all cars stored in the store. Return 0.0 when the store has no car records.
+5. Count how many rental records belong to each customer and return the result as a customer-to-count mapping. Return an empty map when the store has no rental records for any customer.
+```
+
+# Class Diagram
+```plantuml
+@startuml
+
+title carrental Model
+
+class Car {
+    dailyPrice : double
+    model : String
+    plate : String
+}
+class Customer {
+    address : String
+    name : String
+    surname : String
+}
+class OverdueNotice {
+    noticeId : String
+    customer : Customer
+    sendNoticeTo(customer : Customer) : String
+}
+class Rental {
+    backDate : EDate
+    dueDate : EDate
+    leasingTerms : String
+    rentalDate : EDate
+    totalPrice : double
+    car : Car
+    customer : Customer
+}
+class Store {
+    name : String
+    cars : List<Car>
+    notices : List<OverdueNotice>
+    rentals : List<Rental>
+    calculateTotalRevenue() : double
+    countCarsRentedPerCustomer() : EMap
+    determineAverageDailyPrice() : double
+    findCustomersWithOverdueRentals(currentDate : EDate) : List<Customer>
+    identifyAvailableCars() : List<Car>
+}
+
+OverdueNotice --> Customer : customer
+Rental --> Car : car
+Rental --> Customer : customer
+Store *-- "*" Car : cars
+Store *-- "*" OverdueNotice : notices
+Store *-- "*" Rental : rentals
+@enduml
+```
+
+# Operation Specifications
+Store::identifyAvailableCars
+Summary: Filters and sorts cars that are not currently tied to an active (unreturned) rental, ordered by price.
+Algorithm: 
+Related Features: cars, rentals, Car.dailyPrice, Rental.car, Rental.backDate
+Related Classes: Car, Rental
+Input: None
+Output: List<Car> - Available cars sorted by dailyPrice ascending. Empty list if all cars are rented or no cars exist.
+Pre-condition: The Store instance exists. Both cars and rentals collections are initialized.
+Post-condition: Returns a correctly filtered and sorted list of available vehicles. Original collections remain unmodified.
+
+Store::findCustomersWithOverdueRentals
+Summary: Identifies customers with active rentals that have passed their due date without being returned.
+Algorithm: 
+Related Features: rentals, Rental.backDate, Rental.dueDate, Rental.customer
+Related Classes: Customer, Rental
+Input: currentDate : EDate - The reference date used to evaluate overdue status.
+Output: List<Customer> - A list of unique customers with overdue rentals. Empty if none qualify or if currentDate is null.
+Pre-condition: The Store instance exists. currentDate can be null or a valid date.
+Post-condition: Returns a list of distinct customers meeting the overdue criteria. Order is typically insertion-based. Store state remains unmodified.
+
+Store::countCarsRentedPerCustomer
+Summary: Generates a mapping of each customer to the number of rental records they have made.
+Algorithm: 
+Related Features: rentals, Rental.customer
+Related Classes: Customer, Rental
+Input: None
+Output: EMap<Customer, Integer> - A mapping where keys are unique Customers and values are their respective rental counts. Empty if no rentals exist.
+Pre-condition: The Store instance exists and the rentals collection is initialized.
+Post-condition: Returns a complete mapping reflecting accurate rental counts per customer. If rentals is empty, returns an empty map. Store state is unmodified.
+
+Store::calculateTotalRevenue
+Summary: Computes the cumulative revenue generated from all rental records in the store.
+Algorithm: 
+Related Features: rentals, Rental.totalPrice
+Related Classes: Rental
+Input: None
+Output: double - The sum of totalPrice values across all rental records. Non-negative.
+Pre-condition: The Store instance exists and the rentals collection is initialized (may be empty).
+Post-condition: Returns the exact arithmetic sum of all rental totalPrice fields. The store's internal state remains unchanged.
+
+Store::determineAverageDailyPrice
+Summary: Calculates the arithmetic mean of the daily prices of all cars in the store.
+Algorithm: 
+Related Features: cars, Car.dailyPrice
+Related Classes: Car
+Input: None
+Output: double - The average daily price of all cars. >= 0.0.
+Pre-condition: The Store instance exists and the cars collection is initialized.
+Post-condition: Returns the precise average. If no cars exist, returns 0.0. No modifications to store state.
+
+# Output Format
+Put the revised specifications in a single block as illustrated below:
+
+```result
+
+class_1::operation_1
+/*
+ * revised description for operation_1
+ */
+
+class_1::operation_2
+/*
+ * revised description for this operation_2
+ */
+
+...
+```
+
+17:43:04.773 [main] DEBUG org.springframework.retry.support.RetryTemplate -- Retry: count=0
+17:43:04.774 [main] DEBUG org.springframework.web.client.DefaultRestClient -- Writing [ChatCompletionRequest[messages=[ChatCompletionMessage[rawContent=# Task
+You will be given a **Requirement**, a **Class Diagram** in PlantUML, and a list of operation specifications. Your task is to correct the specifications that are inconsistent with the requirement.
+
+An operation specification must describe the following sections about the operation:
+1. Summary: the summary of functionality;
+2. Algorithm: algorithm or pseudo code;
+3. Related Features: a list of structural or behavior features within this class that shall be accessed;
+4. Related Classes: a list of classes and data types defined in **Class Diagram** that shall be accessed, in the format of `Related Classes: ClsA, CLsB, ...` or `Related Classes: None`;
+5. Input: the input parameters, including the meaning, the format, and the value ranges if necessary;
+6. Output: output value, including the meaning, the format, and the value ranges if necessary;
+7. Pre-condition: the condition that the system and the input must satisfy before the operation is executed;
+8. Post-condition: the condition that the system and the output must satisfy after the operation is executed.
+
+Finish this task by following the guidelines below.
+1. Read the requirement and the class diagram.
+2. For each operation specification, determine whether it is complete and consistent with the requirement.
+3. If there is any error, correct the erroneous specification.
+4. Follow the specification format. Output changed specifications only; OMIT unchanged specifications.
+
+# Requirement
+```text
+Store assistants manage a rented-car gallery for each store. Each store keeps a store name together with the car records, rental records, and overdue-notice records that belong to that location. Every car record stores a plate number, model, and daily price. Customer records store the renter's name, surname, and address. Rental records store the rental date, due date, return date, total price, and leasing terms, and connect the rented car with the customer who rents it. When a customer wants to rent a car, the system shows the cars that are currently available and sorts them by daily price. The system records each rental, calculates total rental revenue, lists overdue customers when the current date passes a due date and the car has not been returned, computes the average daily price of all cars in the store, and counts how many rentals each customer has made. The main office issues overdue notices for late returns, and every overdue notice keeps a notice number so the notice can be tracked for the target customer.
+Function Requirement:
+1. Identify the cars that are currently available in the store. A car is available when it is not tied to an active rental whose return date is still empty. Return the available cars in ascending order of daily price, or return an empty list when none are available.
+2. Calculate the total revenue generated by all rental records stored in the store.
+3. List the customers whose rentals are overdue. A rental is overdue when its return date is empty and the current date is later than the due date. Return an empty list when no overdue customers exist, or when the current date input is null.
+4. Determine the average daily price of all cars stored in the store. Return 0.0 when the store has no car records.
+5. Count how many rental records belong to each customer and return the result as a customer-to-count mapping. Return an empty map when the store has no rental records for any customer.
+```
+
+# Class Diagram
+```plantuml
+@startuml
+
+title carrental Model
+
+class Car {
+    dailyPrice : double
+    model : String
+    plate : String
+}
+class Customer {
+    address : String
+    name : String
+    surname : String
+}
+class OverdueNotice {
+    noticeId : String
+    customer : Customer
+    sendNoticeTo(customer : Customer) : String
+}
+class Rental {
+    backDate : EDate
+    dueDate : EDate
+    leasingTerms : String
+    rentalDate : EDate
+    totalPrice : double
+    car : Car
+    customer : Customer
+}
+class Store {
+    name : String
+    cars : List<Car>
+    notices : List<OverdueNotice>
+    rentals : List<Rental>
+    calculateTotalRevenue() : double
+    countCarsRentedPerCustomer() : EMap
+    determineAverageDailyPrice() : double
+    findCustomersWithOverdueRentals(currentDate : EDate) : List<Customer>
+    identifyAvailableCars() : List<Car>
+}
+
+OverdueNotice --> Customer : customer
+Rental --> Car : car
+Rental --> Customer : customer
+Store *-- "*" Car : cars
+Store *-- "*" OverdueNotice : notices
+Store *-- "*" Rental : rentals
+@enduml
+```
+
+# Operation Specifications
+Store::identifyAvailableCars
+Summary: Filters and sorts cars that are not currently tied to an active (unreturned) rental, ordered by price.
+Algorithm: 
+Related Features: cars, rentals, Car.dailyPrice, Rental.car, Rental.backDate
+Related Classes: Car, Rental
+Input: None
+Output: List<Car> - Available cars sorted by dailyPrice ascending. Empty list if all cars are rented or no cars exist.
+Pre-condition: The Store instance exists. Both cars and rentals collections are initialized.
+Post-condition: Returns a correctly filtered and sorted list of available vehicles. Original collections remain unmodified.
+
+Store::findCustomersWithOverdueRentals
+Summary: Identifies customers with active rentals that have passed their due date without being returned.
+Algorithm: 
+Related Features: rentals, Rental.backDate, Rental.dueDate, Rental.customer
+Related Classes: Customer, Rental
+Input: currentDate : EDate - The reference date used to evaluate overdue status.
+Output: List<Customer> - A list of unique customers with overdue rentals. Empty if none qualify or if currentDate is null.
+Pre-condition: The Store instance exists. currentDate can be null or a valid date.
+Post-condition: Returns a list of distinct customers meeting the overdue criteria. Order is typically insertion-based. Store state remains unmodified.
+
+Store::countCarsRentedPerCustomer
+Summary: Generates a mapping of each customer to the number of rental records they have made.
+Algorithm: 
+Related Features: rentals, Rental.customer
+Related Classes: Customer, Rental
+Input: None
+Output: EMap<Customer, Integer> - A mapping where keys are unique Customers and values are their respective rental counts. Empty if no rentals exist.
+Pre-condition: The Store instance exists and the rentals collection is initialized.
+Post-condition: Returns a complete mapping reflecting accurate rental counts per customer. If rentals is empty, returns an empty map. Store state is unmodified.
+
+Store::calculateTotalRevenue
+Summary: Computes the cumulative revenue generated from all rental records in the store.
+Algorithm: 
+Related Features: rentals, Rental.totalPrice
+Related Classes: Rental
+Input: None
+Output: double - The sum of totalPrice values across all rental records. Non-negative.
+Pre-condition: The Store instance exists and the rentals collection is initialized (may be empty).
+Post-condition: Returns the exact arithmetic sum of all rental totalPrice fields. The store's internal state remains unchanged.
+
+Store::determineAverageDailyPrice
+Summary: Calculates the arithmetic mean of the daily prices of all cars in the store.
+Algorithm: 
+Related Features: cars, Car.dailyPrice
+Related Classes: Car
+Input: None
+Output: double - The average daily price of all cars. >= 0.0.
+Pre-condition: The Store instance exists and the cars collection is initialized.
+Post-condition: Returns the precise average. If no cars exist, returns 0.0. No modifications to store state.
+
+# Output Format
+Put the revised specifications in a single block as illustrated below:
+
+```result
+
+class_1::operation_1
+/*
+ * revised description for operation_1
+ */
+
+class_1::operation_2
+/*
+ * revised description for this operation_2
+ */
+
+...
+```
+, role=USER, name=null, toolCallId=null, toolCalls=null, refusal=null, audioOutput=null, annotations=null, reasoningContent=null]], model=qwen3.6-flash, store=null, metadata=null, frequencyPenalty=null, logitBias=null, logprobs=null, topLogprobs=null, maxTokens=null, maxCompletionTokens=32768, n=null, outputModalities=null, audioParameters=null, presencePenalty=null, responseFormat=null, seed=null, serviceTier=null, stop=null, stream=false, streamOptions=null, temperature=0.7, topP=null, tools=null, toolChoice=null, parallelToolCalls=null, user=null, reasoningEffort=null, webSearchOptions=null, verbosity=null, promptCacheKey=null, safetyIdentifier=null, extraBody={}]] as "application/json" with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+17:43:45.048 [main] DEBUG org.springframework.web.client.DefaultRestClient -- Reading to [org.springframework.ai.openai.api.OpenAiApi$ChatCompletion]
+99841 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - LLM Response:
+{org.eclipse.emf.ecore.impl.EOperationImpl@202d9236 (name: identifyAvailableCars) (ordered: true, unique: true, lowerBound: 0, upperBound: -1)=Summary: Filters and sorts cars that are not currently tied to an active (unreturned) rental, ordered by price.
+Algorithm: 
+  1. Initialize an empty list `availableCars`.
+  2. For each `car` in `cars`:
+     a. Set `isAvailable = true`.
+     b. For each `rental` in `rentals`:
+        i. If `rental.car` equals `car` AND `rental.backDate` is null:
+           - Set `isAvailable = false` and break inner loop.
+     c. If `isAvailable` is true, add `car` to `availableCars`.
+  3. Sort `availableCars` in ascending order based on `dailyPrice`.
+  4. Return `availableCars`.
+Related Features: cars, rentals, Car.dailyPrice, Rental.car, Rental.backDate
+Related Classes: Car, Rental
+Input: None
+Output: List<Car> - Available cars sorted by dailyPrice ascending. Empty list if no cars are available.
+Pre-condition: The Store instance exists. Both cars and rentals collections are initialized.
+Post-condition: Returns a correctly filtered and sorted list of available vehicles. Original collections remain unmodified., org.eclipse.emf.ecore.impl.EOperationImpl@6d6ac396 (name: findCustomersWithOverdueRentals) (ordered: true, unique: true, lowerBound: 0, upperBound: -1)=Summary: Identifies customers with active rentals that have passed their due date without being returned.
+Algorithm: 
+  1. If `currentDate` is null, return an empty list.
+  2. Initialize an empty set `overdueCustomers` to ensure uniqueness.
+  3. For each `rental` in `rentals`:
+     a. If `rental.backDate` is null AND `rental.dueDate` < `currentDate`:
+        i. Add `rental.customer` to `overdueCustomers`.
+  4. Convert `overdueCustomers` to a list and return it.
+Related Features: rentals, Rental.backDate, Rental.dueDate, Rental.customer
+Related Classes: Customer, Rental
+Input: currentDate : EDate - The reference date used to evaluate overdue status.
+Output: List<Customer> - A list of unique customers with overdue rentals. Empty if none qualify or if currentDate is null.
+Pre-condition: The Store instance exists. currentDate can be null or a valid date.
+Post-condition: Returns a list of distinct customers meeting the overdue criteria. Store state remains unmodified., org.eclipse.emf.ecore.impl.EOperationImpl@f5a7226 (name: countCarsRentedPerCustomer) (ordered: true, unique: true, lowerBound: 0, upperBound: 1)=Summary: Generates a mapping of each customer to the number of rental records they have made.
+Algorithm: 
+  1. Initialize an empty map `customerCountMap`.
+  2. For each `rental` in `rentals`:
+     a. Get `customer = rental.customer`.
+     b. If `customer` is not in `customerCountMap`, initialize its count to 0.
+     c. Increment count for `customer` in `customerCountMap` by 1.
+  3. Return `customerCountMap`.
+Related Features: rentals, Rental.customer
+Related Classes: Customer, Rental
+Input: None
+Output: EMap<Customer, Integer> - A mapping where keys are unique Customers and values are their respective rental counts. Empty if no rentals exist.
+Pre-condition: The Store instance exists and the rentals collection is initialized.
+Post-condition: Returns a complete mapping reflecting accurate rental counts per customer. Store state is unmodified., org.eclipse.emf.ecore.impl.EOperationImpl@1f782c05 (name: calculateTotalRevenue) (ordered: true, unique: true, lowerBound: 0, upperBound: 1)=Summary: Computes the cumulative revenue generated from all rental records in the store.
+Algorithm: 
+  1. Initialize `totalRevenue = 0.0`.
+  2. For each `rental` in `rentals`:
+     a. `totalRevenue += rental.totalPrice`.
+  3. Return `totalRevenue`.
+Related Features: rentals, Rental.totalPrice
+Related Classes: Rental
+Input: None
+Output: double - The sum of totalPrice values across all rental records. Non-negative.
+Pre-condition: The Store instance exists and the rentals collection is initialized (may be empty).
+Post-condition: Returns the exact arithmetic sum of all rental totalPrice fields. The store's internal state remains unchanged., org.eclipse.emf.ecore.impl.EOperationImpl@432af457 (name: determineAverageDailyPrice) (ordered: true, unique: true, lowerBound: 0, upperBound: 1)=Summary: Calculates the arithmetic mean of the daily prices of all cars in the store.
+Algorithm: 
+  1. If `cars` is empty, return 0.0.
+  2. Initialize `priceSum = 0.0`.
+  3. For each `car` in `cars`:
+     a. `priceSum += car.dailyPrice`.
+  4. Calculate `average = priceSum / cars.size()`.
+  5. Return `average`.
+Related Features: cars, Car.dailyPrice
+Related Classes: Car
+Input: None
+Output: double - The average daily price of all cars. >= 0.0.
+Pre-condition: The Store instance exists and the cars collection is initialized.
+Post-condition: Returns the precise average. If no cars exist, returns 0.0. No modifications to store state.}
+99841 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Verification End
+99868 [main] INFO  .sei.mde.mwe2.EMFGeneratorFragment2  - Generating EMF model code
+17:43:45.295 [main] INFO org.eclipse.emf.mwe.utils.GenModelHelper -- Registered GenModel 'http://www.example/carrental' from 'platform:/resource/R12_RentedCarGalleryManagementSystem/model/generated/carrental.genmodel'
+100414 [main] INFO  .sei.mde.mwe2.EMFGeneratorFragment2  - Enhancing generated code at ../R12_RentedCarGalleryManagementSystem/src-gen/edu/carrental
+100418 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Code Completion for Store
+101541 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Prompt:
+# Task
+You will be given a **Java Class** generated from an Ecore model by EMF code generator with `suppressInterfaces=true`. Your task is to implement the Java methods unimplemented by taking additional contextual information into account.
+
+Complete this task by following the guidelines below.
+1. Compute context information
+  1.1 Consider the related classes in the Javadocs.
+  1.2 Locate these files in your project.
+  1.3 Generate the class summarization.
+2. A method is unimplemented if its body contains `// TODO: Please complete this Java method based on the docstring`.
+3. For every unimplemented method, 
+  3.1 You must read the docstring of this method. The fragment between `<!-- begin-model-doc -->` and `<!-- end-model-doc -->` contains the method specification;
+  3.2 Generate your code strictly according to the algorithm; Be aware of the EMF code style and APIs;
+  3.3 You should not change the method signature;
+  3.4 After generation, replace the current body with the one you generate;
+  3.5 Keep and update the docstring by changing `@generated` to `@generated NOT`.
+4. Check the import list. Add missing imports if needed.
+5. Do not change other part.
+6. Be aware of the method signatures, particularly, the input and output types, provided in the context.
+
+## EMF Coding Style
+- When possible, call getter/setter methods to access field values. Do not read/write raw fields derived from the class diagram.
+- The getter of a boolean attribute `bv` looks like `isBv()`, e.g., `isIsTrue()` for `isTrue`.
+- When possibe, use the creation factory for object creation.
+- To create an EList instance, import and use `org.eclipse.emf.common.util.BasicEList`.
+
+# Java Class
+```java
+/**
+ * generated by Enhanced EcoreGen
+ */
+package edu.carrental;
+
+import java.util.Collection;
+import java.util.Date;
+import java.util.Map;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Store</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link edu.carrental.Store#getCars <em>Cars</em>}</li>
+ *   <li>{@link edu.carrental.Store#getRentals <em>Rentals</em>}</li>
+ *   <li>{@link edu.carrental.Store#getNotices <em>Notices</em>}</li>
+ *   <li>{@link edu.carrental.Store#getName <em>Name</em>}</li>
+ * </ul>
+ *
+ * @see edu.carrental.CarrentalPackage#getStore()
+ * @model kind="class"
+ * @generated
+ */
+public class Store extends MinimalEObjectImpl.Container implements EObject
+{
+  protected EList<Car> cars;
+
+  protected EList<Rental> rentals;
+
+  protected EList<OverdueNotice> notices;
+
+  protected static final String NAME_EDEFAULT = null;
+
+  protected String name = NAME_EDEFAULT;
+
+  protected Store()
+  { ... /* omitted */ }
+
+  @Override
+  protected EClass eStaticClass()
+  { ... /* omitted */ }
+
+  public EList<Car> getCars()
+  { ... /* omitted */ }
+
+  public EList<Rental> getRentals()
+  { ... /* omitted */ }
+
+  public EList<OverdueNotice> getNotices()
+  { ... /* omitted */ }
+
+  public String getName()
+  { ... /* omitted */ }
+
+  public void setName(String newName)
+  { ... /* omitted */ }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Filters and sorts cars that are not currently tied to an active (unreturned) rental, ordered by price.
+   * Algorithm: 
+   *   1. Initialize an empty list `availableCars`.
+   *   2. For each `car` in `cars`:
+   *      a. Set `isAvailable = true`.
+   *      b. For each `rental` in `rentals`:
+   *         i. If `rental.car` equals `car` AND `rental.backDate` is null:
+   *            - Set `isAvailable = false` and break inner loop.
+   *      c. If `isAvailable` is true, add `car` to `availableCars`.
+   *   3. Sort `availableCars` in ascending order based on `dailyPrice`.
+   *   4. Return `availableCars`.
+   * Related Features: cars, rentals, Car.dailyPrice, Rental.car, Rental.backDate
+   * Related Classes: Car, Rental
+   * Input: None
+   * Output: List<Car> - Available cars sorted by dailyPrice ascending. Empty list if no cars are available.
+   * Pre-condition: The Store instance exists. Both cars and rentals collections are initialized.
+   * Post-condition: Returns a correctly filtered and sorted list of available vehicles. Original collections remain unmodified.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public EList<Car> identifyAvailableCars()
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Computes the cumulative revenue generated from all rental records in the store.
+   * Algorithm: 
+   *   1. Initialize `totalRevenue = 0.0`.
+   *   2. For each `rental` in `rentals`:
+   *      a. `totalRevenue += rental.totalPrice`.
+   *   3. Return `totalRevenue`.
+   * Related Features: rentals, Rental.totalPrice
+   * Related Classes: Rental
+   * Input: None
+   * Output: double - The sum of totalPrice values across all rental records. Non-negative.
+   * Pre-condition: The Store instance exists and the rentals collection is initialized (may be empty).
+   * Post-condition: Returns the exact arithmetic sum of all rental totalPrice fields. The store's internal state remains unchanged.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public double calculateTotalRevenue()
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Identifies customers with active rentals that have passed their due date without being returned.
+   * Algorithm: 
+   *   1. If `currentDate` is null, return an empty list.
+   *   2. Initialize an empty set `overdueCustomers` to ensure uniqueness.
+   *   3. For each `rental` in `rentals`:
+   *      a. If `rental.backDate` is null AND `rental.dueDate` < `currentDate`:
+   *         i. Add `rental.customer` to `overdueCustomers`.
+   *   4. Convert `overdueCustomers` to a list and return it.
+   * Related Features: rentals, Rental.backDate, Rental.dueDate, Rental.customer
+   * Related Classes: Customer, Rental
+   * Input: currentDate : EDate - The reference date used to evaluate overdue status.
+   * Output: List<Customer> - A list of unique customers with overdue rentals. Empty if none qualify or if currentDate is null.
+   * Pre-condition: The Store instance exists. currentDate can be null or a valid date.
+   * Post-condition: Returns a list of distinct customers meeting the overdue criteria. Store state remains unmodified.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public EList<Customer> findCustomersWithOverdueRentals(final Date currentDate)
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Calculates the arithmetic mean of the daily prices of all cars in the store.
+   * Algorithm: 
+   *   1. If `cars` is empty, return 0.0.
+   *   2. Initialize `priceSum = 0.0`.
+   *   3. For each `car` in `cars`:
+   *      a. `priceSum += car.dailyPrice`.
+   *   4. Calculate `average = priceSum / cars.size()`.
+   *   5. Return `average`.
+   * Related Features: cars, Car.dailyPrice
+   * Related Classes: Car
+   * Input: None
+   * Output: double - The average daily price of all cars. >= 0.0.
+   * Pre-condition: The Store instance exists and the cars collection is initialized.
+   * Post-condition: Returns the precise average. If no cars exist, returns 0.0. No modifications to store state.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public double determineAverageDailyPrice()
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Generates a mapping of each customer to the number of rental records they have made.
+   * Algorithm: 
+   *   1. Initialize an empty map `customerCountMap`.
+   *   2. For each `rental` in `rentals`:
+   *      a. Get `customer = rental.customer`.
+   *      b. If `customer` is not in `customerCountMap`, initialize its count to 0.
+   *      c. Increment count for `customer` in `customerCountMap` by 1.
+   *   3. Return `customerCountMap`.
+   * Related Features: rentals, Rental.customer
+   * Related Classes: Customer, Rental
+   * Input: None
+   * Output: EMap<Customer, Integer> - A mapping where keys are unique Customers and values are their respective rental counts. Empty if no rentals exist.
+   * Pre-condition: The Store instance exists and the rentals collection is initialized.
+   * Post-condition: Returns a complete mapping reflecting accurate rental counts per customer. Store state is unmodified.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public Map<Customer, Integer> countCarsRentedPerCustomer()
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  @Override
+  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  { ... /* omitted */ }
+
+  @Override
+  public Object eGet(int featureID, boolean resolve, boolean coreType)
+  { ... /* omitted */ }
+
+  @SuppressWarnings("unchecked")
+  @Override
+  public void eSet(int featureID, Object newValue)
+  { ... /* omitted */ }
+
+  @Override
+  public void eUnset(int featureID)
+  { ... /* omitted */ }
+
+  @Override
+  public boolean eIsSet(int featureID)
+  { ... /* omitted */ }
+
+  @Override
+  public String toString()
+  { ... /* omitted */ }
+
+} // Store
+```
+
+# Output Format
+Put the new Java class code into a single block as follows.
+
+```java
+(completed Java class)
+```
+
+17:43:47.003 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- storing configured custom inline type for java.lang.String as definition (since it is the main schema "#")
+17:43:47.034 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- generating array definition for java.lang.String[]
+17:43:47.035 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- directly applying configured custom inline type for java.lang.String
+17:43:47.039 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- storing configured custom inline type for java.lang.String as definition (since it is the main schema "#")
+17:43:47.042 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- generating array definition for java.lang.String[]
+17:43:47.042 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- directly applying configured custom inline type for java.lang.String
+17:43:47.060 [main] DEBUG org.springframework.retry.support.RetryTemplate -- Retry: count=0
+17:43:47.060 [main] DEBUG org.springframework.web.client.DefaultRestClient -- Writing [ChatCompletionRequest[messages=[ChatCompletionMessage[rawContent=# Task
+You will be given a **Java Class** generated from an Ecore model by EMF code generator with `suppressInterfaces=true`. Your task is to implement the Java methods unimplemented by taking additional contextual information into account.
+
+Complete this task by following the guidelines below.
+1. Compute context information
+  1.1 Consider the related classes in the Javadocs.
+  1.2 Locate these files in your project.
+  1.3 Generate the class summarization.
+2. A method is unimplemented if its body contains `// TODO: Please complete this Java method based on the docstring`.
+3. For every unimplemented method, 
+  3.1 You must read the docstring of this method. The fragment between `<!-- begin-model-doc -->` and `<!-- end-model-doc -->` contains the method specification;
+  3.2 Generate your code strictly according to the algorithm; Be aware of the EMF code style and APIs;
+  3.3 You should not change the method signature;
+  3.4 After generation, replace the current body with the one you generate;
+  3.5 Keep and update the docstring by changing `@generated` to `@generated NOT`.
+4. Check the import list. Add missing imports if needed.
+5. Do not change other part.
+6. Be aware of the method signatures, particularly, the input and output types, provided in the context.
+
+## EMF Coding Style
+- When possible, call getter/setter methods to access field values. Do not read/write raw fields derived from the class diagram.
+- The getter of a boolean attribute `bv` looks like `isBv()`, e.g., `isIsTrue()` for `isTrue`.
+- When possibe, use the creation factory for object creation.
+- To create an EList instance, import and use `org.eclipse.emf.common.util.BasicEList`.
+
+# Java Class
+```java
+/**
+ * generated by Enhanced EcoreGen
+ */
+package edu.carrental;
+
+import java.util.Collection;
+import java.util.Date;
+import java.util.Map;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Store</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link edu.carrental.Store#getCars <em>Cars</em>}</li>
+ *   <li>{@link edu.carrental.Store#getRentals <em>Rentals</em>}</li>
+ *   <li>{@link edu.carrental.Store#getNotices <em>Notices</em>}</li>
+ *   <li>{@link edu.carrental.Store#getName <em>Name</em>}</li>
+ * </ul>
+ *
+ * @see edu.carrental.CarrentalPackage#getStore()
+ * @model kind="class"
+ * @generated
+ */
+public class Store extends MinimalEObjectImpl.Container implements EObject
+{
+  protected EList<Car> cars;
+
+  protected EList<Rental> rentals;
+
+  protected EList<OverdueNotice> notices;
+
+  protected static final String NAME_EDEFAULT = null;
+
+  protected String name = NAME_EDEFAULT;
+
+  protected Store()
+  { ... /* omitted */ }
+
+  @Override
+  protected EClass eStaticClass()
+  { ... /* omitted */ }
+
+  public EList<Car> getCars()
+  { ... /* omitted */ }
+
+  public EList<Rental> getRentals()
+  { ... /* omitted */ }
+
+  public EList<OverdueNotice> getNotices()
+  { ... /* omitted */ }
+
+  public String getName()
+  { ... /* omitted */ }
+
+  public void setName(String newName)
+  { ... /* omitted */ }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Filters and sorts cars that are not currently tied to an active (unreturned) rental, ordered by price.
+   * Algorithm: 
+   *   1. Initialize an empty list `availableCars`.
+   *   2. For each `car` in `cars`:
+   *      a. Set `isAvailable = true`.
+   *      b. For each `rental` in `rentals`:
+   *         i. If `rental.car` equals `car` AND `rental.backDate` is null:
+   *            - Set `isAvailable = false` and break inner loop.
+   *      c. If `isAvailable` is true, add `car` to `availableCars`.
+   *   3. Sort `availableCars` in ascending order based on `dailyPrice`.
+   *   4. Return `availableCars`.
+   * Related Features: cars, rentals, Car.dailyPrice, Rental.car, Rental.backDate
+   * Related Classes: Car, Rental
+   * Input: None
+   * Output: List<Car> - Available cars sorted by dailyPrice ascending. Empty list if no cars are available.
+   * Pre-condition: The Store instance exists. Both cars and rentals collections are initialized.
+   * Post-condition: Returns a correctly filtered and sorted list of available vehicles. Original collections remain unmodified.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public EList<Car> identifyAvailableCars()
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Computes the cumulative revenue generated from all rental records in the store.
+   * Algorithm: 
+   *   1. Initialize `totalRevenue = 0.0`.
+   *   2. For each `rental` in `rentals`:
+   *      a. `totalRevenue += rental.totalPrice`.
+   *   3. Return `totalRevenue`.
+   * Related Features: rentals, Rental.totalPrice
+   * Related Classes: Rental
+   * Input: None
+   * Output: double - The sum of totalPrice values across all rental records. Non-negative.
+   * Pre-condition: The Store instance exists and the rentals collection is initialized (may be empty).
+   * Post-condition: Returns the exact arithmetic sum of all rental totalPrice fields. The store's internal state remains unchanged.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public double calculateTotalRevenue()
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Identifies customers with active rentals that have passed their due date without being returned.
+   * Algorithm: 
+   *   1. If `currentDate` is null, return an empty list.
+   *   2. Initialize an empty set `overdueCustomers` to ensure uniqueness.
+   *   3. For each `rental` in `rentals`:
+   *      a. If `rental.backDate` is null AND `rental.dueDate` < `currentDate`:
+   *         i. Add `rental.customer` to `overdueCustomers`.
+   *   4. Convert `overdueCustomers` to a list and return it.
+   * Related Features: rentals, Rental.backDate, Rental.dueDate, Rental.customer
+   * Related Classes: Customer, Rental
+   * Input: currentDate : EDate - The reference date used to evaluate overdue status.
+   * Output: List<Customer> - A list of unique customers with overdue rentals. Empty if none qualify or if currentDate is null.
+   * Pre-condition: The Store instance exists. currentDate can be null or a valid date.
+   * Post-condition: Returns a list of distinct customers meeting the overdue criteria. Store state remains unmodified.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public EList<Customer> findCustomersWithOverdueRentals(final Date currentDate)
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Calculates the arithmetic mean of the daily prices of all cars in the store.
+   * Algorithm: 
+   *   1. If `cars` is empty, return 0.0.
+   *   2. Initialize `priceSum = 0.0`.
+   *   3. For each `car` in `cars`:
+   *      a. `priceSum += car.dailyPrice`.
+   *   4. Calculate `average = priceSum / cars.size()`.
+   *   5. Return `average`.
+   * Related Features: cars, Car.dailyPrice
+   * Related Classes: Car
+   * Input: None
+   * Output: double - The average daily price of all cars. >= 0.0.
+   * Pre-condition: The Store instance exists and the cars collection is initialized.
+   * Post-condition: Returns the precise average. If no cars exist, returns 0.0. No modifications to store state.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public double determineAverageDailyPrice()
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Generates a mapping of each customer to the number of rental records they have made.
+   * Algorithm: 
+   *   1. Initialize an empty map `customerCountMap`.
+   *   2. For each `rental` in `rentals`:
+   *      a. Get `customer = rental.customer`.
+   *      b. If `customer` is not in `customerCountMap`, initialize its count to 0.
+   *      c. Increment count for `customer` in `customerCountMap` by 1.
+   *   3. Return `customerCountMap`.
+   * Related Features: rentals, Rental.customer
+   * Related Classes: Customer, Rental
+   * Input: None
+   * Output: EMap<Customer, Integer> - A mapping where keys are unique Customers and values are their respective rental counts. Empty if no rentals exist.
+   * Pre-condition: The Store instance exists and the rentals collection is initialized.
+   * Post-condition: Returns a complete mapping reflecting accurate rental counts per customer. Store state is unmodified.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public Map<Customer, Integer> countCarsRentedPerCustomer()
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  @Override
+  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  { ... /* omitted */ }
+
+  @Override
+  public Object eGet(int featureID, boolean resolve, boolean coreType)
+  { ... /* omitted */ }
+
+  @SuppressWarnings("unchecked")
+  @Override
+  public void eSet(int featureID, Object newValue)
+  { ... /* omitted */ }
+
+  @Override
+  public void eUnset(int featureID)
+  { ... /* omitted */ }
+
+  @Override
+  public boolean eIsSet(int featureID)
+  { ... /* omitted */ }
+
+  @Override
+  public String toString()
+  { ... /* omitted */ }
+
+} // Store
+```
+
+# Output Format
+Put the new Java class code into a single block as follows.
+
+```java
+(completed Java class)
+```
+, role=USER, name=null, toolCallId=null, toolCalls=null, refusal=null, audioOutput=null, annotations=null, reasoningContent=null]], model=qwen3.6-flash, store=null, metadata=null, frequencyPenalty=null, logitBias=null, logprobs=null, topLogprobs=null, maxTokens=null, maxCompletionTokens=32768, n=null, outputModalities=null, audioParameters=null, presencePenalty=null, responseFormat=null, seed=null, serviceTier=null, stop=null, stream=false, streamOptions=null, temperature=0.7, topP=null, tools=[org.springframework.ai.openai.api.OpenAiApi$FunctionTool@40ac0a56, org.springframework.ai.openai.api.OpenAiApi$FunctionTool@25b4754a, org.springframework.ai.openai.api.OpenAiApi$FunctionTool@6ec3a4c2], toolChoice=null, parallelToolCalls=null, user=null, reasoningEffort=null, webSearchOptions=null, verbosity=null, promptCacheKey=null, safetyIdentifier=null, extraBody={}]] as "application/json" with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+17:44:44.298 [main] DEBUG org.springframework.web.client.DefaultRestClient -- Reading to [org.springframework.ai.openai.api.OpenAiApi$ChatCompletion]
+159138 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - LLM Response:
+/**
+ * generated by Enhanced EcoreGen
+ */
+package edu.carrental;
+
+import java.util.Collection;
+import java.util.Date;
+import java.util.Map;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.BasicEList;
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Store</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link edu.carrental.Store#getCars <em>Cars</em>}</li>
+ *   <li>{@link edu.carrental.Store#getRentals <em>Rentals</em>}</li>
+ *   <li>{@link edu.carrental.Store#getNotices <em>Notices</em>}</li>
+ *   <li>{@link edu.carrental.Store#getName <em>Name</em>}</li>
+ * </ul>
+ *
+ * @see edu.carrental.CarrentalPackage#getStore()
+ * @model kind="class"
+ * @generated
+ */
+public class Store extends MinimalEObjectImpl.Container implements EObject
+{
+  protected EList<Car> cars;
+
+  protected EList<Rental> rentals;
+
+  protected EList<OverdueNotice> notices;
+
+  protected static final String NAME_EDEFAULT = null;
+
+  protected String name = NAME_EDEFAULT;
+
+  protected Store()
+  { ... /* omitted */ }
+
+  @Override
+  protected EClass eStaticClass()
+  { ... /* omitted */ }
+
+  public EList<Car> getCars()
+  { ... /* omitted */ }
+
+  public EList<Rental> getRentals()
+  { ... /* omitted */ }
+
+  public EList<OverdueNotice> getNotices()
+  { ... /* omitted */ }
+
+  public String getName()
+  { ... /* omitted */ }
+
+  public void setName(String newName)
+  { ... /* omitted */ }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Filters and sorts cars that are not currently tied to an active (unreturned) rental, ordered by price.
+   * Algorithm: 
+   *   1. Initialize an empty list `availableCars`.
+   *   2. For each `car` in `cars`:
+   *      a. Set `isAvailable = true`.
+   *      b. For each `rental` in `rentals`:
+   *         i. If `rental.car` equals `car` AND `rental.backDate` is null:
+   *            - Set `isAvailable = false` and break inner loop.
+   *      c. If `isAvailable` is true, add `car` to `availableCars`.
+   *   3. Sort `availableCars` in ascending order based on `dailyPrice`.
+   *   4. Return `availableCars`.
+   * Related Features: cars, rentals, Car.dailyPrice, Rental.car, Rental.backDate
+   * Related Classes: Car, Rental
+   * Input: None
+   * Output: List<Car> - Available cars sorted by dailyPrice ascending. Empty list if no cars are available.
+   * Pre-condition: The Store instance exists. Both cars and rentals collections are initialized.
+   * Post-condition: Returns a correctly filtered and sorted list of available vehicles. Original collections remain unmodified.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated NOT
+   */
+  public EList<Car> identifyAvailableCars()
+  {
+    EList<Car> availableCars = new BasicEList<Car>();
+    for (Car car : getCars()) {
+      boolean isAvailable = true;
+      for (Rental rental : getRentals()) {
+        if (rental.getCar() != null && rental.getCar().equals(car) && rental.getBackDate() == null) {
+          isAvailable = false;
+          break;
+        }
+      }
+      if (isAvailable) {
+        availableCars.add(car);
+      }
+    }
+    availableCars.sort(Comparator.comparingDouble(Car::getDailyPrice));
+    return availableCars;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Computes the cumulative revenue generated from all rental records in the store.
+   * Algorithm: 
+   *   1. Initialize `totalRevenue = 0.0`.
+   *   2. For each `rental` in `rentals`:
+   *      a. `totalRevenue += rental.totalPrice`.
+   *   3. Return `totalRevenue`.
+   * Related Features: rentals, Rental.totalPrice
+   * Related Classes: Rental
+   * Input: None
+   * Output: double - The sum of totalPrice values across all rental records. Non-negative.
+   * Pre-condition: The Store instance exists and the rentals collection is initialized (may be empty).
+   * Post-condition: Returns the exact arithmetic sum of all rental totalPrice fields. The store's internal state remains unchanged.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated NOT
+   */
+  public double calculateTotalRevenue()
+  {
+    double totalRevenue = 0.0;
+    for (Rental rental : getRentals()) {
+      totalRevenue += rental.getTotalPrice();
+    }
+    return totalRevenue;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Identifies customers with active rentals that have passed their due date without being returned.
+   * Algorithm: 
+   *   1. If `currentDate` is null, return an empty list.
+   *   2. Initialize an empty set `overdueCustomers` to ensure uniqueness.
+   *   3. For each `rental` in `rentals`:
+   *      a. If `rental.backDate` is null AND `rental.dueDate` < `currentDate`:
+   *         i. Add `rental.customer` to `overdueCustomers`.
+   *   4. Convert `overdueCustomers` to a list and return it.
+   * Related Features: rentals, Rental.backDate, Rental.dueDate, Rental.customer
+   * Related Classes: Customer, Rental
+   * Input: currentDate : EDate - The reference date used to evaluate overdue status.
+   * Output: List<Customer> - A list of unique customers with overdue rentals. Empty if none qualify or if currentDate is null.
+   * Pre-condition: The Store instance exists. currentDate can be null or a valid date.
+   * Post-condition: Returns a list of distinct customers meeting the overdue criteria. Store state remains unmodified.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated NOT
+   */
+  public EList<Customer> findCustomersWithOverdueRentals(final Date currentDate)
+  {
+    if (currentDate == null) {
+      return new BasicEList<Customer>();
+    }
+    Set<Customer> overdueCustomers = new HashSet<Customer>();
+    for (Rental rental : getRentals()) {
+      if (rental.getBackDate() == null && rental.getDueDate() != null && rental.getDueDate().before(currentDate)) {
+        Customer customer = rental.getCustomer();
+        if (customer != null) {
+          overdueCustomers.add(customer);
+        }
+      }
+    }
+    return new BasicEList<Customer>(overdueCustomers);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Calculates the arithmetic mean of the daily prices of all cars in the store.
+   * Algorithm: 
+   *   1. If `cars` is empty, return 0.0.
+   *   2. Initialize `priceSum = 0.0`.
+   *   3. For each `car` in `cars`:
+   *      a. `priceSum += car.dailyPrice`.
+   *   4. Calculate `average = priceSum / cars.size()`.
+   *   5. Return `average`.
+   * Related Features: cars, Car.dailyPrice
+   * Related Classes: Car
+   * Input: None
+   * Output: double - The average daily price of all cars. >= 0.0.
+   * Pre-condition: The Store instance exists and the cars collection is initialized.
+   * Post-condition: Returns the precise average. If no cars exist, returns 0.0. No modifications to store state.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated NOT
+   */
+  public double determineAverageDailyPrice()
+  {
+    EList<Car> cars = getCars();
+    if (cars.isEmpty()) {
+      return 0.0;
+    }
+    double priceSum = 0.0;
+    for (Car car : cars) {
+      priceSum += car.getDailyPrice();
+    }
+    return priceSum / cars.size();
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Generates a mapping of each customer to the number of rental records they have made.
+   * Algorithm: 
+   *   1. Initialize an empty map `customerCountMap`.
+   *   2. For each `rental` in `rentals`:
+   *      a. Get `customer = rental.customer`.
+   *      b. If `customer` is not in `customerCountMap`, initialize its count to 0.
+   *      c. Increment count for `customer` in `customerCountMap` by 1.
+   *   3. Return `customerCountMap`.
+   * Related Features: rentals, Rental.customer
+   * Related Classes: Customer, Rental
+   * Input: None
+   * Output: EMap<Customer, Integer> - A mapping where keys are unique Customers and values are their respective rental counts. Empty if no rentals exist.
+   * Pre-condition: The Store instance exists and the rentals collection is initialized.
+   * Post-condition: Returns a complete mapping reflecting accurate rental counts per customer. Store state is unmodified.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated NOT
+   */
+  public Map<Customer, Integer> countCarsRentedPerCustomer()
+  {
+    Map<Customer, Integer> customerCountMap = new HashMap<Customer, Integer>();
+    for (Rental rental : getRentals()) {
+      Customer customer = rental.getCustomer();
+      if (customer != null) {
+        Integer count = customerCountMap.get(customer);
+        if (count == null) {
+          count = 0;
+        }
+        customerCountMap.put(customer, count + 1);
+      }
+    }
+    return customerCountMap;
+  }
+
+  @Override
+  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  { ... /* omitted */ }
+
+  @Override
+  public Object eGet(int featureID, boolean resolve, boolean coreType)
+  { ... /* omitted */ }
+
+  @SuppressWarnings("unchecked")
+  @Override
+  public void eSet(int featureID, Object newValue)
+  { ... /* omitted */ }
+
+  @Override
+  public void eUnset(int featureID)
+  { ... /* omitted */ }
+
+  @Override
+  public boolean eIsSet(int featureID)
+  { ... /* omitted */ }
+
+  @Override
+  public String toString()
+  { ... /* omitted */ }
+
+} // Store
+159256 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Code Completion for OverdueNotice
+159285 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Prompt:
+# Task
+You will be given a **Java Class** generated from an Ecore model by EMF code generator with `suppressInterfaces=true`. Your task is to implement the Java methods unimplemented by taking additional contextual information into account.
+
+Complete this task by following the guidelines below.
+1. Compute context information
+  1.1 Consider the related classes in the Javadocs.
+  1.2 Locate these files in your project.
+  1.3 Generate the class summarization.
+2. A method is unimplemented if its body contains `// TODO: Please complete this Java method based on the docstring`.
+3. For every unimplemented method, 
+  3.1 You must read the docstring of this method. The fragment between `<!-- begin-model-doc -->` and `<!-- end-model-doc -->` contains the method specification;
+  3.2 Generate your code strictly according to the algorithm; Be aware of the EMF code style and APIs;
+  3.3 You should not change the method signature;
+  3.4 After generation, replace the current body with the one you generate;
+  3.5 Keep and update the docstring by changing `@generated` to `@generated NOT`.
+4. Check the import list. Add missing imports if needed.
+5. Do not change other part.
+6. Be aware of the method signatures, particularly, the input and output types, provided in the context.
+
+## EMF Coding Style
+- When possible, call getter/setter methods to access field values. Do not read/write raw fields derived from the class diagram.
+- The getter of a boolean attribute `bv` looks like `isBv()`, e.g., `isIsTrue()` for `isTrue`.
+- When possibe, use the creation factory for object creation.
+- To create an EList instance, import and use `org.eclipse.emf.common.util.BasicEList`.
+
+# Java Class
+```java
+/**
+ * generated by Enhanced EcoreGen
+ */
+package edu.carrental;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Overdue Notice</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link edu.carrental.OverdueNotice#getCustomer <em>Customer</em>}</li>
+ *   <li>{@link edu.carrental.OverdueNotice#getNoticeId <em>Notice Id</em>}</li>
+ * </ul>
+ *
+ * @see edu.carrental.CarrentalPackage#getOverdueNotice()
+ * @model kind="class"
+ * @generated
+ */
+public class OverdueNotice extends MinimalEObjectImpl.Container implements EObject
+{
+  protected Customer customer;
+
+  protected static final String NOTICE_ID_EDEFAULT = null;
+
+  protected String noticeId = NOTICE_ID_EDEFAULT;
+
+  protected OverdueNotice()
+  { ... /* omitted */ }
+
+  @Override
+  protected EClass eStaticClass()
+  { ... /* omitted */ }
+
+  public Customer getCustomer()
+  { ... /* omitted */ }
+
+  public Customer basicGetCustomer()
+  { ... /* omitted */ }
+
+  public void setCustomer(Customer newCustomer)
+  { ... /* omitted */ }
+
+  public String getNoticeId()
+  { ... /* omitted */ }
+
+  public void setNoticeId(String newNoticeId)
+  { ... /* omitted */ }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Links a target customer to the overdue notice and returns a tracking identifier.
+   * Algorithm: 
+   *   1. Validate that the input customer parameter is not null.
+   *   2. Assign the input customer to the instance variable 'customer'.
+   *   3. Return the 'noticeId' as the tracking confirmation string.
+   * Related Features: noticeId, customer
+   * Related Classes: Customer
+   * Input: customer : Customer - The target customer to whom the overdue notice is issued. Must not be null.
+   * Output: String - A tracking confirmation string containing the noticeId for identification and tracking purposes.
+   * Pre-condition: The OverdueNotice object is instantiated with a valid, non-null noticeId. The customer parameter is not null.
+   * Post-condition: The customer attribute is successfully linked to the provided customer object. A non-null tracking string is returned. Internal state reflects the notice as issued/tracked.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public String sendNoticeTo(final Customer customer)
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  @Override
+  public Object eGet(int featureID, boolean resolve, boolean coreType)
+  { ... /* omitted */ }
+
+  @Override
+  public void eSet(int featureID, Object newValue)
+  { ... /* omitted */ }
+
+  @Override
+  public void eUnset(int featureID)
+  { ... /* omitted */ }
+
+  @Override
+  public boolean eIsSet(int featureID)
+  { ... /* omitted */ }
+
+  @Override
+  public String toString()
+  { ... /* omitted */ }
+
+} // OverdueNotice
+```
+
+# Output Format
+Put the new Java class code into a single block as follows.
+
+```java
+(completed Java class)
+```
+
+17:44:44.499 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- storing configured custom inline type for java.lang.String as definition (since it is the main schema "#")
+17:44:44.500 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- generating array definition for java.lang.String[]
+17:44:44.501 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- directly applying configured custom inline type for java.lang.String
+17:44:44.502 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- storing configured custom inline type for java.lang.String as definition (since it is the main schema "#")
+17:44:44.504 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- generating array definition for java.lang.String[]
+17:44:44.504 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- directly applying configured custom inline type for java.lang.String
+17:44:44.508 [main] DEBUG org.springframework.retry.support.RetryTemplate -- Retry: count=0
+17:44:44.509 [main] DEBUG org.springframework.web.client.DefaultRestClient -- Writing [ChatCompletionRequest[messages=[ChatCompletionMessage[rawContent=# Task
+You will be given a **Java Class** generated from an Ecore model by EMF code generator with `suppressInterfaces=true`. Your task is to implement the Java methods unimplemented by taking additional contextual information into account.
+
+Complete this task by following the guidelines below.
+1. Compute context information
+  1.1 Consider the related classes in the Javadocs.
+  1.2 Locate these files in your project.
+  1.3 Generate the class summarization.
+2. A method is unimplemented if its body contains `// TODO: Please complete this Java method based on the docstring`.
+3. For every unimplemented method, 
+  3.1 You must read the docstring of this method. The fragment between `<!-- begin-model-doc -->` and `<!-- end-model-doc -->` contains the method specification;
+  3.2 Generate your code strictly according to the algorithm; Be aware of the EMF code style and APIs;
+  3.3 You should not change the method signature;
+  3.4 After generation, replace the current body with the one you generate;
+  3.5 Keep and update the docstring by changing `@generated` to `@generated NOT`.
+4. Check the import list. Add missing imports if needed.
+5. Do not change other part.
+6. Be aware of the method signatures, particularly, the input and output types, provided in the context.
+
+## EMF Coding Style
+- When possible, call getter/setter methods to access field values. Do not read/write raw fields derived from the class diagram.
+- The getter of a boolean attribute `bv` looks like `isBv()`, e.g., `isIsTrue()` for `isTrue`.
+- When possibe, use the creation factory for object creation.
+- To create an EList instance, import and use `org.eclipse.emf.common.util.BasicEList`.
+
+# Java Class
+```java
+/**
+ * generated by Enhanced EcoreGen
+ */
+package edu.carrental;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Overdue Notice</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link edu.carrental.OverdueNotice#getCustomer <em>Customer</em>}</li>
+ *   <li>{@link edu.carrental.OverdueNotice#getNoticeId <em>Notice Id</em>}</li>
+ * </ul>
+ *
+ * @see edu.carrental.CarrentalPackage#getOverdueNotice()
+ * @model kind="class"
+ * @generated
+ */
+public class OverdueNotice extends MinimalEObjectImpl.Container implements EObject
+{
+  protected Customer customer;
+
+  protected static final String NOTICE_ID_EDEFAULT = null;
+
+  protected String noticeId = NOTICE_ID_EDEFAULT;
+
+  protected OverdueNotice()
+  { ... /* omitted */ }
+
+  @Override
+  protected EClass eStaticClass()
+  { ... /* omitted */ }
+
+  public Customer getCustomer()
+  { ... /* omitted */ }
+
+  public Customer basicGetCustomer()
+  { ... /* omitted */ }
+
+  public void setCustomer(Customer newCustomer)
+  { ... /* omitted */ }
+
+  public String getNoticeId()
+  { ... /* omitted */ }
+
+  public void setNoticeId(String newNoticeId)
+  { ... /* omitted */ }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Links a target customer to the overdue notice and returns a tracking identifier.
+   * Algorithm: 
+   *   1. Validate that the input customer parameter is not null.
+   *   2. Assign the input customer to the instance variable 'customer'.
+   *   3. Return the 'noticeId' as the tracking confirmation string.
+   * Related Features: noticeId, customer
+   * Related Classes: Customer
+   * Input: customer : Customer - The target customer to whom the overdue notice is issued. Must not be null.
+   * Output: String - A tracking confirmation string containing the noticeId for identification and tracking purposes.
+   * Pre-condition: The OverdueNotice object is instantiated with a valid, non-null noticeId. The customer parameter is not null.
+   * Post-condition: The customer attribute is successfully linked to the provided customer object. A non-null tracking string is returned. Internal state reflects the notice as issued/tracked.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public String sendNoticeTo(final Customer customer)
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  @Override
+  public Object eGet(int featureID, boolean resolve, boolean coreType)
+  { ... /* omitted */ }
+
+  @Override
+  public void eSet(int featureID, Object newValue)
+  { ... /* omitted */ }
+
+  @Override
+  public void eUnset(int featureID)
+  { ... /* omitted */ }
+
+  @Override
+  public boolean eIsSet(int featureID)
+  { ... /* omitted */ }
+
+  @Override
+  public String toString()
+  { ... /* omitted */ }
+
+} // OverdueNotice
+```
+
+# Output Format
+Put the new Java class code into a single block as follows.
+
+```java
+(completed Java class)
+```
+, role=USER, name=null, toolCallId=null, toolCalls=null, refusal=null, audioOutput=null, annotations=null, reasoningContent=null]], model=qwen3.6-flash, store=null, metadata=null, frequencyPenalty=null, logitBias=null, logprobs=null, topLogprobs=null, maxTokens=null, maxCompletionTokens=32768, n=null, outputModalities=null, audioParameters=null, presencePenalty=null, responseFormat=null, seed=null, serviceTier=null, stop=null, stream=false, streamOptions=null, temperature=0.7, topP=null, tools=[org.springframework.ai.openai.api.OpenAiApi$FunctionTool@1800c1e3, org.springframework.ai.openai.api.OpenAiApi$FunctionTool@3b8b4846, org.springframework.ai.openai.api.OpenAiApi$FunctionTool@4e357792], toolChoice=null, parallelToolCalls=null, user=null, reasoningEffort=null, webSearchOptions=null, verbosity=null, promptCacheKey=null, safetyIdentifier=null, extraBody={}]] as "application/json" with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+17:45:14.185 [main] DEBUG org.springframework.web.client.DefaultRestClient -- Reading to [org.springframework.ai.openai.api.OpenAiApi$ChatCompletion]
+188973 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - LLM Response:
+/**
+ * generated by Enhanced EcoreGen
+ */
+package edu.carrental;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Overdue Notice</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link edu.carrental.OverdueNotice#getCustomer <em>Customer</em>}</li>
+ *   <li>{@link edu.carrental.OverdueNotice#getNoticeId <em>Notice Id</em>}</li>
+ * </ul>
+ *
+ * @see edu.carrental.CarrentalPackage#getOverdueNotice()
+ * @model kind="class"
+ * @generated
+ */
+public class OverdueNotice extends MinimalEObjectImpl.Container implements EObject
+{
+  protected Customer customer;
+
+  protected static final String NOTICE_ID_EDEFAULT = null;
+
+  protected String noticeId = NOTICE_ID_EDEFAULT;
+
+  protected OverdueNotice()
+  { ... /* omitted */ }
+
+  @Override
+  protected EClass eStaticClass()
+  { ... /* omitted */ }
+
+  public Customer getCustomer()
+  { ... /* omitted */ }
+
+  public Customer basicGetCustomer()
+  { ... /* omitted */ }
+
+  public void setCustomer(Customer newCustomer)
+  { ... /* omitted */ }
+
+  public String getNoticeId()
+  { ... /* omitted */ }
+
+  public void setNoticeId(String newNoticeId)
+  { ... /* omitted */ }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Links a target customer to the overdue notice and returns a tracking identifier.
+   * Algorithm: 
+   *   1. Validate that the input customer parameter is not null.
+   *   2. Assign the input customer to the instance variable 'customer'.
+   *   3. Return the 'noticeId' as the tracking confirmation string.
+   * Related Features: noticeId, customer
+   * Related Classes: Customer
+   * Input: customer : Customer - The target customer to whom the overdue notice is issued. Must not be null.
+   * Output: String - A tracking confirmation string containing the noticeId for identification and tracking purposes.
+   * Pre-condition: The OverdueNotice object is instantiated with a valid, non-null noticeId. The customer parameter is not null.
+   * Post-condition: The customer attribute is successfully linked to the provided customer object. A non-null tracking string is returned. Internal state reflects the notice as issued/tracked.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated NOT
+   */
+  public String sendNoticeTo(final Customer customer)
+  {
+      if (customer == null) {
+          throw new IllegalArgumentException("Customer must not be null.");
+      }
+      setCustomer(customer);
+      return getNoticeId();
+  }
+
+  @Override
+  public Object eGet(int featureID, boolean resolve, boolean coreType)
+  { ... /* omitted */ }
+
+  @Override
+  public void eSet(int featureID, Object newValue)
+  { ... /* omitted */ }
+
+  @Override
+  public void eUnset(int featureID)
+  { ... /* omitted */ }
+
+  @Override
+  public boolean eIsSet(int featureID)
+  { ... /* omitted */ }
+
+  @Override
+  public String toString()
+  { ... /* omitted */ }
+
+} // OverdueNotice
+188982 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Code Fixing
+188983 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - JDTCompilerWrapper -11 -d ../R12_RentedCarGalleryManagementSystem/src-gen/../llm-bin -classpath "E:/eclipse-dsl/plugins/org.eclipse.emf.ecore_2.41.0.v20251025-0946.jar;E:/eclipse-dsl/plugins/org.eclipse.emf.common_2.44.0.v20251025-0946.jar" ../R12_RentedCarGalleryManagementSystem/src-gen/edu/carrental/
+190115 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - 
+190115 [main] ERROR du.ustb.sei.mde.mwe2.EcoreGenerator  - 
+190115 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - There is no more compilation error
+190128 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Generating common infrastructure
+190160 [main] INFO  .emf.mwe2.runtime.workflow.Workflow  - Done.
+sample1.mwe2 启动完成
+正在拷贝 src-gen/edu/carrental 到 qwen3.6-flash/carrental1...
+拷贝完成！

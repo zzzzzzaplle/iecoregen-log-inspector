@@ -1,0 +1,6 @@
+# Project Environment Requirements
+## 项目环境要求
+
+## Java Version / Java 版本
+
+- **Recommended:** Java 21

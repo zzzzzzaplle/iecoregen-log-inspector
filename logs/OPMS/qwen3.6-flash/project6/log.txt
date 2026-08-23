@@ -1,0 +1,2904 @@
+======================================
+[qwen3.6-flash] 正在启动 sample1.mwe2...
+======================================
+0    [main] WARN  pes.access.impl.DeclaredTypeFactory  - --- xtext.common.types ---------------------------------------------------
+1    [main] WARN  pes.access.impl.DeclaredTypeFactory  - ASM library is not available. Falling back to java.lang.reflect API.
+1    [main] WARN  pes.access.impl.DeclaredTypeFactory  - Please note that no information about compile time constants is available.
+1    [main] WARN  pes.access.impl.DeclaredTypeFactory  - It's recommended to use org.objectweb.asm 9.9.0 or better (Maven group id: org.ow2.asm).
+1    [main] WARN  pes.access.impl.DeclaredTypeFactory  - --------------------------------------------------------------------------
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+662  [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Initializing Xtext generator
+03:33:54.788 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.osgi.annotation.versioning_1.1.2.202109301733.jar
+03:33:54.790 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.osgi.annotation.versioning at 'archive:file:/E:/eclipse-dsl/plugins/org.osgi.annotation.versioning_1.1.2.202109301733.jar!/'
+03:33:54.790 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.osgi.annotation.bundle_2.0.0.202202082230.jar
+03:33:54.790 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.osgi.annotation.bundle at 'archive:file:/E:/eclipse-dsl/plugins/org.osgi.annotation.bundle_2.0.0.202202082230.jar!/'
+03:33:54.791 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.osgi.service.component.annotations_1.5.1.202212101352.jar
+03:33:54.791 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.osgi.service.component.annotations at 'archive:file:/E:/eclipse-dsl/plugins/org.osgi.service.component.annotations_1.5.1.202212101352.jar!/'
+03:33:54.791 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.osgi.service.metatype.annotations_1.4.1.202109301733.jar
+03:33:54.791 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.osgi.service.metatype.annotations at 'archive:file:/E:/eclipse-dsl/plugins/org.osgi.service.metatype.annotations_1.4.1.202109301733.jar!/'
+03:33:54.791 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.ecore_2.41.0.v20251025-0946.jar
+03:33:54.792 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.ecore at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.ecore_2.41.0.v20251025-0946.jar!/'
+03:33:54.792 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.common_2.44.0.v20251025-0946.jar
+03:33:54.793 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.common at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.common_2.44.0.v20251025-0946.jar!/'
+03:33:54.793 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.swt_3.132.0.v20251124-0642.jar
+03:33:54.793 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.swt at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.swt_3.132.0.v20251124-0642.jar!/'
+03:33:54.793 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.swt.svg_3.131.0.v20251009-2047.jar
+03:33:54.793 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.swt.svg at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.swt.svg_3.131.0.v20251009-2047.jar!/'
+03:33:54.793 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.swt.win32.win32.x86_64_3.132.0.v20251124-0642.jar
+03:33:54.795 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.swt.win32.win32.x86_64 at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.swt.win32.win32.x86_64_3.132.0.v20251124-0642.jar!/'
+03:33:54.795 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.jface_3.38.100.v20251108-1551.jar
+03:33:54.796 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.jface at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.jface_3.38.100.v20251108-1551.jar!/'
+03:33:54.796 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.core.commands_3.12.500.v20251103-0733.jar
+03:33:54.796 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.core.commands at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.core.commands_3.12.500.v20251103-0733.jar!/'
+03:33:54.796 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\biz.aQute.bnd.util_7.1.0.202411251545.jar
+03:33:54.796 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project biz.aQute.bnd.util at 'archive:file:/E:/eclipse-dsl/plugins/biz.aQute.bnd.util_7.1.0.202411251545.jar!/'
+03:33:54.797 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.mwe2.launch_2.24.0.v20251122-0744.jar
+03:33:54.797 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.mwe2.launch at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.mwe2.launch_2.24.0.v20251122-0744.jar!/'
+03:33:54.797 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.mwe2.language_2.24.0.v20251122-0744.jar
+03:33:54.798 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.mwe2.language at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.mwe2.language_2.24.0.v20251122-0744.jar!/'
+03:33:54.798 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.xtext.common.types_2.41.0.v20251124-0739.jar
+03:33:54.798 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.xtext.common.types at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.xtext.common.types_2.41.0.v20251124-0739.jar!/'
+03:33:54.798 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.mwe2.runtime_2.24.0.v20251122-0744.jar
+03:33:54.800 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.mwe2.runtime at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.mwe2.runtime_2.24.0.v20251122-0744.jar!/'
+03:33:54.800 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.xtext_2.41.0.v20251124-0739.jar
+03:33:54.802 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.xtext at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.xtext_2.41.0.v20251124-0739.jar!/'
+03:33:54.802 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.ecore.xmi_2.39.0.v20250910-1205.jar
+03:33:54.803 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.ecore.xmi at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.ecore.xmi_2.39.0.v20250910-1205.jar!/'
+03:33:54.803 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.antlr.runtime_3.2.0.v20230929-1400.jar
+03:33:54.803 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.antlr.runtime at 'archive:file:/E:/eclipse-dsl/plugins/org.antlr.runtime_3.2.0.v20230929-1400.jar!/'
+03:33:54.804 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.mwe.core_1.18.0.v20251122-0744.jar
+03:33:54.804 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.mwe.core at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.mwe.core_1.18.0.v20251122-0744.jar!/'
+03:33:54.804 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.apache.commons.cli_1.11.0.jar
+03:33:54.804 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.commons.cli at 'archive:file:/E:/eclipse-dsl/plugins/org.apache.commons.cli_1.11.0.jar!/'
+03:33:54.804 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.mwe.utils_1.18.0.v20251122-0744.jar
+03:33:54.805 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.mwe.utils at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.mwe.utils_1.18.0.v20251122-0744.jar!/'
+03:33:54.805 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.xtext.util_2.41.0.v20251124-0739.jar
+03:33:54.805 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.xtext.util at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.xtext.util_2.41.0.v20251124-0739.jar!/'
+03:33:54.806 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\com.google.guava_33.5.0.jre.jar
+03:33:54.806 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.google.guava at 'archive:file:/E:/eclipse-dsl/plugins/com.google.guava_33.5.0.jre.jar!/'
+03:33:54.806 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\com.google.inject_7.0.0.jar
+03:33:54.806 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.google.inject at 'archive:file:/E:/eclipse-dsl/plugins/com.google.inject_7.0.0.jar!/'
+03:33:54.806 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\com.google.guava.failureaccess_1.0.3.jar
+03:33:54.806 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.google.guava.failureaccess at 'archive:file:/E:/eclipse-dsl/plugins/com.google.guava.failureaccess_1.0.3.jar!/'
+03:33:54.806 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\jakarta.inject.jakarta.inject-api_2.0.1.jar
+03:33:54.807 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project jakarta.inject.jakarta.inject-api at 'archive:file:/E:/eclipse-dsl/plugins/jakarta.inject.jakarta.inject-api_2.0.1.jar!/'
+03:33:54.807 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.mwe2.lib_2.24.0.v20251122-0744.jar
+03:33:54.807 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.mwe2.lib at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.mwe2.lib_2.24.0.v20251122-0744.jar!/'
+03:33:54.807 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.xtext.xbase_2.41.0.v20251124-0739.jar
+03:33:54.809 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.xtext.xbase at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.xtext.xbase_2.41.0.v20251124-0739.jar!/'
+03:33:54.809 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.xtend.lib_2.41.0.v20251124-0739.jar
+03:33:54.810 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.xtend.lib at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.xtend.lib_2.41.0.v20251124-0739.jar!/'
+03:33:54.810 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.xtext.xbase.lib_2.41.0.v20251124-0739.jar
+03:33:54.810 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.xtext.xbase.lib at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.xtext.xbase.lib_2.41.0.v20251124-0739.jar!/'
+03:33:54.810 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.xtend.lib.macro_2.41.0.v20251124-0739.jar
+03:33:54.811 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.xtend.lib.macro at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.xtend.lib.macro_2.41.0.v20251124-0739.jar!/'
+03:33:54.811 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.apache.log4j_1.2.26.jar
+03:33:54.811 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.log4j at 'archive:file:/E:/eclipse-dsl/plugins/org.apache.log4j_1.2.26.jar!/'
+03:33:54.811 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.jdt.core_3.44.0.v20251118-1842.jar
+03:33:54.813 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.jdt.core at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.jdt.core_3.44.0.v20251118-1842.jar!/'
+03:33:54.813 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.jdt.core.compiler.batch_3.44.0.v20251118-1623.jar
+03:33:54.814 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.jdt.core.compiler.batch at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.jdt.core.compiler.batch_3.44.0.v20251118-1623.jar!/'
+03:33:54.815 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.apache.commons.logging_1.2.0.jar
+03:33:54.815 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.commons.logging at 'archive:file:/E:/eclipse-dsl/plugins/org.apache.commons.logging_1.2.0.jar!/'
+03:33:54.815 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.core.runtime_3.34.100.v20251111-1421.jar
+03:33:54.816 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.core.runtime at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.core.runtime_3.34.100.v20251111-1421.jar!/'
+03:33:54.816 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.osgi_3.24.0.v20251126-0427.jar
+03:33:54.817 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.osgi at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.osgi_3.24.0.v20251126-0427.jar!/'
+03:33:54.818 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.osgi.compatibility.state_1.3.0.v20251022-1724.jar
+03:33:54.818 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.osgi.compatibility.state at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.osgi.compatibility.state_1.3.0.v20251022-1724.jar!/'
+03:33:54.818 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.equinox.common_3.20.300.v20251111-0312.jar
+03:33:54.819 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.equinox.common at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.equinox.common_3.20.300.v20251111-0312.jar!/'
+03:33:54.819 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.core.jobs_3.15.700.v20250725-1147.jar
+03:33:54.819 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.core.jobs at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.core.jobs_3.15.700.v20250725-1147.jar!/'
+03:33:54.820 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.equinox.registry_3.12.600.v20250906-0651.jar
+03:33:54.820 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.equinox.registry at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.equinox.registry_3.12.600.v20250906-0651.jar!/'
+03:33:54.820 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.equinox.preferences_3.12.100.v20251111-0704.jar
+03:33:54.820 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.equinox.preferences at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.equinox.preferences_3.12.100.v20251111-0704.jar!/'
+03:33:54.822 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.osgi.service.prefs_1.1.2.202109301733.jar
+03:33:54.822 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.osgi.service.prefs at 'archive:file:/E:/eclipse-dsl/plugins/org.osgi.service.prefs_1.1.2.202109301733.jar!/'
+03:33:54.822 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.core.contenttype_3.9.800.v20251105-1620.jar
+03:33:54.822 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.core.contenttype at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.core.contenttype_3.9.800.v20251105-1620.jar!/'
+03:33:54.823 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.equinox.app_1.7.500.v20250629-0337.jar
+03:33:54.823 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.equinox.app at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.equinox.app_1.7.500.v20250629-0337.jar!/'
+03:33:54.823 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.xtext.xtext.generator_2.41.0.v20251124-0739.jar
+03:33:54.824 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.xtext.xtext.generator at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.xtext.xtext.generator_2.41.0.v20251124-0739.jar!/'
+03:33:54.825 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.codegen.ecore_2.44.0.v20251025-0946.jar
+03:33:54.825 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.codegen.ecore at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.codegen.ecore_2.44.0.v20251025-0946.jar!/'
+03:33:54.826 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.codegen_2.27.0.v20250910-1205.jar
+03:33:54.826 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.codegen at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.codegen_2.27.0.v20250910-1205.jar!/'
+03:33:54.826 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.jdt_3.19.1100.v20251201-0920.jar
+03:33:54.826 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.jdt at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.jdt_3.19.1100.v20251201-0920.jar!/'
+03:33:54.893 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project edu.ustb.sei.mde.mwe2 at 'file:/E:/E-Workspace/iecoregen/edu.ustb.sei.mde.mwe2/'
+03:33:54.894 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.core.resources_3.23.100.v20251106-1705.jar
+03:33:54.894 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.core.resources at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.core.resources_3.23.100.v20251106-1705.jar!/'
+03:33:54.895 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.jface.text_3.29.0.v20251112-0859.jar
+03:33:54.895 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.jface.text at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.jface.text_3.29.0.v20251112-0859.jar!/'
+03:33:54.895 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.text_3.14.500.v20251103-0730.jar
+03:33:54.896 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.text at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.text_3.14.500.v20251103-0730.jar!/'
+03:33:54.896 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.ui_3.207.400.v20251015-1301.jar
+03:33:54.896 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.ui at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.ui_3.207.400.v20251015-1301.jar!/'
+03:33:54.897 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.ui.workbench_3.137.0.v20251114-0005.jar
+03:33:54.899 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.ui.workbench at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.ui.workbench_3.137.0.v20251114-0005.jar!/'
+03:33:54.900 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.e4.ui.workbench3_0.17.600.v20250918-0518.jar
+03:33:54.900 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.e4.ui.workbench3 at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.e4.ui.workbench3_0.17.600.v20250918-0518.jar!/'
+03:33:54.903 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project edu.ustb.sei.ai at 'file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai/'
+03:33:54.904 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai\lib\jackson-core-2.19.2.jar
+03:33:54.904 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.fasterxml.jackson.core.jackson-core at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai/lib/jackson-core-2.19.2.jar!/'
+03:33:54.904 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai\lib\jackson-databind-2.19.2.jar
+03:33:54.905 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.fasterxml.jackson.core.jackson-databind at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai/lib/jackson-databind-2.19.2.jar!/'
+03:33:54.905 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\antlr4-runtime-4.13.1.jar
+03:33:54.905 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.antlr.antlr4-runtime at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/antlr4-runtime-4.13.1.jar!/'
+03:33:54.905 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\antlr-runtime-3.5.3.jar
+03:33:54.906 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\antlr-runtime-3.5.3.jar
+03:33:54.906 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project antlr-runtime at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/antlr-runtime-3.5.3.jar!/'
+03:33:54.907 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\classmate-1.7.1.jar
+03:33:54.907 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.fasterxml.classmate at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/classmate-1.7.1.jar!/'
+03:33:54.907 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\commons-codec-1.17.1.jar
+03:33:54.908 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.commons.commons-codec at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/commons-codec-1.17.1.jar!/'
+03:33:54.908 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\commons-collections4-4.3.jar
+03:33:54.908 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.commons.commons-collections4 at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/commons-collections4-4.3.jar!/'
+03:33:54.909 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\commons-compress-1.27.1.jar
+03:33:54.909 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.commons.commons-compress at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/commons-compress-1.27.1.jar!/'
+03:33:54.909 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\commons-io-2.16.1.jar
+03:33:54.909 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.commons.commons-io at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/commons-io-2.16.1.jar!/'
+03:33:54.909 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\commons-lang3-3.17.0.jar
+03:33:54.910 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.commons.lang3 at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/commons-lang3-3.17.0.jar!/'
+03:33:54.910 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\commons-logging-1.3.5.jar
+03:33:54.910 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.commons.commons-logging at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/commons-logging-1.3.5.jar!/'
+03:33:54.910 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\commons-text-1.10.0.jar
+03:33:54.911 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.commons.commons-text at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/commons-text-1.10.0.jar!/'
+03:33:54.911 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\gson-2.13.2.jar
+03:33:54.911 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.google.gson at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/gson-2.13.2.jar!/'
+03:33:54.911 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\guava-32.0.1-jre.jar
+03:33:54.911 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.google.guava at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/guava-32.0.1-jre.jar!/'
+03:33:54.912 [main] WARN org.eclipse.emf.mwe.utils.StandaloneSetup -- Skipping conflicting project com.google.guava at 'archive:file:/E:/eclipse-dsl/plugins/com.google.guava_33.5.0.jre.jar!/' and using 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/guava-32.0.1-jre.jar!/' instead.
+03:33:54.912 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jackson-annotations-2.19.4.jar
+03:33:54.912 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.fasterxml.jackson.core.jackson-annotations at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jackson-annotations-2.19.4.jar!/'
+03:33:54.912 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jackson-core-2.19.2.jar
+03:33:54.913 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.fasterxml.jackson.core.jackson-core at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jackson-core-2.19.2.jar!/'
+03:33:54.913 [main] WARN org.eclipse.emf.mwe.utils.StandaloneSetup -- Skipping conflicting project com.fasterxml.jackson.core.jackson-core at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai/lib/jackson-core-2.19.2.jar!/' and using 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jackson-core-2.19.2.jar!/' instead.
+03:33:54.913 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jackson-databind-2.19.4.jar
+03:33:54.913 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.fasterxml.jackson.core.jackson-databind at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jackson-databind-2.19.4.jar!/'
+03:33:54.913 [main] WARN org.eclipse.emf.mwe.utils.StandaloneSetup -- Skipping conflicting project com.fasterxml.jackson.core.jackson-databind at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai/lib/jackson-databind-2.19.2.jar!/' and using 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jackson-databind-2.19.4.jar!/' instead.
+03:33:54.913 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jackson-module-jsonSchema-2.19.4.jar
+03:33:54.914 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.fasterxml.jackson.module.jackson-module-jsonSchema at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jackson-module-jsonSchema-2.19.4.jar!/'
+03:33:54.914 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\javax.annotation-api-1.3.2.jar
+03:33:54.914 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project javax.annotation-api at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/javax.annotation-api-1.3.2.jar!/'
+03:33:54.914 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jna-5.14.0.jar
+03:33:54.915 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.sun.jna at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jna-5.14.0.jar!/'
+03:33:54.915 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jsonschema-generator-4.38.0.jar
+03:33:54.915 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jsonschema-generator-4.38.0.jar
+03:33:54.915 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project jsonschema-generator at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jsonschema-generator-4.38.0.jar!/'
+03:33:54.920 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jsonschema-module-jackson-4.38.0.jar
+03:33:54.923 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jsonschema-module-jackson-4.38.0.jar
+03:33:54.926 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project jsonschema-module-jackson at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jsonschema-module-jackson-4.38.0.jar!/'
+03:33:54.927 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jsonschema-module-swagger-2-4.38.0.jar
+03:33:54.927 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jsonschema-module-swagger-2-4.38.0.jar
+03:33:54.927 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project jsonschema-module-swagger-2 at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jsonschema-module-swagger-2-4.38.0.jar!/'
+03:33:54.929 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\json-schema-validator-2.0.0.jar
+03:33:54.930 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.networknt.json-schema-validator at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/json-schema-validator-2.0.0.jar!/'
+03:33:54.931 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jtokkit-1.1.0.jar
+03:33:54.931 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jtokkit-1.1.0.jar
+03:33:54.931 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project jtokkit at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jtokkit-1.1.0.jar!/'
+03:33:54.931 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\jul-to-slf4j-2.0.17.jar
+03:33:54.932 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project jul.to.slf4j at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/jul-to-slf4j-2.0.17.jar!/'
+03:33:54.932 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\log4j-api-2.24.3.jar
+03:33:54.933 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.logging.log4j.api at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/log4j-api-2.24.3.jar!/'
+03:33:54.940 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\log4j-to-slf4j-2.24.3.jar
+03:33:54.940 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.logging.log4j.to.slf4j at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/log4j-to-slf4j-2.24.3.jar!/'
+03:33:54.941 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\logback-classic-1.5.32.jar
+03:33:54.941 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project ch.qos.logback.classic at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/logback-classic-1.5.32.jar!/'
+03:33:54.941 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\logback-core-1.5.32.jar
+03:33:54.942 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project ch.qos.logback.core at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/logback-core-1.5.32.jar!/'
+03:33:54.942 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\micrometer-commons-1.15.9.jar
+03:33:54.942 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project micrometer-commons at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/micrometer-commons-1.15.9.jar!/'
+03:33:54.942 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\micrometer-core-1.15.9.jar
+03:33:54.943 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project micrometer-core at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/micrometer-core-1.15.9.jar!/'
+03:33:54.943 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\micrometer-observation-1.15.9.jar
+03:33:54.943 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project micrometer-observation at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/micrometer-observation-1.15.9.jar!/'
+03:33:54.944 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\reactive-streams-1.0.4.jar
+03:33:54.944 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project reactive-streams at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/reactive-streams-1.0.4.jar!/'
+03:33:54.944 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\reactor-core-3.7.16.jar
+03:33:54.944 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project io.projectreactor.reactor-core at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/reactor-core-3.7.16.jar!/'
+03:33:54.946 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\slf4j-api-2.0.17.jar
+03:33:54.946 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project slf4j.api at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/slf4j-api-2.0.17.jar!/'
+03:33:54.946 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-client-chat-1.1.4.jar
+03:33:54.946 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-client-chat-1.1.4.jar
+03:33:54.947 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-ai-client-chat at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-ai-client-chat-1.1.4.jar!/'
+03:33:54.947 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-commons-1.1.4.jar
+03:33:54.947 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-commons-1.1.4.jar
+03:33:54.947 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-ai-commons at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-ai-commons-1.1.4.jar!/'
+03:33:54.948 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-deepseek-1.1.4.jar
+03:33:54.948 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-deepseek-1.1.4.jar
+03:33:54.948 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-ai-deepseek at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-ai-deepseek-1.1.4.jar!/'
+03:33:54.948 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-jsoup-document-reader-1.1.0.jar
+03:33:54.948 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-jsoup-document-reader-1.1.0.jar
+03:33:54.949 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-ai-jsoup-document-reader at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-ai-jsoup-document-reader-1.1.0.jar!/'
+03:33:54.949 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-markdown-document-reader-1.1.0.jar
+03:33:54.949 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-markdown-document-reader-1.1.0.jar
+03:33:54.949 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-ai-markdown-document-reader at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-ai-markdown-document-reader-1.1.0.jar!/'
+03:33:54.950 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-model-1.1.4.jar
+03:33:54.950 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-model-1.1.4.jar
+03:33:54.950 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-ai-model at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-ai-model-1.1.4.jar!/'
+03:33:54.950 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-openai-1.1.4.jar
+03:33:54.950 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-openai-1.1.4.jar
+03:33:54.951 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-ai-openai at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-ai-openai-1.1.4.jar!/'
+03:33:54.951 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-rag-1.1.4.jar
+03:33:54.951 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-rag-1.1.4.jar
+03:33:54.951 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-ai-rag at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-ai-rag-1.1.4.jar!/'
+03:33:54.952 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-retry-1.1.4.jar
+03:33:54.952 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-retry-1.1.4.jar
+03:33:54.952 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-ai-retry at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-ai-retry-1.1.4.jar!/'
+03:33:54.952 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-template-st-1.1.4.jar
+03:33:54.952 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-template-st-1.1.4.jar
+03:33:54.953 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-ai-template-st at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-ai-template-st-1.1.4.jar!/'
+03:33:54.953 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-vector-store-1.1.4.jar
+03:33:54.953 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-ai-vector-store-1.1.4.jar
+03:33:54.953 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-ai-vector-store at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-ai-vector-store-1.1.4.jar!/'
+03:33:54.954 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-aop-6.2.16.jar
+03:33:54.954 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-aop-6.2.16.jar
+03:33:54.954 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-aop at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-aop-6.2.16.jar!/'
+03:33:54.954 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-beans-6.2.16.jar
+03:33:54.954 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-beans-6.2.16.jar
+03:33:54.954 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-beans at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-beans-6.2.16.jar!/'
+03:33:54.954 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-context-6.2.16.jar
+03:33:54.954 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-context-6.2.16.jar
+03:33:54.955 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-context at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-context-6.2.16.jar!/'
+03:33:54.955 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-context-support-6.2.16.jar
+03:33:54.955 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-context-support-6.2.16.jar
+03:33:54.955 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-context-support at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-context-support-6.2.16.jar!/'
+03:33:54.955 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-core-6.2.16.jar
+03:33:54.956 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-core-6.2.16.jar
+03:33:54.956 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-core at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-core-6.2.16.jar!/'
+03:33:54.956 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-data-commons-3.5.5.jar
+03:33:54.956 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-data-commons-3.5.5.jar
+03:33:54.956 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-data-commons at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-data-commons-3.5.5.jar!/'
+03:33:54.956 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-data-keyvalue-3.5.5.jar
+03:33:54.956 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-data-keyvalue-3.5.5.jar
+03:33:54.956 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-data-keyvalue at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-data-keyvalue-3.5.5.jar!/'
+03:33:54.957 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-expression-6.2.16.jar
+03:33:54.957 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-expression-6.2.16.jar
+03:33:54.957 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-expression at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-expression-6.2.16.jar!/'
+03:33:54.958 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-jcl-6.2.16.jar
+03:33:54.958 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-jcl-6.2.16.jar
+03:33:54.958 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-jcl at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-jcl-6.2.16.jar!/'
+03:33:54.958 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-messaging-6.2.16.jar
+03:33:54.960 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-messaging-6.2.16.jar
+03:33:54.960 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-messaging at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-messaging-6.2.16.jar!/'
+03:33:54.960 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-retry-2.0.12.jar
+03:33:54.961 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-retry-2.0.12.jar
+03:33:54.961 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-retry at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-retry-2.0.12.jar!/'
+03:33:54.961 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-web-6.2.16.jar
+03:33:54.961 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-web-6.2.16.jar
+03:33:54.962 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-web at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-web-6.2.16.jar!/'
+03:33:54.962 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-webflux-6.2.16.jar
+03:33:54.962 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\spring-webflux-6.2.16.jar
+03:33:54.962 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project spring-webflux at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/spring-webflux-6.2.16.jar!/'
+03:33:54.962 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\ST4-4.3.4.jar
+03:33:54.962 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\ST4-4.3.4.jar
+03:33:54.963 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project ST4 at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/ST4-4.3.4.jar!/'
+03:33:54.963 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\swagger-annotations-2.0.0.jar
+03:33:54.963 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project io.swagger.core.v3.swagger-annotations at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/swagger-annotations-2.0.0.jar!/'
+03:33:54.963 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\swagger-annotations-jakarta-2.2.38.jar
+03:33:54.964 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project io.swagger.core.v3.swagger-annotations.jakarta at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/swagger-annotations-jakarta-2.2.38.jar!/'
+03:33:54.964 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\utils-2.36.3.jar
+03:33:54.964 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\utils-2.36.3.jar
+03:33:54.964 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project utils at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/utils-2.36.3.jar!/'
+03:33:54.964 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.ai.spring.port\lib\validation-api-1.1.0.Final.jar
+03:33:54.965 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project javax.validation.api at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/lib/validation-api-1.1.0.Final.jar!/'
+03:33:54.969 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project edu.ustb.sei.ai.spring.port at 'file:/E:/E-Workspace/iecoregen/edu.ustb.sei.ai.spring.port/'
+03:33:54.970 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.mde.eecg\lib\commons-cli-1.6.0.jar
+03:33:54.971 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.apache.commons.cli at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.mde.eecg/lib/commons-cli-1.6.0.jar!/'
+03:33:54.971 [main] WARN org.eclipse.emf.mwe.utils.StandaloneSetup -- Skipping conflicting project org.apache.commons.cli at 'archive:file:/E:/eclipse-dsl/plugins/org.apache.commons.cli_1.11.0.jar!/' and using 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.mde.eecg/lib/commons-cli-1.6.0.jar!/' instead.
+03:33:54.971 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.mde.eecg\lib\commons-cli-1.6.0-javadoc.jar
+03:33:54.971 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.mde.eecg\lib\commons-cli-1.6.0-javadoc.jar
+03:33:54.971 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project commons-cli at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.mde.eecg/lib/commons-cli-1.6.0-javadoc.jar!/'
+03:33:54.972 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\E-Workspace\iecoregen\edu.ustb.sei.mde.eecg\lib\commons-cli-1.6.0-sources.jar
+03:33:54.972 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from file name for E:\E-Workspace\iecoregen\edu.ustb.sei.mde.eecg\lib\commons-cli-1.6.0-sources.jar
+03:33:54.972 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project commons-cli at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.mde.eecg/lib/commons-cli-1.6.0-sources.jar!/'
+03:33:54.972 [main] WARN org.eclipse.emf.mwe.utils.StandaloneSetup -- Skipping conflicting project commons-cli at 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.mde.eecg/lib/commons-cli-1.6.0-javadoc.jar!/' and using 'archive:file:/E:/E-Workspace/iecoregen/edu.ustb.sei.mde.eecg/lib/commons-cli-1.6.0-sources.jar!/' instead.
+03:33:54.980 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project edu.ustb.sei.mde.eecg at 'file:/E:/E-Workspace/iecoregen/edu.ustb.sei.mde.eecg/'
+03:33:54.980 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.mwe2.runtime.source_2.24.0.v20251122-0744.jar
+03:33:54.981 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.mwe2.runtime.source at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.mwe2.runtime.source_2.24.0.v20251122-0744.jar!/'
+03:33:54.981 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.jface.databinding_1.15.400.v20250925-0701.jar
+03:33:54.981 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.jface.databinding at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.jface.databinding_1.15.400.v20250925-0701.jar!/'
+03:33:54.982 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.jface.notifications_0.7.500.v20250919-0627.jar
+03:33:54.982 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.jface.notifications at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.jface.notifications_0.7.500.v20250919-0627.jar!/'
+03:33:54.982 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.jdt.ui_3.36.0.v20251114-2328.jar
+03:33:54.987 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.jdt.ui at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.jdt.ui_3.36.0.v20251114-2328.jar!/'
+03:33:54.987 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf_2.9.0.v20230211-1150.jar
+03:33:54.987 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf_2.9.0.v20230211-1150.jar!/'
+03:33:54.987 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.ecore.change_2.17.0.v20250910-1205.jar
+03:33:54.988 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.ecore.change at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.ecore.change_2.17.0.v20250910-1205.jar!/'
+03:33:54.988 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.ecore.edit_2.15.0.v20250910-1205.jar
+03:33:54.988 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.ecore.edit at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.ecore.edit_2.15.0.v20250910-1205.jar!/'
+03:33:54.988 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.edit_2.23.0.v20250910-1205.jar
+03:33:54.989 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.edit at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.edit_2.23.0.v20250910-1205.jar!/'
+03:33:54.989 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.junit_4.13.2.v20240929-1000.jar
+03:33:54.990 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.junit at 'archive:file:/E:/eclipse-dsl/plugins/org.junit_4.13.2.v20240929-1000.jar!/'
+03:33:54.990 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.hamcrest_3.0.0.jar
+03:33:54.990 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.hamcrest at 'archive:file:/E:/eclipse-dsl/plugins/org.hamcrest_3.0.0.jar!/'
+03:33:54.990 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.mwe2.language.source_2.24.0.v20251122-0744.jar
+03:33:54.991 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.mwe2.language.source at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.mwe2.language.source_2.24.0.v20251122-0744.jar!/'
+03:33:54.991 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.e4.ui.services_1.6.600.v20251023-1358.jar
+03:33:54.991 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.e4.ui.services at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.e4.ui.services_1.6.600.v20251023-1358.jar!/'
+03:33:54.991 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.e4.core.di.annotations_1.8.400.v20240413-1529.jar
+03:33:54.991 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.e4.core.di.annotations at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.e4.core.di.annotations_1.8.400.v20240413-1529.jar!/'
+03:33:54.992 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.ui.views_3.12.800.v20250924-1436.jar
+03:33:54.992 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.ui.views at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.ui.views_3.12.800.v20250924-1436.jar!/'
+03:33:54.992 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.ui.ide_3.22.800.v20251112-0859.jar
+03:33:54.994 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.ui.ide at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.ui.ide_3.22.800.v20251112-0859.jar!/'
+03:33:54.994 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.e4.ui.ide_3.17.300.v20250917-0547.jar
+03:33:54.995 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.e4.ui.ide at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.e4.ui.ide_3.17.300.v20250917-0547.jar!/'
+03:33:54.995 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\com.github.weisj.jsvg_2.0.0.jar
+03:33:54.995 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project com.github.weisj.jsvg at 'archive:file:/E:/eclipse-dsl/plugins/com.github.weisj.jsvg_2.0.0.jar!/'
+03:33:54.995 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\jakarta.annotation-api_2.1.1.jar
+03:33:54.996 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project jakarta.annotation-api at 'archive:file:/E:/eclipse-dsl/plugins/jakarta.annotation-api_2.1.1.jar!/'
+03:33:55.000 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project edu.ustb.sei.mde.eecg.ui at 'file:/E:/E-Workspace/iecoregen/edu.ustb.sei.mde.eecg.ui/'
+03:33:55.001 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.jdt.annotation_2.4.100.v20251017-1955.jar
+03:33:55.001 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.jdt.annotation at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.jdt.annotation_2.4.100.v20251017-1955.jar!/'
+03:33:55.002 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.mwe2.launch.source_2.24.0.v20251122-0744.jar
+03:33:55.002 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.mwe2.launch.source at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.mwe2.launch.source_2.24.0.v20251122-0744.jar!/'
+03:33:55.002 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.emf.mwe2.launch.ui.source_2.24.0.v20251122-0744.jar
+03:33:55.002 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.emf.mwe2.launch.ui.source at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.emf.mwe2.launch.ui.source_2.24.0.v20251122-0744.jar!/'
+03:33:55.002 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\aQute.libg_7.1.0.202411251545.jar
+03:33:55.003 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project aQute.libg at 'archive:file:/E:/eclipse-dsl/plugins/aQute.libg_7.1.0.202411251545.jar!/'
+03:33:55.003 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Trying to determine project name from Manifest for E:\eclipse-dsl\plugins\org.eclipse.jdt.core.manipulation_1.23.200.v20251125-1647.jar
+03:33:55.005 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project org.eclipse.jdt.core.manipulation at 'archive:file:/E:/eclipse-dsl/plugins/org.eclipse.jdt.core.manipulation_1.23.200.v20251125-1647.jar!/'
+03:33:55.030 [main] DEBUG org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project OPMS at 'file:/E:/E-Workspace/OPMS/'
+03:33:55.031 [main] INFO org.eclipse.emf.mwe.utils.StandaloneSetup -- Registering project OPMS at 'file:/E:/E-Workspace/OPMS/'
+03:33:55.587 [main] DEBUG reactor.util.Loggers -- Using Slf4j logging framework
+03:33:55.626 [main] WARN org.springframework.ai.openai.OpenAiChatOptions -- Both maxTokens and maxCompletionTokens are set. OpenAI API does not support setting both parameters simultaneously. The previously set maxTokens (65536) will be cleared and maxCompletionTokens (32768) will be used.
+03:33:55.646 [main] WARN org.springframework.ai.openai.OpenAiChatOptions -- Both maxTokens and maxCompletionTokens are set. OpenAI API does not support setting both parameters simultaneously. The previously set maxTokens (65536) will be cleared and maxCompletionTokens (32768) will be used.
+03:33:55.721 [main] INFO org.eclipse.emf.mwe.utils.StandaloneSetup -- Using resourceSet registry. The registered Packages will not be registered in the global EPackage.Registry.INSTANCE!
+03:33:55.761 [main] DEBUG org.eclipse.emf.mwe.utils.DirectoryCleaner -- Cleaning folder ..\OPMS\src-gen
+03:33:55.761 [main] DEBUG org.eclipse.emf.mwe.utils.DirectoryCleaner -- Cleaning folder ..\OPMS\src-gen
+03:33:55.763 [main] DEBUG org.eclipse.emf.mwe.utils.DirectoryCleaner -- Cleaning folder ..\OPMS\src-gen\edu
+03:33:55.763 [main] DEBUG org.eclipse.emf.mwe.utils.DirectoryCleaner -- Cleaning folder ..\OPMS\src-gen\edu\fleet
+03:33:55.763 [main] DEBUG org.eclipse.emf.mwe.utils.DirectoryCleaner -- Cleaning folder ..\OPMS\src-gen\edu\fleet\util
+03:33:55.763 [main] DEBUG org.eclipse.emf.mwe.utils.DirectoryCleaner -- Cleaning folder ..\OPMS\src-gen\edu\project
+03:33:55.766 [main] DEBUG org.eclipse.emf.mwe.utils.DirectoryCleaner -- Cleaning folder ..\OPMS\src-gen\edu\project\util
+03:33:55.767 [main] DEBUG org.eclipse.emf.mwe.utils.DirectoryCleaner -- Cleaning folder ..\OPMS\model\generated
+03:33:55.767 [main] DEBUG org.eclipse.emf.mwe.utils.DirectoryCleaner -- Cleaning folder ..\OPMS\model\generated
+1666 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Generating edu.ustb.sei.mde.mwe2.EcoreLanguage@31e739bf
+1666 [main] INFO  .sei.mde.mwe2.EMFGeneratorFragment2  - Enhancing Ecore model
+1680 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Annotating EOperations
+1688 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Prompt:
+# Task
+You will be given a **Requirement** and a **Class Diagram** in PlantUML. Your task is to annotate every operation listed in <Operations> with a specfication.
+
+An operation specification must describe the following sections about the operation:
+1. Summary: the summary of functionality;
+2. Algorithm: algorithm or pesudo code;
+3. Related Features: a list of structural or behavior features within this class that shall be accessed;
+4. Related Classes: a list of classes and data types defined in **Class Diagram** that shall be accessed, in the format of `Related Classes: ClsA, CLsB, ...` or `Related Classes: None`;
+5. Input: the input parameters, including the meaning, the format, and the value ranges if necessary;
+6. Output: output value, including the meaning, the format, and the value ranges if necessary;
+7. Pre-condition: the condition that the system and the input must satisfy before the operation is executed;
+8. Post-condition: the condition that the system and the output must satisfy after the operation is executed.
+
+Finish this task by following the guidelines below.
+1. Take the principle of modularization into account.
+2. For each operation, determine its functional boundary based on the given requirement. Ensure high cohesion and low coupling.
+3. If there is any unspecified details, such as undefined constants, rates, and ratios, then you must infer them.
+4. Make sure that all requirements can be covered.
+
+# Requirement
+```text
+A company is comprised of two to eight departments. Each department has an ID and email. A department hires employees for certain projects. Employees working on projects can be temporary employees or permanent employees. Each employee is identified by a name, email, employee ID, employee number. Projects can be of types - production projects, research projects, education projects, and community projects. All projects have a title, description, budget amount, and deadline. In addition, each education project and community project are associated with one funding group. The funding group can be of types - private group, government group, or mixed group. The production projects are characterized by a site code.
+
+functional requirement：
+1.Total budget of all projects in a company.Calculate the sum of the budget amounts of all projects in all departments of a company. 
+
+2.Average budget of all projects in a department.Calculate the average budget amount of all projects in a given department.
+
+3.Count the distinct number of employees who work on at least one production projects in the company. An employee working on multiple production projects is counted only once.
+
+4.Funding group type of all community projects in a department.Retrieve the funding group type of all community projects within a given department.
+
+5.Manage departments in a company. Ensure that the company always has between 2 and 8 departments (inclusive). Allow adding a new department with unique name only if the current number of departments is less than 8, and allow removing an existing department by name only if the current number of departments is greater than 2; reject any operation that would violate these constraints. When the number of departments exceeds the maximum limit or falls below the minimum limit, throw an IllegalStateException; when the department name is duplicate, null, empty, or the target department to remove does not exist, throw an IllegalArgumentException.
+```
+
+# Class Diagram
+```plantuml
+@startuml
+
+title project Model
+
+class CommunityProject {
+    fundingGroup : FundingGroup
+}
+class Company {
+    departments : List<Department>
+    addDepartment(department : Department) : void
+    calculateTotalBudget() : double
+    countEmployeesInProductionProjects() : int
+    removeDepartment(name : String) : String
+}
+class Department {
+    ID : String
+    email : String
+    company : Company
+    employees : List<Employee>
+    projects : List<Project>
+    calculateAverageBudget() : double
+    getFundingGroupTypeCommunityProjects() : List<FundingGroupType>
+}
+class EducationProject {
+    fundingGroup : FundingGroup
+}
+class Employee {
+    ID : String
+    email : String
+    name : String
+    number : String
+    type : EmployeeType
+    department : Department
+}
+class FundingGroup {
+    name : String
+    type : FundingGroupType
+    communityProjects : List<CommunityProject>
+    educationProjects : List<EducationProject>
+}
+class ProductionProject {
+    siteCode : String
+}
+abstract class Project {
+    budget : double
+    deadline : EDate
+    description : String
+    title : String
+    department : Department
+    workingEmployees : List<Employee>
+}
+class ResearchProject {
+}
+enum EmployeeType {
+    TEMPORARY
+    PERMANENT
+}
+enum FundingGroupType {
+    PRIVATE
+    GOVERNMENT
+    MIXED
+}
+
+CommunityProject --|> Project
+CommunityProject --> FundingGroup : fundingGroup  'opposite: communityProjects
+Company *-- "*" Department : departments  'opposite: company
+Department --> Company : company  'opposite: departments
+Department *-- "*" Employee : employees  'opposite: department
+Department *-- "*" Project : projects  'opposite: department
+EducationProject --|> Project
+EducationProject --> FundingGroup : fundingGroup  'opposite: educationProjects
+Employee --> Department : department  'opposite: employees
+FundingGroup --> "*" CommunityProject : communityProjects  'opposite: fundingGroup
+FundingGroup --> "*" EducationProject : educationProjects  'opposite: fundingGroup
+ProductionProject --|> Project
+Project --> Department : department  'opposite: projects
+Project --> "*" Employee : workingEmployees
+ResearchProject --|> Project
+@enduml
+```
+
+# Operations
++ Company::addDepartment
++ Company::calculateTotalBudget
++ Company::countEmployeesInProductionProjects
++ Company::removeDepartment
++ Department::calculateAverageBudget
++ Department::getFundingGroupTypeCommunityProjects
+
+# Output Format
+Put all your results in a single block as illustrated below:
+
+```result
+
+class_1::operation_1
+/*
+ * your description for operation_1
+ */
+
+class_1::operation_2
+/*
+ * your description for this operation_2
+ */
+
+...
+```
+
+03:33:55.809 [main] DEBUG io.micrometer.common.util.internal.logging.InternalLoggerFactory -- Using SLF4J as the default logging framework
+03:33:56.104 [main] DEBUG org.springframework.retry.support.RetryTemplate -- Retry: count=0
+03:33:56.198 [main] DEBUG org.springframework.web.client.DefaultRestClient -- Writing [ChatCompletionRequest[messages=[ChatCompletionMessage[rawContent=# Task
+You will be given a **Requirement** and a **Class Diagram** in PlantUML. Your task is to annotate every operation listed in <Operations> with a specfication.
+
+An operation specification must describe the following sections about the operation:
+1. Summary: the summary of functionality;
+2. Algorithm: algorithm or pesudo code;
+3. Related Features: a list of structural or behavior features within this class that shall be accessed;
+4. Related Classes: a list of classes and data types defined in **Class Diagram** that shall be accessed, in the format of `Related Classes: ClsA, CLsB, ...` or `Related Classes: None`;
+5. Input: the input parameters, including the meaning, the format, and the value ranges if necessary;
+6. Output: output value, including the meaning, the format, and the value ranges if necessary;
+7. Pre-condition: the condition that the system and the input must satisfy before the operation is executed;
+8. Post-condition: the condition that the system and the output must satisfy after the operation is executed.
+
+Finish this task by following the guidelines below.
+1. Take the principle of modularization into account.
+2. For each operation, determine its functional boundary based on the given requirement. Ensure high cohesion and low coupling.
+3. If there is any unspecified details, such as undefined constants, rates, and ratios, then you must infer them.
+4. Make sure that all requirements can be covered.
+
+# Requirement
+```text
+A company is comprised of two to eight departments. Each department has an ID and email. A department hires employees for certain projects. Employees working on projects can be temporary employees or permanent employees. Each employee is identified by a name, email, employee ID, employee number. Projects can be of types - production projects, research projects, education projects, and community projects. All projects have a title, description, budget amount, and deadline. In addition, each education project and community project are associated with one funding group. The funding group can be of types - private group, government group, or mixed group. The production projects are characterized by a site code.
+
+functional requirement：
+1.Total budget of all projects in a company.Calculate the sum of the budget amounts of all projects in all departments of a company. 
+
+2.Average budget of all projects in a department.Calculate the average budget amount of all projects in a given department.
+
+3.Count the distinct number of employees who work on at least one production projects in the company. An employee working on multiple production projects is counted only once.
+
+4.Funding group type of all community projects in a department.Retrieve the funding group type of all community projects within a given department.
+
+5.Manage departments in a company. Ensure that the company always has between 2 and 8 departments (inclusive). Allow adding a new department with unique name only if the current number of departments is less than 8, and allow removing an existing department by name only if the current number of departments is greater than 2; reject any operation that would violate these constraints. When the number of departments exceeds the maximum limit or falls below the minimum limit, throw an IllegalStateException; when the department name is duplicate, null, empty, or the target department to remove does not exist, throw an IllegalArgumentException.
+```
+
+# Class Diagram
+```plantuml
+@startuml
+
+title project Model
+
+class CommunityProject {
+    fundingGroup : FundingGroup
+}
+class Company {
+    departments : List<Department>
+    addDepartment(department : Department) : void
+    calculateTotalBudget() : double
+    countEmployeesInProductionProjects() : int
+    removeDepartment(name : String) : String
+}
+class Department {
+    ID : String
+    email : String
+    company : Company
+    employees : List<Employee>
+    projects : List<Project>
+    calculateAverageBudget() : double
+    getFundingGroupTypeCommunityProjects() : List<FundingGroupType>
+}
+class EducationProject {
+    fundingGroup : FundingGroup
+}
+class Employee {
+    ID : String
+    email : String
+    name : String
+    number : String
+    type : EmployeeType
+    department : Department
+}
+class FundingGroup {
+    name : String
+    type : FundingGroupType
+    communityProjects : List<CommunityProject>
+    educationProjects : List<EducationProject>
+}
+class ProductionProject {
+    siteCode : String
+}
+abstract class Project {
+    budget : double
+    deadline : EDate
+    description : String
+    title : String
+    department : Department
+    workingEmployees : List<Employee>
+}
+class ResearchProject {
+}
+enum EmployeeType {
+    TEMPORARY
+    PERMANENT
+}
+enum FundingGroupType {
+    PRIVATE
+    GOVERNMENT
+    MIXED
+}
+
+CommunityProject --|> Project
+CommunityProject --> FundingGroup : fundingGroup  'opposite: communityProjects
+Company *-- "*" Department : departments  'opposite: company
+Department --> Company : company  'opposite: departments
+Department *-- "*" Employee : employees  'opposite: department
+Department *-- "*" Project : projects  'opposite: department
+EducationProject --|> Project
+EducationProject --> FundingGroup : fundingGroup  'opposite: educationProjects
+Employee --> Department : department  'opposite: employees
+FundingGroup --> "*" CommunityProject : communityProjects  'opposite: fundingGroup
+FundingGroup --> "*" EducationProject : educationProjects  'opposite: fundingGroup
+ProductionProject --|> Project
+Project --> Department : department  'opposite: projects
+Project --> "*" Employee : workingEmployees
+ResearchProject --|> Project
+@enduml
+```
+
+# Operations
++ Company::addDepartment
++ Company::calculateTotalBudget
++ Company::countEmployeesInProductionProjects
++ Company::removeDepartment
++ Department::calculateAverageBudget
++ Department::getFundingGroupTypeCommunityProjects
+
+# Output Format
+Put all your results in a single block as illustrated below:
+
+```result
+
+class_1::operation_1
+/*
+ * your description for operation_1
+ */
+
+class_1::operation_2
+/*
+ * your description for this operation_2
+ */
+
+...
+```
+, role=USER, name=null, toolCallId=null, toolCalls=null, refusal=null, audioOutput=null, annotations=null, reasoningContent=null]], model=qwen/qwen3.6-flash, store=null, metadata=null, frequencyPenalty=null, logitBias=null, logprobs=null, topLogprobs=null, maxTokens=null, maxCompletionTokens=32768, n=null, outputModalities=null, audioParameters=null, presencePenalty=null, responseFormat=null, seed=null, serviceTier=null, stop=null, stream=false, streamOptions=null, temperature=0.7, topP=null, tools=null, toolChoice=null, parallelToolCalls=null, user=null, reasoningEffort=null, webSearchOptions=null, verbosity=null, promptCacheKey=null, safetyIdentifier=null, extraBody={}]] as "application/json" with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+03:33:57.723 [main] DEBUG org.springframework.web.client.DefaultRestClient -- Reading to [org.springframework.ai.openai.api.OpenAiApi$ChatCompletion]
+29413 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - LLM Response:
+{org.eclipse.emf.ecore.impl.EOperationImpl@160b4809 (name: countEmployeesInProductionProjects) (ordered: true, unique: true, lowerBound: 0, upperBound: 1)=Summary: Counts the number of distinct employees who work on at least one ProductionProject within the company.
+Algorithm: 1. Initialize Set<Employee> uniqueEmployees = new HashSet<>().
+          2. For each dept in departments:
+          3.     For each proj in dept.projects:
+          4.         If proj is an instance of ProductionProject:
+          5.             For each emp in proj.workingEmployees:
+          6.                 uniqueEmployees.add(emp)
+          7. Return uniqueEmployees.size().
+Related Features: departments, projects, workingEmployees
+Related Classes: Department, Project, ProductionProject, Employee
+Input: None
+Output: count : int - The number of unique employees working on production projects. Value range: >= 0
+Pre-condition: Company structure is initialized.
+Post-condition: Returns the correct count of distinct employees. System state remains unchanged., org.eclipse.emf.ecore.impl.EOperationImpl@664e848c (name: removeDepartment) (ordered: true, unique: true, lowerBound: 0, upperBound: 1)=Summary: Removes an existing department from the company by name, enforcing minimum department count and existence constraints.
+Algorithm: 1. If departments.size() <= 2, throw IllegalStateException.
+          2. If name is null or empty, throw IllegalArgumentException.
+          3. Find targetDept in departments where targetDept.name == name.
+          4. If targetDept is null, throw IllegalArgumentException.
+          5. Remove targetDept from departments.
+          6. Set targetDept.company = null.
+          7. Return "Department removed successfully".
+Related Features: departments, company
+Related Classes: Department, Company
+Input: name : String - The name of the department to be removed. Must be a non-null, non-empty String.
+Output: result : String - A confirmation message upon successful removal. Value range: non-empty String.
+Pre-condition: Company exists. name parameter is provided.
+Post-condition: If successful, the specified department is removed, departments size decreases by 1, and bidirectional reference is cleared. If constraints violated, exceptions are thrown and state remains unchanged., org.eclipse.emf.ecore.impl.EOperationImpl@114a5e0 (name: getFundingGroupTypeCommunityProjects) (ordered: true, unique: true, lowerBound: 0, upperBound: -1)=Summary: Retrieves the funding group types associated with all CommunityProjects within this department.
+Algorithm: 1. Initialize List<FundingGroupType> resultTypes = new ArrayList<>().
+          2. For each proj in projects:
+          3.     If proj is an instance of CommunityProject:
+          4.         If proj.fundingGroup != null:
+          5.             resultTypes.add(proj.fundingGroup.type)
+          6. Return resultTypes.
+Related Features: projects, fundingGroup, type
+Related Classes: Project, CommunityProject, FundingGroup, FundingGroupType
+Input: None
+Output: types : List<FundingGroupType> - List of funding group types for community projects in this department. Value range: List containing 0 or more FundingGroupType enum values.
+Pre-condition: Department instance is initialized. projects list is not null.
+Post-condition: Returns the list of funding group types for community projects. System state remains unchanged., org.eclipse.emf.ecore.impl.EOperationImpl@4d93f75b (name: calculateAverageBudget) (ordered: true, unique: true, lowerBound: 0, upperBound: 1)=Summary: Calculates the average budget amount of all projects associated with this department.
+Algorithm: 1. If projects.size() == 0, return 0.0.
+          2. Initialize sum = 0.0.
+          3. For each proj in projects:
+          4.     sum += proj.budget
+          5. Return sum / projects.size().
+Related Features: projects, budget
+Related Classes: Project
+Input: None
+Output: average : double - The average budget of department projects. Value range: >= 0.0
+Pre-condition: Department instance is initialized. projects list is not null.
+Post-condition: Returns the calculated average budget. System state remains unchanged., org.eclipse.emf.ecore.impl.EOperationImpl@5efeb117 (name: calculateTotalBudget) (ordered: true, unique: true, lowerBound: 0, upperBound: 1)=Summary: Computes the sum of budget amounts for all projects across all departments in the company.
+Algorithm: 1. Initialize totalBudget = 0.0.
+          2. For each dept in departments:
+          3.     For each proj in dept.projects:
+          4.         totalBudget += proj.budget
+          5. Return totalBudget.
+Related Features: departments, projects, budget
+Related Classes: Department, Project
+Input: None
+Output: total : double - The sum of all project budgets in the company. Value range: >= 0.0
+Pre-condition: Company exists. departments and inner projects lists are initialized and not null.
+Post-condition: Returns the exact calculated sum. System state remains unchanged., org.eclipse.emf.ecore.impl.EOperationImpl@149b4d20 (name: addDepartment) (ordered: true, unique: true, lowerBound: 0, upperBound: 1)=Summary: Adds a new department to the company, enforcing constraints on the maximum number of departments and name uniqueness.
+Algorithm: 1. If departments.size() >= 8, throw IllegalStateException.
+          2. If department.name is null or empty, throw IllegalArgumentException.
+          3. Iterate through departments to check if any existing department.name equals department.name. If match found, throw IllegalArgumentException.
+          4. Add department to departments list.
+          5. Set department.company = this.
+          6. Return void.
+Related Features: departments, Department.name (inferred), Department.company
+Related Classes: Department, Company
+Input: department : Department - The department object to be added. Its name must be a non-null, non-empty String.
+Output: void
+Pre-condition: Company instance is initialized. Input department object is not null.
+Post-condition: If successful, departments contains the new department, its size increases by 1, and department.company references this Company. If constraints are violated, specific exceptions are thrown and system state remains unchanged.}
+29414 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Verify Annotations
+29417 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Prompt:
+# Task
+You will be given a **Requirement**, a **Class Diagram** in PlantUML, and a list of operation specifications. Your task is to correct the specifications that are inconsistent with the requirement.
+
+An operation specification must describe the following sections about the operation:
+1. Summary: the summary of functionality;
+2. Algorithm: algorithm or pesudo code;
+3. Related Features: a list of structural or behavior features within this class that shall be accessed;
+4. Related Classes: a list of classes and data types defined in **Class Diagram** that shall be accessed, in the format of `Related Classes: ClsA, CLsB, ...` or `Related Classes: None`;
+5. Input: the input parameters, including the meaning, the format, and the value ranges if necessary;
+6. Output: output value, including the meaning, the format, and the value ranges if necessary;
+7. Pre-condition: the condition that the system and the input must satisfy before the operation is executed;
+8. Post-condition: the condition that the system and the output must satisfy after the operation is executed.
+
+Finish this task by following the guidelines below.
+1. Read the requirement and the class diagram.
+2. For each operation specification, determine whether it is complete and consistent with the requirement.
+3. If there is any error, correct the erroneous specification.
+4. Follow the specification format. Output changed specifications only; OMIT unchanged specifications.
+
+# Requirement
+```text
+A company is comprised of two to eight departments. Each department has an ID and email. A department hires employees for certain projects. Employees working on projects can be temporary employees or permanent employees. Each employee is identified by a name, email, employee ID, employee number. Projects can be of types - production projects, research projects, education projects, and community projects. All projects have a title, description, budget amount, and deadline. In addition, each education project and community project are associated with one funding group. The funding group can be of types - private group, government group, or mixed group. The production projects are characterized by a site code.
+
+functional requirement：
+1.Total budget of all projects in a company.Calculate the sum of the budget amounts of all projects in all departments of a company. 
+
+2.Average budget of all projects in a department.Calculate the average budget amount of all projects in a given department.
+
+3.Count the distinct number of employees who work on at least one production projects in the company. An employee working on multiple production projects is counted only once.
+
+4.Funding group type of all community projects in a department.Retrieve the funding group type of all community projects within a given department.
+
+5.Manage departments in a company. Ensure that the company always has between 2 and 8 departments (inclusive). Allow adding a new department with unique name only if the current number of departments is less than 8, and allow removing an existing department by name only if the current number of departments is greater than 2; reject any operation that would violate these constraints. When the number of departments exceeds the maximum limit or falls below the minimum limit, throw an IllegalStateException; when the department name is duplicate, null, empty, or the target department to remove does not exist, throw an IllegalArgumentException.
+```
+
+# Class Diagram
+```plantuml
+@startuml
+
+title project Model
+
+class CommunityProject {
+    fundingGroup : FundingGroup
+}
+class Company {
+    departments : List<Department>
+    addDepartment(department : Department) : void
+    calculateTotalBudget() : double
+    countEmployeesInProductionProjects() : int
+    removeDepartment(name : String) : String
+}
+class Department {
+    ID : String
+    email : String
+    company : Company
+    employees : List<Employee>
+    projects : List<Project>
+    calculateAverageBudget() : double
+    getFundingGroupTypeCommunityProjects() : List<FundingGroupType>
+}
+class EducationProject {
+    fundingGroup : FundingGroup
+}
+class Employee {
+    ID : String
+    email : String
+    name : String
+    number : String
+    type : EmployeeType
+    department : Department
+}
+class FundingGroup {
+    name : String
+    type : FundingGroupType
+    communityProjects : List<CommunityProject>
+    educationProjects : List<EducationProject>
+}
+class ProductionProject {
+    siteCode : String
+}
+abstract class Project {
+    budget : double
+    deadline : EDate
+    description : String
+    title : String
+    department : Department
+    workingEmployees : List<Employee>
+}
+class ResearchProject {
+}
+enum EmployeeType {
+    TEMPORARY
+    PERMANENT
+}
+enum FundingGroupType {
+    PRIVATE
+    GOVERNMENT
+    MIXED
+}
+
+CommunityProject --|> Project
+CommunityProject --> FundingGroup : fundingGroup  'opposite: communityProjects
+Company *-- "*" Department : departments  'opposite: company
+Department --> Company : company  'opposite: departments
+Department *-- "*" Employee : employees  'opposite: department
+Department *-- "*" Project : projects  'opposite: department
+EducationProject --|> Project
+EducationProject --> FundingGroup : fundingGroup  'opposite: educationProjects
+Employee --> Department : department  'opposite: employees
+FundingGroup --> "*" CommunityProject : communityProjects  'opposite: fundingGroup
+FundingGroup --> "*" EducationProject : educationProjects  'opposite: fundingGroup
+ProductionProject --|> Project
+Project --> Department : department  'opposite: projects
+Project --> "*" Employee : workingEmployees
+ResearchProject --|> Project
+@enduml
+```
+
+# Operation Specifications
+Department::getFundingGroupTypeCommunityProjects
+Summary: Retrieves the funding group types associated with all CommunityProjects within this department.
+Algorithm: 1. Initialize List<FundingGroupType> resultTypes = new ArrayList<>().
+          2. For each proj in projects:
+          3.     If proj is an instance of CommunityProject:
+          4.         If proj.fundingGroup != null:
+          5.             resultTypes.add(proj.fundingGroup.type)
+          6. Return resultTypes.
+Related Features: projects, fundingGroup, type
+Related Classes: Project, CommunityProject, FundingGroup, FundingGroupType
+Input: None
+Output: types : List<FundingGroupType> - List of funding group types for community projects in this department. Value range: List containing 0 or more FundingGroupType enum values.
+Pre-condition: Department instance is initialized. projects list is not null.
+Post-condition: Returns the list of funding group types for community projects. System state remains unchanged.
+
+Department::calculateAverageBudget
+Summary: Calculates the average budget amount of all projects associated with this department.
+Algorithm: 1. If projects.size() == 0, return 0.0.
+          2. Initialize sum = 0.0.
+          3. For each proj in projects:
+          4.     sum += proj.budget
+          5. Return sum / projects.size().
+Related Features: projects, budget
+Related Classes: Project
+Input: None
+Output: average : double - The average budget of department projects. Value range: >= 0.0
+Pre-condition: Department instance is initialized. projects list is not null.
+Post-condition: Returns the calculated average budget. System state remains unchanged.
+
+# Output Format
+Put the revised specifications in a single block as illustrated below:
+
+```result
+
+class_1::operation_1
+/*
+ * revised description for operation_1
+ */
+
+class_1::operation_2
+/*
+ * revised description for this operation_2
+ */
+
+...
+```
+
+03:34:23.523 [main] DEBUG org.springframework.retry.support.RetryTemplate -- Retry: count=0
+03:34:23.524 [main] DEBUG org.springframework.web.client.DefaultRestClient -- Writing [ChatCompletionRequest[messages=[ChatCompletionMessage[rawContent=# Task
+You will be given a **Requirement**, a **Class Diagram** in PlantUML, and a list of operation specifications. Your task is to correct the specifications that are inconsistent with the requirement.
+
+An operation specification must describe the following sections about the operation:
+1. Summary: the summary of functionality;
+2. Algorithm: algorithm or pesudo code;
+3. Related Features: a list of structural or behavior features within this class that shall be accessed;
+4. Related Classes: a list of classes and data types defined in **Class Diagram** that shall be accessed, in the format of `Related Classes: ClsA, CLsB, ...` or `Related Classes: None`;
+5. Input: the input parameters, including the meaning, the format, and the value ranges if necessary;
+6. Output: output value, including the meaning, the format, and the value ranges if necessary;
+7. Pre-condition: the condition that the system and the input must satisfy before the operation is executed;
+8. Post-condition: the condition that the system and the output must satisfy after the operation is executed.
+
+Finish this task by following the guidelines below.
+1. Read the requirement and the class diagram.
+2. For each operation specification, determine whether it is complete and consistent with the requirement.
+3. If there is any error, correct the erroneous specification.
+4. Follow the specification format. Output changed specifications only; OMIT unchanged specifications.
+
+# Requirement
+```text
+A company is comprised of two to eight departments. Each department has an ID and email. A department hires employees for certain projects. Employees working on projects can be temporary employees or permanent employees. Each employee is identified by a name, email, employee ID, employee number. Projects can be of types - production projects, research projects, education projects, and community projects. All projects have a title, description, budget amount, and deadline. In addition, each education project and community project are associated with one funding group. The funding group can be of types - private group, government group, or mixed group. The production projects are characterized by a site code.
+
+functional requirement：
+1.Total budget of all projects in a company.Calculate the sum of the budget amounts of all projects in all departments of a company. 
+
+2.Average budget of all projects in a department.Calculate the average budget amount of all projects in a given department.
+
+3.Count the distinct number of employees who work on at least one production projects in the company. An employee working on multiple production projects is counted only once.
+
+4.Funding group type of all community projects in a department.Retrieve the funding group type of all community projects within a given department.
+
+5.Manage departments in a company. Ensure that the company always has between 2 and 8 departments (inclusive). Allow adding a new department with unique name only if the current number of departments is less than 8, and allow removing an existing department by name only if the current number of departments is greater than 2; reject any operation that would violate these constraints. When the number of departments exceeds the maximum limit or falls below the minimum limit, throw an IllegalStateException; when the department name is duplicate, null, empty, or the target department to remove does not exist, throw an IllegalArgumentException.
+```
+
+# Class Diagram
+```plantuml
+@startuml
+
+title project Model
+
+class CommunityProject {
+    fundingGroup : FundingGroup
+}
+class Company {
+    departments : List<Department>
+    addDepartment(department : Department) : void
+    calculateTotalBudget() : double
+    countEmployeesInProductionProjects() : int
+    removeDepartment(name : String) : String
+}
+class Department {
+    ID : String
+    email : String
+    company : Company
+    employees : List<Employee>
+    projects : List<Project>
+    calculateAverageBudget() : double
+    getFundingGroupTypeCommunityProjects() : List<FundingGroupType>
+}
+class EducationProject {
+    fundingGroup : FundingGroup
+}
+class Employee {
+    ID : String
+    email : String
+    name : String
+    number : String
+    type : EmployeeType
+    department : Department
+}
+class FundingGroup {
+    name : String
+    type : FundingGroupType
+    communityProjects : List<CommunityProject>
+    educationProjects : List<EducationProject>
+}
+class ProductionProject {
+    siteCode : String
+}
+abstract class Project {
+    budget : double
+    deadline : EDate
+    description : String
+    title : String
+    department : Department
+    workingEmployees : List<Employee>
+}
+class ResearchProject {
+}
+enum EmployeeType {
+    TEMPORARY
+    PERMANENT
+}
+enum FundingGroupType {
+    PRIVATE
+    GOVERNMENT
+    MIXED
+}
+
+CommunityProject --|> Project
+CommunityProject --> FundingGroup : fundingGroup  'opposite: communityProjects
+Company *-- "*" Department : departments  'opposite: company
+Department --> Company : company  'opposite: departments
+Department *-- "*" Employee : employees  'opposite: department
+Department *-- "*" Project : projects  'opposite: department
+EducationProject --|> Project
+EducationProject --> FundingGroup : fundingGroup  'opposite: educationProjects
+Employee --> Department : department  'opposite: employees
+FundingGroup --> "*" CommunityProject : communityProjects  'opposite: fundingGroup
+FundingGroup --> "*" EducationProject : educationProjects  'opposite: fundingGroup
+ProductionProject --|> Project
+Project --> Department : department  'opposite: projects
+Project --> "*" Employee : workingEmployees
+ResearchProject --|> Project
+@enduml
+```
+
+# Operation Specifications
+Department::getFundingGroupTypeCommunityProjects
+Summary: Retrieves the funding group types associated with all CommunityProjects within this department.
+Algorithm: 1. Initialize List<FundingGroupType> resultTypes = new ArrayList<>().
+          2. For each proj in projects:
+          3.     If proj is an instance of CommunityProject:
+          4.         If proj.fundingGroup != null:
+          5.             resultTypes.add(proj.fundingGroup.type)
+          6. Return resultTypes.
+Related Features: projects, fundingGroup, type
+Related Classes: Project, CommunityProject, FundingGroup, FundingGroupType
+Input: None
+Output: types : List<FundingGroupType> - List of funding group types for community projects in this department. Value range: List containing 0 or more FundingGroupType enum values.
+Pre-condition: Department instance is initialized. projects list is not null.
+Post-condition: Returns the list of funding group types for community projects. System state remains unchanged.
+
+Department::calculateAverageBudget
+Summary: Calculates the average budget amount of all projects associated with this department.
+Algorithm: 1. If projects.size() == 0, return 0.0.
+          2. Initialize sum = 0.0.
+          3. For each proj in projects:
+          4.     sum += proj.budget
+          5. Return sum / projects.size().
+Related Features: projects, budget
+Related Classes: Project
+Input: None
+Output: average : double - The average budget of department projects. Value range: >= 0.0
+Pre-condition: Department instance is initialized. projects list is not null.
+Post-condition: Returns the calculated average budget. System state remains unchanged.
+
+# Output Format
+Put the revised specifications in a single block as illustrated below:
+
+```result
+
+class_1::operation_1
+/*
+ * revised description for operation_1
+ */
+
+class_1::operation_2
+/*
+ * revised description for this operation_2
+ */
+
+...
+```
+, role=USER, name=null, toolCallId=null, toolCalls=null, refusal=null, audioOutput=null, annotations=null, reasoningContent=null]], model=qwen/qwen3.6-flash, store=null, metadata=null, frequencyPenalty=null, logitBias=null, logprobs=null, topLogprobs=null, maxTokens=null, maxCompletionTokens=32768, n=null, outputModalities=null, audioParameters=null, presencePenalty=null, responseFormat=null, seed=null, serviceTier=null, stop=null, stream=false, streamOptions=null, temperature=0.7, topP=null, tools=null, toolChoice=null, parallelToolCalls=null, user=null, reasoningEffort=null, webSearchOptions=null, verbosity=null, promptCacheKey=null, safetyIdentifier=null, extraBody={}]] as "application/json" with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+03:34:24.357 [main] DEBUG org.springframework.web.client.DefaultRestClient -- Reading to [org.springframework.ai.openai.api.OpenAiApi$ChatCompletion]
+56981 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - LLM Response:
+{org.eclipse.emf.ecore.impl.EOperationImpl@114a5e0 (name: getFundingGroupTypeCommunityProjects) (ordered: true, unique: true, lowerBound: 0, upperBound: -1)=Summary: Retrieves the funding group types associated with all CommunityProjects within this department.
+Algorithm: 
+  1. Initialize List<FundingGroupType> resultTypes = new ArrayList<>();
+  2. For each proj in projects:
+  3.     If proj is an instance of CommunityProject:
+  4.         If proj.fundingGroup != null:
+  5.             resultTypes.add(proj.fundingGroup.type)
+  6. Return resultTypes.
+Related Features: projects, fundingGroup, type
+Related Classes: Project, CommunityProject, FundingGroup, FundingGroupType
+Input: None
+Output: types : List<FundingGroupType> - List of funding group types for community projects in this department. Value range: List containing 0 or more FundingGroupType enum values.
+Pre-condition: Department instance is initialized. projects list is not null.
+Post-condition: Returns the list of funding group types for community projects. System state remains unchanged., org.eclipse.emf.ecore.impl.EOperationImpl@4d93f75b (name: calculateAverageBudget) (ordered: true, unique: true, lowerBound: 0, upperBound: 1)=Summary: Calculates the average budget amount of all projects associated with this department.
+Algorithm: 
+  1. If projects.size() == 0, return 0.0.
+  2. Initialize sum = 0.0.
+  3. For each proj in projects:
+  4.     sum += proj.budget
+  5. Return sum / projects.size().
+Related Features: projects, budget
+Related Classes: Project
+Input: None
+Output: average : double - The average budget of department projects. Value range: >= 0.0
+Pre-condition: Department instance is initialized. projects list is not null.
+Post-condition: Returns the calculated average budget. System state remains unchanged.}
+56981 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Prompt:
+# Task
+You will be given a **Requirement**, a **Class Diagram** in PlantUML, and a list of operation specifications. Your task is to correct the specifications that are inconsistent with the requirement.
+
+An operation specification must describe the following sections about the operation:
+1. Summary: the summary of functionality;
+2. Algorithm: algorithm or pesudo code;
+3. Related Features: a list of structural or behavior features within this class that shall be accessed;
+4. Related Classes: a list of classes and data types defined in **Class Diagram** that shall be accessed, in the format of `Related Classes: ClsA, CLsB, ...` or `Related Classes: None`;
+5. Input: the input parameters, including the meaning, the format, and the value ranges if necessary;
+6. Output: output value, including the meaning, the format, and the value ranges if necessary;
+7. Pre-condition: the condition that the system and the input must satisfy before the operation is executed;
+8. Post-condition: the condition that the system and the output must satisfy after the operation is executed.
+
+Finish this task by following the guidelines below.
+1. Read the requirement and the class diagram.
+2. For each operation specification, determine whether it is complete and consistent with the requirement.
+3. If there is any error, correct the erroneous specification.
+4. Follow the specification format. Output changed specifications only; OMIT unchanged specifications.
+
+# Requirement
+```text
+A company is comprised of two to eight departments. Each department has an ID and email. A department hires employees for certain projects. Employees working on projects can be temporary employees or permanent employees. Each employee is identified by a name, email, employee ID, employee number. Projects can be of types - production projects, research projects, education projects, and community projects. All projects have a title, description, budget amount, and deadline. In addition, each education project and community project are associated with one funding group. The funding group can be of types - private group, government group, or mixed group. The production projects are characterized by a site code.
+
+functional requirement：
+1.Total budget of all projects in a company.Calculate the sum of the budget amounts of all projects in all departments of a company. 
+
+2.Average budget of all projects in a department.Calculate the average budget amount of all projects in a given department.
+
+3.Count the distinct number of employees who work on at least one production projects in the company. An employee working on multiple production projects is counted only once.
+
+4.Funding group type of all community projects in a department.Retrieve the funding group type of all community projects within a given department.
+
+5.Manage departments in a company. Ensure that the company always has between 2 and 8 departments (inclusive). Allow adding a new department with unique name only if the current number of departments is less than 8, and allow removing an existing department by name only if the current number of departments is greater than 2; reject any operation that would violate these constraints. When the number of departments exceeds the maximum limit or falls below the minimum limit, throw an IllegalStateException; when the department name is duplicate, null, empty, or the target department to remove does not exist, throw an IllegalArgumentException.
+```
+
+# Class Diagram
+```plantuml
+@startuml
+
+title project Model
+
+class CommunityProject {
+    fundingGroup : FundingGroup
+}
+class Company {
+    departments : List<Department>
+    addDepartment(department : Department) : void
+    calculateTotalBudget() : double
+    countEmployeesInProductionProjects() : int
+    removeDepartment(name : String) : String
+}
+class Department {
+    ID : String
+    email : String
+    company : Company
+    employees : List<Employee>
+    projects : List<Project>
+    calculateAverageBudget() : double
+    getFundingGroupTypeCommunityProjects() : List<FundingGroupType>
+}
+class EducationProject {
+    fundingGroup : FundingGroup
+}
+class Employee {
+    ID : String
+    email : String
+    name : String
+    number : String
+    type : EmployeeType
+    department : Department
+}
+class FundingGroup {
+    name : String
+    type : FundingGroupType
+    communityProjects : List<CommunityProject>
+    educationProjects : List<EducationProject>
+}
+class ProductionProject {
+    siteCode : String
+}
+abstract class Project {
+    budget : double
+    deadline : EDate
+    description : String
+    title : String
+    department : Department
+    workingEmployees : List<Employee>
+}
+class ResearchProject {
+}
+enum EmployeeType {
+    TEMPORARY
+    PERMANENT
+}
+enum FundingGroupType {
+    PRIVATE
+    GOVERNMENT
+    MIXED
+}
+
+CommunityProject --|> Project
+CommunityProject --> FundingGroup : fundingGroup  'opposite: communityProjects
+Company *-- "*" Department : departments  'opposite: company
+Department --> Company : company  'opposite: departments
+Department *-- "*" Employee : employees  'opposite: department
+Department *-- "*" Project : projects  'opposite: department
+EducationProject --|> Project
+EducationProject --> FundingGroup : fundingGroup  'opposite: educationProjects
+Employee --> Department : department  'opposite: employees
+FundingGroup --> "*" CommunityProject : communityProjects  'opposite: fundingGroup
+FundingGroup --> "*" EducationProject : educationProjects  'opposite: fundingGroup
+ProductionProject --|> Project
+Project --> Department : department  'opposite: projects
+Project --> "*" Employee : workingEmployees
+ResearchProject --|> Project
+@enduml
+```
+
+# Operation Specifications
+Company::countEmployeesInProductionProjects
+Summary: Counts the number of distinct employees who work on at least one ProductionProject within the company.
+Algorithm: 1. Initialize Set<Employee> uniqueEmployees = new HashSet<>().
+          2. For each dept in departments:
+          3.     For each proj in dept.projects:
+          4.         If proj is an instance of ProductionProject:
+          5.             For each emp in proj.workingEmployees:
+          6.                 uniqueEmployees.add(emp)
+          7. Return uniqueEmployees.size().
+Related Features: departments, projects, workingEmployees
+Related Classes: Department, Project, ProductionProject, Employee
+Input: None
+Output: count : int - The number of unique employees working on production projects. Value range: >= 0
+Pre-condition: Company structure is initialized.
+Post-condition: Returns the correct count of distinct employees. System state remains unchanged.
+
+Company::removeDepartment
+Summary: Removes an existing department from the company by name, enforcing minimum department count and existence constraints.
+Algorithm: 1. If departments.size() <= 2, throw IllegalStateException.
+          2. If name is null or empty, throw IllegalArgumentException.
+          3. Find targetDept in departments where targetDept.name == name.
+          4. If targetDept is null, throw IllegalArgumentException.
+          5. Remove targetDept from departments.
+          6. Set targetDept.company = null.
+          7. Return "Department removed successfully".
+Related Features: departments, company
+Related Classes: Department, Company
+Input: name : String - The name of the department to be removed. Must be a non-null, non-empty String.
+Output: result : String - A confirmation message upon successful removal. Value range: non-empty String.
+Pre-condition: Company exists. name parameter is provided.
+Post-condition: If successful, the specified department is removed, departments size decreases by 1, and bidirectional reference is cleared. If constraints violated, exceptions are thrown and state remains unchanged.
+
+Company::calculateTotalBudget
+Summary: Computes the sum of budget amounts for all projects across all departments in the company.
+Algorithm: 1. Initialize totalBudget = 0.0.
+          2. For each dept in departments:
+          3.     For each proj in dept.projects:
+          4.         totalBudget += proj.budget
+          5. Return totalBudget.
+Related Features: departments, projects, budget
+Related Classes: Department, Project
+Input: None
+Output: total : double - The sum of all project budgets in the company. Value range: >= 0.0
+Pre-condition: Company exists. departments and inner projects lists are initialized and not null.
+Post-condition: Returns the exact calculated sum. System state remains unchanged.
+
+Company::addDepartment
+Summary: Adds a new department to the company, enforcing constraints on the maximum number of departments and name uniqueness.
+Algorithm: 1. If departments.size() >= 8, throw IllegalStateException.
+          2. If department.name is null or empty, throw IllegalArgumentException.
+          3. Iterate through departments to check if any existing department.name equals department.name. If match found, throw IllegalArgumentException.
+          4. Add department to departments list.
+          5. Set department.company = this.
+          6. Return void.
+Related Features: departments, Department.name (inferred), Department.company
+Related Classes: Department, Company
+Input: department : Department - The department object to be added. Its name must be a non-null, non-empty String.
+Output: void
+Pre-condition: Company instance is initialized. Input department object is not null.
+Post-condition: If successful, departments contains the new department, its size increases by 1, and department.company references this Company. If constraints are violated, specific exceptions are thrown and system state remains unchanged.
+
+# Output Format
+Put the revised specifications in a single block as illustrated below:
+
+```result
+
+class_1::operation_1
+/*
+ * revised description for operation_1
+ */
+
+class_1::operation_2
+/*
+ * revised description for this operation_2
+ */
+
+...
+```
+
+03:34:51.089 [main] DEBUG org.springframework.retry.support.RetryTemplate -- Retry: count=0
+03:34:51.089 [main] DEBUG org.springframework.web.client.DefaultRestClient -- Writing [ChatCompletionRequest[messages=[ChatCompletionMessage[rawContent=# Task
+You will be given a **Requirement**, a **Class Diagram** in PlantUML, and a list of operation specifications. Your task is to correct the specifications that are inconsistent with the requirement.
+
+An operation specification must describe the following sections about the operation:
+1. Summary: the summary of functionality;
+2. Algorithm: algorithm or pesudo code;
+3. Related Features: a list of structural or behavior features within this class that shall be accessed;
+4. Related Classes: a list of classes and data types defined in **Class Diagram** that shall be accessed, in the format of `Related Classes: ClsA, CLsB, ...` or `Related Classes: None`;
+5. Input: the input parameters, including the meaning, the format, and the value ranges if necessary;
+6. Output: output value, including the meaning, the format, and the value ranges if necessary;
+7. Pre-condition: the condition that the system and the input must satisfy before the operation is executed;
+8. Post-condition: the condition that the system and the output must satisfy after the operation is executed.
+
+Finish this task by following the guidelines below.
+1. Read the requirement and the class diagram.
+2. For each operation specification, determine whether it is complete and consistent with the requirement.
+3. If there is any error, correct the erroneous specification.
+4. Follow the specification format. Output changed specifications only; OMIT unchanged specifications.
+
+# Requirement
+```text
+A company is comprised of two to eight departments. Each department has an ID and email. A department hires employees for certain projects. Employees working on projects can be temporary employees or permanent employees. Each employee is identified by a name, email, employee ID, employee number. Projects can be of types - production projects, research projects, education projects, and community projects. All projects have a title, description, budget amount, and deadline. In addition, each education project and community project are associated with one funding group. The funding group can be of types - private group, government group, or mixed group. The production projects are characterized by a site code.
+
+functional requirement：
+1.Total budget of all projects in a company.Calculate the sum of the budget amounts of all projects in all departments of a company. 
+
+2.Average budget of all projects in a department.Calculate the average budget amount of all projects in a given department.
+
+3.Count the distinct number of employees who work on at least one production projects in the company. An employee working on multiple production projects is counted only once.
+
+4.Funding group type of all community projects in a department.Retrieve the funding group type of all community projects within a given department.
+
+5.Manage departments in a company. Ensure that the company always has between 2 and 8 departments (inclusive). Allow adding a new department with unique name only if the current number of departments is less than 8, and allow removing an existing department by name only if the current number of departments is greater than 2; reject any operation that would violate these constraints. When the number of departments exceeds the maximum limit or falls below the minimum limit, throw an IllegalStateException; when the department name is duplicate, null, empty, or the target department to remove does not exist, throw an IllegalArgumentException.
+```
+
+# Class Diagram
+```plantuml
+@startuml
+
+title project Model
+
+class CommunityProject {
+    fundingGroup : FundingGroup
+}
+class Company {
+    departments : List<Department>
+    addDepartment(department : Department) : void
+    calculateTotalBudget() : double
+    countEmployeesInProductionProjects() : int
+    removeDepartment(name : String) : String
+}
+class Department {
+    ID : String
+    email : String
+    company : Company
+    employees : List<Employee>
+    projects : List<Project>
+    calculateAverageBudget() : double
+    getFundingGroupTypeCommunityProjects() : List<FundingGroupType>
+}
+class EducationProject {
+    fundingGroup : FundingGroup
+}
+class Employee {
+    ID : String
+    email : String
+    name : String
+    number : String
+    type : EmployeeType
+    department : Department
+}
+class FundingGroup {
+    name : String
+    type : FundingGroupType
+    communityProjects : List<CommunityProject>
+    educationProjects : List<EducationProject>
+}
+class ProductionProject {
+    siteCode : String
+}
+abstract class Project {
+    budget : double
+    deadline : EDate
+    description : String
+    title : String
+    department : Department
+    workingEmployees : List<Employee>
+}
+class ResearchProject {
+}
+enum EmployeeType {
+    TEMPORARY
+    PERMANENT
+}
+enum FundingGroupType {
+    PRIVATE
+    GOVERNMENT
+    MIXED
+}
+
+CommunityProject --|> Project
+CommunityProject --> FundingGroup : fundingGroup  'opposite: communityProjects
+Company *-- "*" Department : departments  'opposite: company
+Department --> Company : company  'opposite: departments
+Department *-- "*" Employee : employees  'opposite: department
+Department *-- "*" Project : projects  'opposite: department
+EducationProject --|> Project
+EducationProject --> FundingGroup : fundingGroup  'opposite: educationProjects
+Employee --> Department : department  'opposite: employees
+FundingGroup --> "*" CommunityProject : communityProjects  'opposite: fundingGroup
+FundingGroup --> "*" EducationProject : educationProjects  'opposite: fundingGroup
+ProductionProject --|> Project
+Project --> Department : department  'opposite: projects
+Project --> "*" Employee : workingEmployees
+ResearchProject --|> Project
+@enduml
+```
+
+# Operation Specifications
+Company::countEmployeesInProductionProjects
+Summary: Counts the number of distinct employees who work on at least one ProductionProject within the company.
+Algorithm: 1. Initialize Set<Employee> uniqueEmployees = new HashSet<>().
+          2. For each dept in departments:
+          3.     For each proj in dept.projects:
+          4.         If proj is an instance of ProductionProject:
+          5.             For each emp in proj.workingEmployees:
+          6.                 uniqueEmployees.add(emp)
+          7. Return uniqueEmployees.size().
+Related Features: departments, projects, workingEmployees
+Related Classes: Department, Project, ProductionProject, Employee
+Input: None
+Output: count : int - The number of unique employees working on production projects. Value range: >= 0
+Pre-condition: Company structure is initialized.
+Post-condition: Returns the correct count of distinct employees. System state remains unchanged.
+
+Company::removeDepartment
+Summary: Removes an existing department from the company by name, enforcing minimum department count and existence constraints.
+Algorithm: 1. If departments.size() <= 2, throw IllegalStateException.
+          2. If name is null or empty, throw IllegalArgumentException.
+          3. Find targetDept in departments where targetDept.name == name.
+          4. If targetDept is null, throw IllegalArgumentException.
+          5. Remove targetDept from departments.
+          6. Set targetDept.company = null.
+          7. Return "Department removed successfully".
+Related Features: departments, company
+Related Classes: Department, Company
+Input: name : String - The name of the department to be removed. Must be a non-null, non-empty String.
+Output: result : String - A confirmation message upon successful removal. Value range: non-empty String.
+Pre-condition: Company exists. name parameter is provided.
+Post-condition: If successful, the specified department is removed, departments size decreases by 1, and bidirectional reference is cleared. If constraints violated, exceptions are thrown and state remains unchanged.
+
+Company::calculateTotalBudget
+Summary: Computes the sum of budget amounts for all projects across all departments in the company.
+Algorithm: 1. Initialize totalBudget = 0.0.
+          2. For each dept in departments:
+          3.     For each proj in dept.projects:
+          4.         totalBudget += proj.budget
+          5. Return totalBudget.
+Related Features: departments, projects, budget
+Related Classes: Department, Project
+Input: None
+Output: total : double - The sum of all project budgets in the company. Value range: >= 0.0
+Pre-condition: Company exists. departments and inner projects lists are initialized and not null.
+Post-condition: Returns the exact calculated sum. System state remains unchanged.
+
+Company::addDepartment
+Summary: Adds a new department to the company, enforcing constraints on the maximum number of departments and name uniqueness.
+Algorithm: 1. If departments.size() >= 8, throw IllegalStateException.
+          2. If department.name is null or empty, throw IllegalArgumentException.
+          3. Iterate through departments to check if any existing department.name equals department.name. If match found, throw IllegalArgumentException.
+          4. Add department to departments list.
+          5. Set department.company = this.
+          6. Return void.
+Related Features: departments, Department.name (inferred), Department.company
+Related Classes: Department, Company
+Input: department : Department - The department object to be added. Its name must be a non-null, non-empty String.
+Output: void
+Pre-condition: Company instance is initialized. Input department object is not null.
+Post-condition: If successful, departments contains the new department, its size increases by 1, and department.company references this Company. If constraints are violated, specific exceptions are thrown and system state remains unchanged.
+
+# Output Format
+Put the revised specifications in a single block as illustrated below:
+
+```result
+
+class_1::operation_1
+/*
+ * revised description for operation_1
+ */
+
+class_1::operation_2
+/*
+ * revised description for this operation_2
+ */
+
+...
+```
+, role=USER, name=null, toolCallId=null, toolCalls=null, refusal=null, audioOutput=null, annotations=null, reasoningContent=null]], model=qwen/qwen3.6-flash, store=null, metadata=null, frequencyPenalty=null, logitBias=null, logprobs=null, topLogprobs=null, maxTokens=null, maxCompletionTokens=32768, n=null, outputModalities=null, audioParameters=null, presencePenalty=null, responseFormat=null, seed=null, serviceTier=null, stop=null, stream=false, streamOptions=null, temperature=0.7, topP=null, tools=null, toolChoice=null, parallelToolCalls=null, user=null, reasoningEffort=null, webSearchOptions=null, verbosity=null, promptCacheKey=null, safetyIdentifier=null, extraBody={}]] as "application/json" with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+03:34:53.490 [main] DEBUG org.springframework.web.client.DefaultRestClient -- Reading to [org.springframework.ai.openai.api.OpenAiApi$ChatCompletion]
+94843 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - LLM Response:
+{org.eclipse.emf.ecore.impl.EOperationImpl@664e848c (name: removeDepartment) (ordered: true, unique: true, lowerBound: 0, upperBound: 1)=Summary: Removes an existing department from the company by its ID, enforcing minimum department count and existence constraints.
+Algorithm: 1. If departments.size() <= 2, throw IllegalStateException.
+           2. If name is null or empty, throw IllegalArgumentException.
+           3. Find targetDept in departments where targetDept.ID == name.
+           4. If targetDept is null, throw IllegalArgumentException.
+           5. Remove targetDept from departments.
+           6. Set targetDept.company = null.
+           7. Return "Department removed successfully".
+Related Features: departments, company, ID
+Related Classes: Department, Company
+Input: name : String - The ID of the department to be removed. Must be a non-null, non-empty String.
+Output: result : String - A confirmation message upon successful removal. Value range: non-empty String.
+Pre-condition: Company exists. name parameter is provided.
+Post-condition: If successful, the specified department is removed, departments size decreases by 1, and bidirectional reference is cleared. If constraints violated, exceptions are thrown and state remains unchanged., org.eclipse.emf.ecore.impl.EOperationImpl@149b4d20 (name: addDepartment) (ordered: true, unique: true, lowerBound: 0, upperBound: 1)=Summary: Adds a new department to the company, enforcing constraints on the maximum number of departments and ID uniqueness.
+Algorithm: 1. If departments.size() >= 8, throw IllegalStateException.
+           2. If department.ID is null or empty, throw IllegalArgumentException.
+           3. Iterate through departments to check if any existing department.ID equals department.ID. If match found, throw IllegalArgumentException.
+           4. Add department to departments list.
+           5. Set department.company = this.
+           6. Return void.
+Related Features: departments, Department.ID, Department.company
+Related Classes: Department, Company
+Input: department : Department - The department object to be added. Its ID must be a non-null, non-empty String.
+Output: void
+Pre-condition: Company instance is initialized. Input department object is not null.
+Post-condition: If successful, departments contains the new department, its size increases by 1, and department.company references this Company. If constraints are violated, specific exceptions are thrown and system state remains unchanged.}
+94843 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Verification End
+94847 [main] INFO  .sei.mde.mwe2.EMFGeneratorFragment2  - Generating EMF model code
+03:35:29.005 [main] INFO org.eclipse.emf.mwe.utils.GenModelHelper -- Registered GenModel 'http://www.example.org/project' from 'platform:/resource/OPMS/model/generated/project.genmodel'
+95048 [main] INFO  .sei.mde.mwe2.EMFGeneratorFragment2  - Enhancing generated code at ../OPMS/src-gen/edu/project
+95049 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Code Completion for Company
+95787 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Prompt:
+# Task
+You will be given a **Java Class** generated from an Ecore model by EMF code generator with `suppressInterfaces=true`. Your task is to implement the Java methods unimplemented by taking additional contextual information into account.
+
+Complete this task by following the guidelines below.
+1. Compute context information
+  1.1 Navigate the Ecore model to find related classes
+  1.2 Also consider the related classes in the Javadocs.
+  1.3 Locate these files in your project.
+  1.4 Generate the class summarization.
+2. A method is unimplemented if its body contains `// TODO: Please complete this Java method based on the docstring`.
+3. For every unimplemented method, 
+  3.1 You must read the docstring of this method. The fragment between `<!-- begin-model-doc -->` and `<!-- end-model-doc -->` contains the method specification;
+  3.2 Generate your code strictly according to the algorithm; Be aware of the EMF code style and APIs;
+  3.3 You should not change the method signature;
+  3.4 After generation, replace the current body with the one you generate;
+  3.5 Keep and update the docstring by changing `@generated` to `@generated NOT`.
+4. Check the import list. Add missing imports if needed.
+5. Do not change other part.
+6. Be aware of the method signatures, particularly, the input and output types, provided in the **Context**.
+
+## EMF Coding Style
+- When possible, call getter/setter methods to access field values. Do not read/write raw fields derived from the class diagram.
+- The getter of a boolean attribute `bv` looks like `isBv()`, e.g., `isIsTrue()` for `isTrue`.
+- When possibe, use the creation factory for object creation.
+- To create an EList instance, import and use `org.eclipse.emf.common.util.BasicEList`.
+
+# Java Class
+```java
+/**
+ * generated by Enhanced EcoreGen
+ */
+package edu.project;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Company</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link edu.project.Company#getDepartments <em>Departments</em>}</li>
+ * </ul>
+ *
+ * @see edu.project.ProjectPackage#getCompany()
+ * @model kind="class"
+ * @generated
+ */
+public class Company extends MinimalEObjectImpl.Container implements EObject
+{
+  protected EList<Department> departments;
+
+  protected Company()
+  { ... /* omitted */ }
+
+  @Override
+  protected EClass eStaticClass()
+  { ... /* omitted */ }
+
+  public EList<Department> getDepartments()
+  { ... /* omitted */ }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Computes the sum of budget amounts for all projects across all departments in the company.
+   * Algorithm: 1. Initialize totalBudget = 0.0.
+   *           2. For each dept in departments:
+   *           3.     For each proj in dept.projects:
+   *           4.         totalBudget += proj.budget
+   *           5. Return totalBudget.
+   * Related Features: departments, projects, budget
+   * Related Classes: Department, Project
+   * Input: None
+   * Output: total : double - The sum of all project budgets in the company. Value range: >= 0.0
+   * Pre-condition: Company exists. departments and inner projects lists are initialized and not null.
+   * Post-condition: Returns the exact calculated sum. System state remains unchanged.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public double calculateTotalBudget()
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Counts the number of distinct employees who work on at least one ProductionProject within the company.
+   * Algorithm: 1. Initialize Set<Employee> uniqueEmployees = new HashSet<>().
+   *           2. For each dept in departments:
+   *           3.     For each proj in dept.projects:
+   *           4.         If proj is an instance of ProductionProject:
+   *           5.             For each emp in proj.workingEmployees:
+   *           6.                 uniqueEmployees.add(emp)
+   *           7. Return uniqueEmployees.size().
+   * Related Features: departments, projects, workingEmployees
+   * Related Classes: Department, Project, ProductionProject, Employee
+   * Input: None
+   * Output: count : int - The number of unique employees working on production projects. Value range: >= 0
+   * Pre-condition: Company structure is initialized.
+   * Post-condition: Returns the correct count of distinct employees. System state remains unchanged.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public int countEmployeesInProductionProjects()
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Adds a new department to the company, enforcing constraints on the maximum number of departments and ID uniqueness.
+   * Algorithm: 1. If departments.size() >= 8, throw IllegalStateException.
+   *            2. If department.ID is null or empty, throw IllegalArgumentException.
+   *            3. Iterate through departments to check if any existing department.ID equals department.ID. If match found, throw IllegalArgumentException.
+   *            4. Add department to departments list.
+   *            5. Set department.company = this.
+   *            6. Return void.
+   * Related Features: departments, Department.ID, Department.company
+   * Related Classes: Department, Company
+   * Input: department : Department - The department object to be added. Its ID must be a non-null, non-empty String.
+   * Output: void
+   * Pre-condition: Company instance is initialized. Input department object is not null.
+   * Post-condition: If successful, departments contains the new department, its size increases by 1, and department.company references this Company. If constraints are violated, specific exceptions are thrown and system state remains unchanged.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public void addDepartment(final Department department)
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Removes an existing department from the company by its ID, enforcing minimum department count and existence constraints.
+   * Algorithm: 1. If departments.size() <= 2, throw IllegalStateException.
+   *            2. If name is null or empty, throw IllegalArgumentException.
+   *            3. Find targetDept in departments where targetDept.ID == name.
+   *            4. If targetDept is null, throw IllegalArgumentException.
+   *            5. Remove targetDept from departments.
+   *            6. Set targetDept.company = null.
+   *            7. Return "Department removed successfully".
+   * Related Features: departments, company, ID
+   * Related Classes: Department, Company
+   * Input: name : String - The ID of the department to be removed. Must be a non-null, non-empty String.
+   * Output: result : String - A confirmation message upon successful removal. Value range: non-empty String.
+   * Pre-condition: Company exists. name parameter is provided.
+   * Post-condition: If successful, the specified department is removed, departments size decreases by 1, and bidirectional reference is cleared. If constraints violated, exceptions are thrown and state remains unchanged.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public String removeDepartment(final String name)
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  @SuppressWarnings("unchecked")
+  @Override
+  public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  { ... /* omitted */ }
+
+  @Override
+  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  { ... /* omitted */ }
+
+  @Override
+  public Object eGet(int featureID, boolean resolve, boolean coreType)
+  { ... /* omitted */ }
+
+  @SuppressWarnings("unchecked")
+  @Override
+  public void eSet(int featureID, Object newValue)
+  { ... /* omitted */ }
+
+  @Override
+  public void eUnset(int featureID)
+  { ... /* omitted */ }
+
+  @Override
+  public boolean eIsSet(int featureID)
+  { ... /* omitted */ }
+
+} // Company
+```
+
+# Output Format
+Put the new Java class code into a single block as follows.
+
+```java
+(completed Java class)
+```
+
+03:35:30.001 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- generating array definition for java.lang.String[]
+03:35:30.006 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- directly applying configured custom inline type for java.lang.String
+03:35:30.024 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- storing configured custom inline type for java.lang.String as definition (since it is the main schema "#")
+03:35:30.026 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- generating array definition for java.lang.String[]
+03:35:30.027 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- directly applying configured custom inline type for java.lang.String
+03:35:30.028 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- storing configured custom inline type for java.lang.String as definition (since it is the main schema "#")
+03:35:30.041 [main] DEBUG org.springframework.retry.support.RetryTemplate -- Retry: count=0
+03:35:30.042 [main] DEBUG org.springframework.web.client.DefaultRestClient -- Writing [ChatCompletionRequest[messages=[ChatCompletionMessage[rawContent=# Task
+You will be given a **Java Class** generated from an Ecore model by EMF code generator with `suppressInterfaces=true`. Your task is to implement the Java methods unimplemented by taking additional contextual information into account.
+
+Complete this task by following the guidelines below.
+1. Compute context information
+  1.1 Navigate the Ecore model to find related classes
+  1.2 Also consider the related classes in the Javadocs.
+  1.3 Locate these files in your project.
+  1.4 Generate the class summarization.
+2. A method is unimplemented if its body contains `// TODO: Please complete this Java method based on the docstring`.
+3. For every unimplemented method, 
+  3.1 You must read the docstring of this method. The fragment between `<!-- begin-model-doc -->` and `<!-- end-model-doc -->` contains the method specification;
+  3.2 Generate your code strictly according to the algorithm; Be aware of the EMF code style and APIs;
+  3.3 You should not change the method signature;
+  3.4 After generation, replace the current body with the one you generate;
+  3.5 Keep and update the docstring by changing `@generated` to `@generated NOT`.
+4. Check the import list. Add missing imports if needed.
+5. Do not change other part.
+6. Be aware of the method signatures, particularly, the input and output types, provided in the **Context**.
+
+## EMF Coding Style
+- When possible, call getter/setter methods to access field values. Do not read/write raw fields derived from the class diagram.
+- The getter of a boolean attribute `bv` looks like `isBv()`, e.g., `isIsTrue()` for `isTrue`.
+- When possibe, use the creation factory for object creation.
+- To create an EList instance, import and use `org.eclipse.emf.common.util.BasicEList`.
+
+# Java Class
+```java
+/**
+ * generated by Enhanced EcoreGen
+ */
+package edu.project;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Company</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link edu.project.Company#getDepartments <em>Departments</em>}</li>
+ * </ul>
+ *
+ * @see edu.project.ProjectPackage#getCompany()
+ * @model kind="class"
+ * @generated
+ */
+public class Company extends MinimalEObjectImpl.Container implements EObject
+{
+  protected EList<Department> departments;
+
+  protected Company()
+  { ... /* omitted */ }
+
+  @Override
+  protected EClass eStaticClass()
+  { ... /* omitted */ }
+
+  public EList<Department> getDepartments()
+  { ... /* omitted */ }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Computes the sum of budget amounts for all projects across all departments in the company.
+   * Algorithm: 1. Initialize totalBudget = 0.0.
+   *           2. For each dept in departments:
+   *           3.     For each proj in dept.projects:
+   *           4.         totalBudget += proj.budget
+   *           5. Return totalBudget.
+   * Related Features: departments, projects, budget
+   * Related Classes: Department, Project
+   * Input: None
+   * Output: total : double - The sum of all project budgets in the company. Value range: >= 0.0
+   * Pre-condition: Company exists. departments and inner projects lists are initialized and not null.
+   * Post-condition: Returns the exact calculated sum. System state remains unchanged.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public double calculateTotalBudget()
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Counts the number of distinct employees who work on at least one ProductionProject within the company.
+   * Algorithm: 1. Initialize Set<Employee> uniqueEmployees = new HashSet<>().
+   *           2. For each dept in departments:
+   *           3.     For each proj in dept.projects:
+   *           4.         If proj is an instance of ProductionProject:
+   *           5.             For each emp in proj.workingEmployees:
+   *           6.                 uniqueEmployees.add(emp)
+   *           7. Return uniqueEmployees.size().
+   * Related Features: departments, projects, workingEmployees
+   * Related Classes: Department, Project, ProductionProject, Employee
+   * Input: None
+   * Output: count : int - The number of unique employees working on production projects. Value range: >= 0
+   * Pre-condition: Company structure is initialized.
+   * Post-condition: Returns the correct count of distinct employees. System state remains unchanged.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public int countEmployeesInProductionProjects()
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Adds a new department to the company, enforcing constraints on the maximum number of departments and ID uniqueness.
+   * Algorithm: 1. If departments.size() >= 8, throw IllegalStateException.
+   *            2. If department.ID is null or empty, throw IllegalArgumentException.
+   *            3. Iterate through departments to check if any existing department.ID equals department.ID. If match found, throw IllegalArgumentException.
+   *            4. Add department to departments list.
+   *            5. Set department.company = this.
+   *            6. Return void.
+   * Related Features: departments, Department.ID, Department.company
+   * Related Classes: Department, Company
+   * Input: department : Department - The department object to be added. Its ID must be a non-null, non-empty String.
+   * Output: void
+   * Pre-condition: Company instance is initialized. Input department object is not null.
+   * Post-condition: If successful, departments contains the new department, its size increases by 1, and department.company references this Company. If constraints are violated, specific exceptions are thrown and system state remains unchanged.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public void addDepartment(final Department department)
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Removes an existing department from the company by its ID, enforcing minimum department count and existence constraints.
+   * Algorithm: 1. If departments.size() <= 2, throw IllegalStateException.
+   *            2. If name is null or empty, throw IllegalArgumentException.
+   *            3. Find targetDept in departments where targetDept.ID == name.
+   *            4. If targetDept is null, throw IllegalArgumentException.
+   *            5. Remove targetDept from departments.
+   *            6. Set targetDept.company = null.
+   *            7. Return "Department removed successfully".
+   * Related Features: departments, company, ID
+   * Related Classes: Department, Company
+   * Input: name : String - The ID of the department to be removed. Must be a non-null, non-empty String.
+   * Output: result : String - A confirmation message upon successful removal. Value range: non-empty String.
+   * Pre-condition: Company exists. name parameter is provided.
+   * Post-condition: If successful, the specified department is removed, departments size decreases by 1, and bidirectional reference is cleared. If constraints violated, exceptions are thrown and state remains unchanged.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public String removeDepartment(final String name)
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  @SuppressWarnings("unchecked")
+  @Override
+  public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  { ... /* omitted */ }
+
+  @Override
+  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  { ... /* omitted */ }
+
+  @Override
+  public Object eGet(int featureID, boolean resolve, boolean coreType)
+  { ... /* omitted */ }
+
+  @SuppressWarnings("unchecked")
+  @Override
+  public void eSet(int featureID, Object newValue)
+  { ... /* omitted */ }
+
+  @Override
+  public void eUnset(int featureID)
+  { ... /* omitted */ }
+
+  @Override
+  public boolean eIsSet(int featureID)
+  { ... /* omitted */ }
+
+} // Company
+```
+
+# Output Format
+Put the new Java class code into a single block as follows.
+
+```java
+(completed Java class)
+```
+, role=USER, name=null, toolCallId=null, toolCalls=null, refusal=null, audioOutput=null, annotations=null, reasoningContent=null]], model=qwen/qwen3.6-flash, store=null, metadata=null, frequencyPenalty=null, logitBias=null, logprobs=null, topLogprobs=null, maxTokens=null, maxCompletionTokens=32768, n=null, outputModalities=null, audioParameters=null, presencePenalty=null, responseFormat=null, seed=null, serviceTier=null, stop=null, stream=false, streamOptions=null, temperature=0.7, topP=null, tools=[org.springframework.ai.openai.api.OpenAiApi$FunctionTool@60a4e619, org.springframework.ai.openai.api.OpenAiApi$FunctionTool@2bb3f39e, org.springframework.ai.openai.api.OpenAiApi$FunctionTool@11f3400c], toolChoice=null, parallelToolCalls=null, user=null, reasoningEffort=null, webSearchOptions=null, verbosity=null, promptCacheKey=null, safetyIdentifier=null, extraBody={}]] as "application/json" with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+03:35:30.980 [main] DEBUG org.springframework.web.client.DefaultRestClient -- Reading to [org.springframework.ai.openai.api.OpenAiApi$ChatCompletion]
+126089 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - LLM Response:
+/**
+ * generated by Enhanced EcoreGen
+ */
+package edu.project;
+
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
+
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Company</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link edu.project.Company#getDepartments <em>Departments</em>}</li>
+ * </ul>
+ *
+ * @see edu.project.ProjectPackage#getCompany()
+ * @model kind="class"
+ * @generated
+ */
+public class Company extends MinimalEObjectImpl.Container implements EObject
+{
+  protected EList<Department> departments;
+
+  protected Company()
+  { ... /* omitted */ }
+
+  @Override
+  protected EClass eStaticClass()
+  { ... /* omitted */ }
+
+  public EList<Department> getDepartments()
+  { ... /* omitted */ }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Computes the sum of budget amounts for all projects across all departments in the company.
+   * Algorithm: 1. Initialize totalBudget = 0.0.
+   *           2. For each dept in departments:
+   *           3.     For each proj in dept.projects:
+   *           4.         totalBudget += proj.budget
+   *           5. Return totalBudget.
+   * Related Features: departments, projects, budget
+   * Related Classes: Department, Project
+   * Input: None
+   * Output: total : double - The sum of all project budgets in the company. Value range: >= 0.0
+   * Pre-condition: Company exists. departments and inner projects lists are initialized and not null.
+   * Post-condition: Returns the exact calculated sum. System state remains unchanged.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated NOT
+   */
+  public double calculateTotalBudget()
+  {
+    double totalBudget = 0.0;
+    for (Department dept : getDepartments()) {
+      for (Project proj : dept.getProjects()) {
+        totalBudget += proj.getBudget();
+      }
+    }
+    return totalBudget;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Counts the number of distinct employees who work on at least one ProductionProject within the company.
+   * Algorithm: 1. Initialize Set<Employee> uniqueEmployees = new HashSet<>().
+   *           2. For each dept in departments:
+   *           3.     For each proj in dept.projects:
+   *           4.         If proj is an instance of ProductionProject:
+   *           5.             For each emp in proj.workingEmployees:
+   *           6.                 uniqueEmployees.add(emp)
+   *           7. Return uniqueEmployees.size().
+   * Related Features: departments, projects, workingEmployees
+   * Related Classes: Department, Project, ProductionProject, Employee
+   * Input: None
+   * Output: count : int - The number of unique employees working on production projects. Value range: >= 0
+   * Pre-condition: Company structure is initialized.
+   * Post-condition: Returns the correct count of distinct employees. System state remains unchanged.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated NOT
+   */
+  public int countEmployeesInProductionProjects()
+  {
+    Set<Employee> uniqueEmployees = new HashSet<>();
+    for (Department dept : getDepartments()) {
+      for (Project proj : dept.getProjects()) {
+        if (proj instanceof ProductionProject) {
+          for (Employee emp : proj.getWorkingEmployees()) {
+            uniqueEmployees.add(emp);
+          }
+        }
+      }
+    }
+    return uniqueEmployees.size();
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Adds a new department to the company, enforcing constraints on the maximum number of departments and ID uniqueness.
+   * Algorithm: 1. If departments.size() >= 8, throw IllegalStateException.
+   *            2. If department.ID is null or empty, throw IllegalArgumentException.
+   *            3. Iterate through departments to check if any existing department.ID equals department.ID. If match found, throw IllegalArgumentException.
+   *            4. Add department to departments list.
+   *            5. Set department.company = this.
+   *            6. Return void.
+   * Related Features: departments, Department.ID, Department.company
+   * Related Classes: Department, Company
+   * Input: department : Department - The department object to be added. Its ID must be a non-null, non-empty String.
+   * Output: void
+   * Pre-condition: Company instance is initialized. Input department object is not null.
+   * Post-condition: If successful, departments contains the new department, its size increases by 1, and department.company references this Company. If constraints are violated, specific exceptions are thrown and system state remains unchanged.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated NOT
+   */
+  public void addDepartment(final Department department)
+  {
+    if (getDepartments().size() >= 8) {
+      throw new IllegalStateException("Maximum number of departments (8) exceeded.");
+    }
+    if (department.getID() == null || department.getID().isEmpty()) {
+      throw new IllegalArgumentException("Department ID cannot be null or empty.");
+    }
+    for (Department existingDept : getDepartments()) {
+      if (existingDept.getID().equals(department.getID())) {
+        throw new IllegalArgumentException("Department with ID " + department.getID() + " already exists.");
+      }
+    }
+    getDepartments().add(department);
+    department.setCompany(this);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Removes an existing department from the company by its ID, enforcing minimum department count and existence constraints.
+   * Algorithm: 1. If departments.size() <= 2, throw IllegalStateException.
+   *            2. If name is null or empty, throw IllegalArgumentException.
+   *            3. Find targetDept in departments where targetDept.ID == name.
+   *            4. If targetDept is null, throw IllegalArgumentException.
+   *            5. Remove targetDept from departments.
+   *            6. Set targetDept.company = null.
+   *            7. Return "Department removed successfully".
+   * Related Features: departments, company, ID
+   * Related Classes: Department, Company
+   * Input: name : String - The ID of the department to be removed. Must be a non-null, non-empty String.
+   * Output: result : String - A confirmation message upon successful removal. Value range: non-empty String.
+   * Pre-condition: Company exists. name parameter is provided.
+   * Post-condition: If successful, the specified department is removed, departments size decreases by 1, and bidirectional reference is cleared. If constraints violated, exceptions are thrown and state remains unchanged.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated NOT
+   */
+  public String removeDepartment(final String name)
+  {
+    if (getDepartments().size() <= 2) {
+      throw new IllegalStateException("Company must have at least 2 departments.");
+    }
+    if (name == null || name.isEmpty()) {
+      throw new IllegalArgumentException("Department ID cannot be null or empty.");
+    }
+    Department targetDept = null;
+    for (Department dept : getDepartments()) {
+      if (dept.getID().equals(name)) {
+        targetDept = dept;
+        break;
+      }
+    }
+    if (targetDept == null) {
+      throw new IllegalArgumentException("Department with ID " + name + " not found.");
+    }
+    getDepartments().remove(targetDept);
+    targetDept.setCompany(null);
+    return "Department removed successfully";
+  }
+
+  @SuppressWarnings("unchecked")
+  @Override
+  public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  { ... /* omitted */ }
+
+  @Override
+  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  { ... /* omitted */ }
+
+  @Override
+  public Object eGet(int featureID, boolean resolve, boolean coreType)
+  { ... /* omitted */ }
+
+  @SuppressWarnings("unchecked")
+  @Override
+  public void eSet(int featureID, Object newValue)
+  { ... /* omitted */ }
+
+  @Override
+  public void eUnset(int featureID)
+  { ... /* omitted */ }
+
+  @Override
+  public boolean eIsSet(int featureID)
+  { ... /* omitted */ }
+
+} // Company
+126205 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Code Completion for Department
+126427 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Prompt:
+# Task
+You will be given a **Java Class** generated from an Ecore model by EMF code generator with `suppressInterfaces=true`. Your task is to implement the Java methods unimplemented by taking additional contextual information into account.
+
+Complete this task by following the guidelines below.
+1. Compute context information
+  1.1 Navigate the Ecore model to find related classes
+  1.2 Also consider the related classes in the Javadocs.
+  1.3 Locate these files in your project.
+  1.4 Generate the class summarization.
+2. A method is unimplemented if its body contains `// TODO: Please complete this Java method based on the docstring`.
+3. For every unimplemented method, 
+  3.1 You must read the docstring of this method. The fragment between `<!-- begin-model-doc -->` and `<!-- end-model-doc -->` contains the method specification;
+  3.2 Generate your code strictly according to the algorithm; Be aware of the EMF code style and APIs;
+  3.3 You should not change the method signature;
+  3.4 After generation, replace the current body with the one you generate;
+  3.5 Keep and update the docstring by changing `@generated` to `@generated NOT`.
+4. Check the import list. Add missing imports if needed.
+5. Do not change other part.
+6. Be aware of the method signatures, particularly, the input and output types, provided in the **Context**.
+
+## EMF Coding Style
+- When possible, call getter/setter methods to access field values. Do not read/write raw fields derived from the class diagram.
+- The getter of a boolean attribute `bv` looks like `isBv()`, e.g., `isIsTrue()` for `isTrue`.
+- When possibe, use the creation factory for object creation.
+- To create an EList instance, import and use `org.eclipse.emf.common.util.BasicEList`.
+
+# Java Class
+```java
+/**
+ * generated by Enhanced EcoreGen
+ */
+package edu.project;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
+import org.eclipse.emf.ecore.util.EcoreUtil;
+import org.eclipse.emf.ecore.util.InternalEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Department</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link edu.project.Department#getID <em>ID</em>}</li>
+ *   <li>{@link edu.project.Department#getEmail <em>Email</em>}</li>
+ *   <li>{@link edu.project.Department#getEmployees <em>Employees</em>}</li>
+ *   <li>{@link edu.project.Department#getCompany <em>Company</em>}</li>
+ *   <li>{@link edu.project.Department#getProjects <em>Projects</em>}</li>
+ * </ul>
+ *
+ * @see edu.project.ProjectPackage#getDepartment()
+ * @model kind="class"
+ * @generated
+ */
+public class Department extends MinimalEObjectImpl.Container implements EObject
+{
+  protected static final String ID_EDEFAULT = null;
+
+  protected String id = ID_EDEFAULT;
+
+  protected static final String EMAIL_EDEFAULT = null;
+
+  protected String email = EMAIL_EDEFAULT;
+
+  protected EList<Employee> employees;
+
+  protected EList<Project> projects;
+
+  protected Department()
+  { ... /* omitted */ }
+
+  @Override
+  protected EClass eStaticClass()
+  { ... /* omitted */ }
+
+  public String getID()
+  { ... /* omitted */ }
+
+  public void setID(String newID)
+  { ... /* omitted */ }
+
+  public String getEmail()
+  { ... /* omitted */ }
+
+  public void setEmail(String newEmail)
+  { ... /* omitted */ }
+
+  public EList<Employee> getEmployees()
+  { ... /* omitted */ }
+
+  public Company getCompany()
+  { ... /* omitted */ }
+
+  public NotificationChain basicSetCompany(Company newCompany, NotificationChain msgs)
+  { ... /* omitted */ }
+
+  public void setCompany(Company newCompany)
+  { ... /* omitted */ }
+
+  public EList<Project> getProjects()
+  { ... /* omitted */ }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Calculates the average budget amount of all projects associated with this department.
+   * Algorithm: 
+   *   1. If projects.size() == 0, return 0.0.
+   *   2. Initialize sum = 0.0.
+   *   3. For each proj in projects:
+   *   4.     sum += proj.budget
+   *   5. Return sum / projects.size().
+   * Related Features: projects, budget
+   * Related Classes: Project
+   * Input: None
+   * Output: average : double - The average budget of department projects. Value range: >= 0.0
+   * Pre-condition: Department instance is initialized. projects list is not null.
+   * Post-condition: Returns the calculated average budget. System state remains unchanged.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public double calculateAverageBudget()
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Retrieves the funding group types associated with all CommunityProjects within this department.
+   * Algorithm: 
+   *   1. Initialize List<FundingGroupType> resultTypes = new ArrayList<>();
+   *   2. For each proj in projects:
+   *   3.     If proj is an instance of CommunityProject:
+   *   4.         If proj.fundingGroup != null:
+   *   5.             resultTypes.add(proj.fundingGroup.type)
+   *   6. Return resultTypes.
+   * Related Features: projects, fundingGroup, type
+   * Related Classes: Project, CommunityProject, FundingGroup, FundingGroupType
+   * Input: None
+   * Output: types : List<FundingGroupType> - List of funding group types for community projects in this department. Value range: List containing 0 or more FundingGroupType enum values.
+   * Pre-condition: Department instance is initialized. projects list is not null.
+   * Post-condition: Returns the list of funding group types for community projects. System state remains unchanged.
+   * <!-- end-model-doc -->
+   * @model kind="operation"
+   *        annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public EList<FundingGroupType> getFundingGroupTypeCommunityProjects()
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  @SuppressWarnings("unchecked")
+  @Override
+  public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  { ... /* omitted */ }
+
+  @Override
+  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  { ... /* omitted */ }
+
+  @Override
+  public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs)
+  { ... /* omitted */ }
+
+  @Override
+  public Object eGet(int featureID, boolean resolve, boolean coreType)
+  { ... /* omitted */ }
+
+  @SuppressWarnings("unchecked")
+  @Override
+  public void eSet(int featureID, Object newValue)
+  { ... /* omitted */ }
+
+  @Override
+  public void eUnset(int featureID)
+  { ... /* omitted */ }
+
+  @Override
+  public boolean eIsSet(int featureID)
+  { ... /* omitted */ }
+
+  @Override
+  public String toString()
+  { ... /* omitted */ }
+
+} // Department
+```
+
+# Output Format
+Put the new Java class code into a single block as follows.
+
+```java
+(completed Java class)
+```
+
+03:36:00.533 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- generating array definition for java.lang.String[]
+03:36:00.534 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- directly applying configured custom inline type for java.lang.String
+03:36:00.538 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- storing configured custom inline type for java.lang.String as definition (since it is the main schema "#")
+03:36:00.539 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- generating array definition for java.lang.String[]
+03:36:00.540 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- directly applying configured custom inline type for java.lang.String
+03:36:00.543 [main] DEBUG com.github.victools.jsonschema.generator.impl.SchemaGenerationContextImpl -- storing configured custom inline type for java.lang.String as definition (since it is the main schema "#")
+03:36:00.549 [main] DEBUG org.springframework.retry.support.RetryTemplate -- Retry: count=0
+03:36:00.555 [main] DEBUG org.springframework.web.client.DefaultRestClient -- Writing [ChatCompletionRequest[messages=[ChatCompletionMessage[rawContent=# Task
+You will be given a **Java Class** generated from an Ecore model by EMF code generator with `suppressInterfaces=true`. Your task is to implement the Java methods unimplemented by taking additional contextual information into account.
+
+Complete this task by following the guidelines below.
+1. Compute context information
+  1.1 Navigate the Ecore model to find related classes
+  1.2 Also consider the related classes in the Javadocs.
+  1.3 Locate these files in your project.
+  1.4 Generate the class summarization.
+2. A method is unimplemented if its body contains `// TODO: Please complete this Java method based on the docstring`.
+3. For every unimplemented method, 
+  3.1 You must read the docstring of this method. The fragment between `<!-- begin-model-doc -->` and `<!-- end-model-doc -->` contains the method specification;
+  3.2 Generate your code strictly according to the algorithm; Be aware of the EMF code style and APIs;
+  3.3 You should not change the method signature;
+  3.4 After generation, replace the current body with the one you generate;
+  3.5 Keep and update the docstring by changing `@generated` to `@generated NOT`.
+4. Check the import list. Add missing imports if needed.
+5. Do not change other part.
+6. Be aware of the method signatures, particularly, the input and output types, provided in the **Context**.
+
+## EMF Coding Style
+- When possible, call getter/setter methods to access field values. Do not read/write raw fields derived from the class diagram.
+- The getter of a boolean attribute `bv` looks like `isBv()`, e.g., `isIsTrue()` for `isTrue`.
+- When possibe, use the creation factory for object creation.
+- To create an EList instance, import and use `org.eclipse.emf.common.util.BasicEList`.
+
+# Java Class
+```java
+/**
+ * generated by Enhanced EcoreGen
+ */
+package edu.project;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
+import org.eclipse.emf.ecore.util.EcoreUtil;
+import org.eclipse.emf.ecore.util.InternalEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Department</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link edu.project.Department#getID <em>ID</em>}</li>
+ *   <li>{@link edu.project.Department#getEmail <em>Email</em>}</li>
+ *   <li>{@link edu.project.Department#getEmployees <em>Employees</em>}</li>
+ *   <li>{@link edu.project.Department#getCompany <em>Company</em>}</li>
+ *   <li>{@link edu.project.Department#getProjects <em>Projects</em>}</li>
+ * </ul>
+ *
+ * @see edu.project.ProjectPackage#getDepartment()
+ * @model kind="class"
+ * @generated
+ */
+public class Department extends MinimalEObjectImpl.Container implements EObject
+{
+  protected static final String ID_EDEFAULT = null;
+
+  protected String id = ID_EDEFAULT;
+
+  protected static final String EMAIL_EDEFAULT = null;
+
+  protected String email = EMAIL_EDEFAULT;
+
+  protected EList<Employee> employees;
+
+  protected EList<Project> projects;
+
+  protected Department()
+  { ... /* omitted */ }
+
+  @Override
+  protected EClass eStaticClass()
+  { ... /* omitted */ }
+
+  public String getID()
+  { ... /* omitted */ }
+
+  public void setID(String newID)
+  { ... /* omitted */ }
+
+  public String getEmail()
+  { ... /* omitted */ }
+
+  public void setEmail(String newEmail)
+  { ... /* omitted */ }
+
+  public EList<Employee> getEmployees()
+  { ... /* omitted */ }
+
+  public Company getCompany()
+  { ... /* omitted */ }
+
+  public NotificationChain basicSetCompany(Company newCompany, NotificationChain msgs)
+  { ... /* omitted */ }
+
+  public void setCompany(Company newCompany)
+  { ... /* omitted */ }
+
+  public EList<Project> getProjects()
+  { ... /* omitted */ }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Calculates the average budget amount of all projects associated with this department.
+   * Algorithm: 
+   *   1. If projects.size() == 0, return 0.0.
+   *   2. Initialize sum = 0.0.
+   *   3. For each proj in projects:
+   *   4.     sum += proj.budget
+   *   5. Return sum / projects.size().
+   * Related Features: projects, budget
+   * Related Classes: Project
+   * Input: None
+   * Output: average : double - The average budget of department projects. Value range: >= 0.0
+   * Pre-condition: Department instance is initialized. projects list is not null.
+   * Post-condition: Returns the calculated average budget. System state remains unchanged.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public double calculateAverageBudget()
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Retrieves the funding group types associated with all CommunityProjects within this department.
+   * Algorithm: 
+   *   1. Initialize List<FundingGroupType> resultTypes = new ArrayList<>();
+   *   2. For each proj in projects:
+   *   3.     If proj is an instance of CommunityProject:
+   *   4.         If proj.fundingGroup != null:
+   *   5.             resultTypes.add(proj.fundingGroup.type)
+   *   6. Return resultTypes.
+   * Related Features: projects, fundingGroup, type
+   * Related Classes: Project, CommunityProject, FundingGroup, FundingGroupType
+   * Input: None
+   * Output: types : List<FundingGroupType> - List of funding group types for community projects in this department. Value range: List containing 0 or more FundingGroupType enum values.
+   * Pre-condition: Department instance is initialized. projects list is not null.
+   * Post-condition: Returns the list of funding group types for community projects. System state remains unchanged.
+   * <!-- end-model-doc -->
+   * @model kind="operation"
+   *        annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated
+   */
+  public EList<FundingGroupType> getFundingGroupTypeCommunityProjects()
+  {
+    // TODO: Please generate a body of this unimplemented method based on the docstring
+    // TODO: Replace the current body with the generated body 
+    // TODO: Ensure that you mark it @generated NOT after code completion
+    throw new UnsupportedOperationException();
+    
+  }
+
+  @SuppressWarnings("unchecked")
+  @Override
+  public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  { ... /* omitted */ }
+
+  @Override
+  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  { ... /* omitted */ }
+
+  @Override
+  public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs)
+  { ... /* omitted */ }
+
+  @Override
+  public Object eGet(int featureID, boolean resolve, boolean coreType)
+  { ... /* omitted */ }
+
+  @SuppressWarnings("unchecked")
+  @Override
+  public void eSet(int featureID, Object newValue)
+  { ... /* omitted */ }
+
+  @Override
+  public void eUnset(int featureID)
+  { ... /* omitted */ }
+
+  @Override
+  public boolean eIsSet(int featureID)
+  { ... /* omitted */ }
+
+  @Override
+  public String toString()
+  { ... /* omitted */ }
+
+} // Department
+```
+
+# Output Format
+Put the new Java class code into a single block as follows.
+
+```java
+(completed Java class)
+```
+, role=USER, name=null, toolCallId=null, toolCalls=null, refusal=null, audioOutput=null, annotations=null, reasoningContent=null]], model=qwen/qwen3.6-flash, store=null, metadata=null, frequencyPenalty=null, logitBias=null, logprobs=null, topLogprobs=null, maxTokens=null, maxCompletionTokens=32768, n=null, outputModalities=null, audioParameters=null, presencePenalty=null, responseFormat=null, seed=null, serviceTier=null, stop=null, stream=false, streamOptions=null, temperature=0.7, topP=null, tools=[org.springframework.ai.openai.api.OpenAiApi$FunctionTool@6ec98ccc, org.springframework.ai.openai.api.OpenAiApi$FunctionTool@441aa7ae, org.springframework.ai.openai.api.OpenAiApi$FunctionTool@1534bdc6], toolChoice=null, parallelToolCalls=null, user=null, reasoningEffort=null, webSearchOptions=null, verbosity=null, promptCacheKey=null, safetyIdentifier=null, extraBody={}]] as "application/json" with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+03:36:01.492 [main] DEBUG org.springframework.web.client.DefaultRestClient -- Reading to [org.springframework.ai.openai.api.OpenAiApi$ChatCompletion]
+160495 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - LLM Response:
+/**
+ * generated by Enhanced EcoreGen
+ */
+package edu.project;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.BasicEList;
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
+import org.eclipse.emf.ecore.util.EcoreUtil;
+import org.eclipse.emf.ecore.util.InternalEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Department</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link edu.project.Department#getID <em>ID</em>}</li>
+ *   <li>{@link edu.project.Department#getEmail <em>Email</em>}</li>
+ *   <li>{@link edu.project.Department#getEmployees <em>Employees</em>}</li>
+ *   <li>{@link edu.project.Department#getCompany <em>Company</em>}</li>
+ *   <li>{@link edu.project.Department#getProjects <em>Projects</em>}</li>
+ * </ul>
+ *
+ * @see edu.project.ProjectPackage#getDepartment()
+ * @model kind="class"
+ * @generated NOT
+ */
+public class Department extends MinimalEObjectImpl.Container implements EObject
+{
+  protected static final String ID_EDEFAULT = null;
+
+  protected String id = ID_EDEFAULT;
+
+  protected static final String EMAIL_EDEFAULT = null;
+
+  protected String email = EMAIL_EDEFAULT;
+
+  protected EList<Employee> employees;
+
+  protected EList<Project> projects;
+
+  protected Department()
+  { ... /* omitted */ }
+
+  @Override
+  protected EClass eStaticClass()
+  { ... /* omitted */ }
+
+  public String getID()
+  { ... /* omitted */ }
+
+  public void setID(String newID)
+  { ... /* omitted */ }
+
+  public String getEmail()
+  { ... /* omitted */ }
+
+  public void setEmail(String newEmail)
+  { ... /* omitted */ }
+
+  public EList<Employee> getEmployees()
+  { ... /* omitted */ }
+
+  public Company getCompany()
+  { ... /* omitted */ }
+
+  public NotificationChain basicSetCompany(Company newCompany, NotificationChain msgs)
+  { ... /* omitted */ }
+
+  public void setCompany(Company newCompany)
+  { ... /* omitted */ }
+
+  public EList<Project> getProjects()
+  { ... /* omitted */ }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Calculates the average budget amount of all projects associated with this department.
+   * Algorithm: 
+   *   1. If projects.size() == 0, return 0.0.
+   *   2. Initialize sum = 0.0.
+   *   3. For each proj in projects:
+   *   4.     sum += proj.budget
+   *   5. Return sum / projects.size().
+   * Related Features: projects, budget
+   * Related Classes: Project
+   * Input: None
+   * Output: average : double - The average budget of department projects. Value range: >= 0.0
+   * Pre-condition: Department instance is initialized. projects list is not null.
+   * Post-condition: Returns the calculated average budget. System state remains unchanged.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated NOT
+   */
+  public double calculateAverageBudget()
+  {
+    EList<Project> projects = getProjects();
+    if (projects.isEmpty()) {
+      return 0.0;
+    }
+    double sum = 0.0;
+    for (Project proj : projects) {
+      sum += proj.getBudget();
+    }
+    return sum / projects.size();
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * Summary: Retrieves the funding group types associated with all CommunityProjects within this department.
+   * Algorithm: 
+   *   1. Initialize List<FundingGroupType> resultTypes = new ArrayList<>();
+   *   2. For each proj in projects:
+   *   3.     If proj is an instance of CommunityProject:
+   *   4.         If proj.fundingGroup != null:
+   *   5.             resultTypes.add(proj.fundingGroup.type)
+   *   6. Return resultTypes.
+   * Related Features: projects, fundingGroup, type
+   * Related Classes: Project, CommunityProject, FundingGroup, FundingGroupType
+   * Input: None
+   * Output: types : List<FundingGroupType> - List of funding group types for community projects in this department. Value range: List containing 0 or more FundingGroupType enum values.
+   * Pre-condition: Department instance is initialized. projects list is not null.
+   * Post-condition: Returns the list of funding group types for community projects. System state remains unchanged.
+   * <!-- end-model-doc -->
+   * @model kind="operation"
+   *        annotation="http://www.ustb.edu.cn/sei/mde/EnhancedCodeGen generated='true'"
+   * @generated NOT
+   */
+  public EList<FundingGroupType> getFundingGroupTypeCommunityProjects()
+  {
+    EList<FundingGroupType> resultTypes = new BasicEList<FundingGroupType>();
+    for (Project proj : getProjects()) {
+      if (proj instanceof CommunityProject) {
+        FundingGroup fg = ((CommunityProject) proj).getFundingGroup();
+        if (fg != null) {
+          resultTypes.add(fg.getType());
+        }
+      }
+    }
+    return resultTypes;
+  }
+
+  @SuppressWarnings("unchecked")
+  @Override
+  public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  { ... /* omitted */ }
+
+  @Override
+  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  { ... /* omitted */ }
+
+  @Override
+  public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs)
+  { ... /* omitted */ }
+
+  @Override
+  public Object eGet(int featureID, boolean resolve, boolean coreType)
+  { ... /* omitted */ }
+
+  @SuppressWarnings("unchecked")
+  @Override
+  public void eSet(int featureID, Object newValue)
+  { ... /* omitted */ }
+
+  @Override
+  public void eUnset(int featureID)
+  { ... /* omitted */ }
+
+  @Override
+  public boolean eIsSet(int featureID)
+  { ... /* omitted */ }
+
+  @Override
+  public String toString()
+  { ... /* omitted */ }
+
+} // Department
+160518 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Code Fixing
+160518 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - JDTCompilerWrapper -11 -d ../OPMS/src-gen/../llm-bin -classpath "E:/eclipse-dsl/plugins/org.eclipse.emf.ecore_2.41.0.v20251025-0946.jar;E:/eclipse-dsl/plugins/org.eclipse.emf.common_2.44.0.v20251025-0946.jar" ../OPMS/src-gen/edu/project/
+161559 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - 
+161559 [main] ERROR du.ustb.sei.mde.mwe2.EcoreGenerator  - 
+161559 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - There is no more compilation error
+161566 [main] INFO  du.ustb.sei.mde.mwe2.EcoreGenerator  - Generating common infrastructure
+161593 [main] INFO  .emf.mwe2.runtime.workflow.Workflow  - Done.
+sample1.mwe2 启动完成
+正在拷贝 src-gen/edu/project 到 qwen3.6-flash/project1...
+拷贝完成！
