@@ -284,21 +284,12 @@ public class LogAnalysisService {
         List<ClassEvent> result = new ArrayList<>();
         for (int index = 0; index < markerEntries.size(); index++) {
             LineEntry markerEntry = markerEntries.get(index);
-            Integer responseSearchEndLine = index + 1 < markerEntries.size()
-                    ? markerEntries.get(index + 1).lineNumber() - 1
-                    : responseSearchEndLine(filteredEntries, endLine);
+            Integer nextMarkerLine = index + 1 < markerEntries.size() ? markerEntries.get(index + 1).lineNumber() : endLine;
             classEvent(markerEntry, pattern)
-                    .map(event -> enrichClassEvent(event, filteredEntries, responseSearchEndLine))
+                    .map(event -> enrichClassEvent(event, filteredEntries, nextMarkerLine, endLine))
                     .ifPresent(result::add);
         }
         return result;
-    }
-
-    private Integer responseSearchEndLine(List<LineEntry> entries, Integer stageEndLine) {
-        if (stageEndLine != null) {
-            return stageEndLine - 1;
-        }
-        return entries.isEmpty() ? null : entries.get(entries.size() - 1).lineNumber();
     }
 
     private Optional<ClassEvent> classEvent(LineEntry entry, Pattern pattern) {
@@ -309,12 +300,10 @@ public class LogAnalysisService {
         return Optional.of(new ClassEvent(matcher.group(1), entry.lineNumber(), null, null));
     }
 
-    private ClassEvent enrichClassEvent(ClassEvent event, List<LineEntry> entries, Integer responseSearchEndLine) {
-        if (responseSearchEndLine == null || responseSearchEndLine < event.line()) {
-            return event;
-        }
+    private ClassEvent enrichClassEvent(ClassEvent event, List<LineEntry> entries, Integer nextMarkerLine, Integer stageEndLine) {
+        int responseSearchEnd = nextMarkerLine != null ? nextMarkerLine - 1 : (stageEndLine != null ? stageEndLine : event.line());
         Integer responseMarkerLine = findFirstContains(entries, LLM_RESPONSE, event.line());
-        if (responseMarkerLine != null && responseMarkerLine > responseSearchEndLine) {
+        if (responseMarkerLine != null && responseMarkerLine > responseSearchEnd) {
             responseMarkerLine = null;
         }
         if (responseMarkerLine == null) {
@@ -322,7 +311,7 @@ public class LogAnalysisService {
         }
 
         int responseStartLine = responseMarkerLine + 1;
-        Integer responseEndLine = findResponseEnd(entries, responseStartLine, responseSearchEndLine);
+        Integer responseEndLine = findResponseEnd(entries, responseStartLine, responseSearchEnd);
 
         return new ClassEvent(event.name(), event.line(), responseStartLine, responseEndLine);
     }

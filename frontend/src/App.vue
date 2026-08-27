@@ -10,8 +10,12 @@ const loading = ref(false);
 const error = ref("");
 const linePreview = ref(null);
 const previewLoading = ref(false);
+const inlinePreview = ref(null);
+const inlinePreviewLoading = ref(false);
 const activeAnnotationResponse = ref("");
 const activeVerificationResponse = ref("");
+const activeAnnotationOperation = ref("");
+const activeVerificationOperation = ref("");
 const activeCompletionClass = ref("");
 const activeFixingClass = ref("");
 
@@ -43,6 +47,12 @@ const groupedExceptions = computed(() => {
 });
 
 const logTitle = computed(() => selectedLog.value?.path || "请选择 log.txt");
+const activeAnnotationResponseItem = computed(() =>
+  selectedSample.value?.operationAnnotationResponses?.find((item) => item.label === activeAnnotationResponse.value) || null,
+);
+const activeVerificationResponseItem = computed(() =>
+  selectedSample.value?.operationVerificationResponses?.find((item) => item.label === activeVerificationResponse.value) || null,
+);
 
 const overview = computed(() => {
   if (!analysis.value) {
@@ -81,12 +91,15 @@ async function loadAnalysis() {
   loading.value = true;
   error.value = "";
   linePreview.value = null;
+  inlinePreview.value = null;
   try {
     analysis.value = await analyzeLog(selectedLogId.value);
     const firstSample = analysis.value.samples?.[0];
     selectedSampleId.value = firstSample?.id || "";
     activeAnnotationResponse.value = firstSample?.operationAnnotationResponses?.[0]?.label || "";
     activeVerificationResponse.value = firstSample?.operationVerificationResponses?.[0]?.label || "";
+    activeAnnotationOperation.value = "";
+    activeVerificationOperation.value = "";
     activeCompletionClass.value = firstSample?.codeCompletionClasses?.[0]?.name || "";
     activeFixingClass.value = firstSample?.fixingClasses?.[0]?.name || "";
   } catch (err) {
@@ -96,15 +109,25 @@ async function loadAnalysis() {
   }
 }
 
-async function showLineContext(line, endLine = null) {
+async function showLineContext(line, endLine = null, meta = {}) {
   if (!selectedLogId.value || !line) return;
   previewLoading.value = true;
   try {
     const start = endLine ? line : Math.max(1, line - 12);
     const end = endLine || (line + 12);
-    linePreview.value = await readLines(selectedLogId.value, start, end);
+    linePreview.value = {
+      ...(await readLines(selectedLogId.value, start, end)),
+      title: meta.title || "原始日志上下文",
+      subtitle: meta.subtitle || "",
+      kind: meta.kind || "lines",
+    };
   } catch (err) {
-    linePreview.value = { error: err.message, lines: [] };
+    linePreview.value = {
+      error: err.message,
+      lines: [],
+      title: meta.title || "原始日志上下文",
+      subtitle: meta.subtitle || "",
+    };
   } finally {
     previewLoading.value = false;
   }
@@ -129,19 +152,106 @@ function activateSample(sample) {
   selectedSampleId.value = sample.id;
   activeAnnotationResponse.value = sample.operationAnnotationResponses?.[0]?.label || "";
   activeVerificationResponse.value = sample.operationVerificationResponses?.[0]?.label || "";
+  activeAnnotationOperation.value = "";
+  activeVerificationOperation.value = "";
   activeCompletionClass.value = sample.codeCompletionClasses?.[0]?.name || "";
   activeFixingClass.value = sample.fixingClasses?.[0]?.name || "";
   linePreview.value = null;
+  inlinePreview.value = null;
 }
 
-async function showStageResponse(item, mode) {
+function operationKey(item) {
+  if (!item) return "";
+  return `${item.name}:${item.startLine}:${item.endLine}`;
+}
+
+function responseKey(item, mode) {
+  if (!item) return "";
+  return `${mode}:response:${item.label}:${item.startLine}:${item.endLine}`;
+}
+
+function operationPreviewKey(item, mode) {
+  if (!item) return "";
+  return `${mode}:operation:${operationKey(item)}`;
+}
+
+function isInlinePreviewOpen(key) {
+  return inlinePreview.value?.key === key;
+}
+
+async function toggleStageResponse(item, mode) {
   if (!item) return;
+  const stageName = mode === "annotation" ? "操作规格补全" : "操作规格校验";
+  const key = responseKey(item, mode);
+  if (isInlinePreviewOpen(key)) {
+    inlinePreview.value = null;
+    return;
+  }
   if (mode === "annotation") {
     activeAnnotationResponse.value = item.label;
+    activeAnnotationOperation.value = "";
   } else {
     activeVerificationResponse.value = item.label;
+    activeVerificationOperation.value = "";
   }
-  await showLineContext(item.startLine, item.endLine);
+  inlinePreviewLoading.value = true;
+  inlinePreview.value = {
+    key,
+    title: `${stageName} / ${item.label}`,
+    subtitle: `完整 LLM Response · L${item.startLine} - L${item.endLine}`,
+    startLine: item.startLine,
+    endLine: item.endLine,
+    kind: "response",
+    lines: [],
+  };
+  try {
+    const response = await readLines(selectedLogId.value, item.startLine, item.endLine);
+    if (inlinePreview.value?.key === key) {
+      inlinePreview.value = {
+        ...inlinePreview.value,
+        ...response,
+      };
+    }
+  } catch (err) {
+    if (inlinePreview.value?.key === key) {
+      inlinePreview.value = {
+        ...inlinePreview.value,
+        error: err.message,
+      };
+    }
+  } finally {
+    inlinePreviewLoading.value = false;
+  }
+}
+
+function toggleOperationSnippet(item, mode) {
+  if (!item) return;
+  const stageName = mode === "annotation" ? "操作规格补全" : "操作规格校验";
+  const key = operationPreviewKey(item, mode);
+  if (isInlinePreviewOpen(key)) {
+    inlinePreview.value = null;
+    if (mode === "annotation") {
+      activeAnnotationOperation.value = "";
+    } else {
+      activeVerificationOperation.value = "";
+    }
+    return;
+  }
+  if (mode === "annotation") {
+    activeAnnotationOperation.value = operationKey(item);
+  } else {
+    activeVerificationOperation.value = operationKey(item);
+  }
+  inlinePreview.value = {
+    key,
+    title: `${stageName} / operation: ${item.name}`,
+    subtitle: `Operation 内容 · L${item.startLine} - L${item.endLine}`,
+    startLine: item.startLine,
+    endLine: item.endLine,
+    kind: "operation",
+    content: item.content,
+    lines: [],
+  };
 }
 
 async function showClassResponse(item, mode) {
@@ -289,17 +399,71 @@ onMounted(loadLogs);
                 </div>
                 <div v-if="selectedSample.operationAnnotationResponses.length === 0" class="empty">无 LLM Response 记录</div>
                 <div v-else class="class-explorer">
-                  <button
+                  <template
                     v-for="item in selectedSample.operationAnnotationResponses"
                     :key="item.label + item.line"
-                    type="button"
-                    class="class-row"
-                    :class="{ active: activeAnnotationResponse === item.label }"
-                    @click="showStageResponse(item, 'annotation')"
                   >
-                    <span class="class-row-title">{{ item.label }}</span>
-                    <span class="class-row-meta">L{{ item.startLine }} - L{{ item.endLine }}</span>
-                  </button>
+                    <div
+                      class="class-row"
+                      :class="{ active: activeAnnotationResponse === item.label }"
+                    >
+                      <div class="class-row-main">
+                        <span class="class-row-title">{{ item.label }}</span>
+                        <span class="class-row-meta">L{{ item.startLine }} - L{{ item.endLine }}</span>
+                      </div>
+                      <button type="button" class="view-button" @click="toggleStageResponse(item, 'annotation')">
+                        {{ isInlinePreviewOpen(responseKey(item, 'annotation')) ? '收起' : '查看' }}
+                      </button>
+                    </div>
+                    <div v-if="isInlinePreviewOpen(responseKey(item, 'annotation'))" class="inline-preview">
+                      <div class="preview-head">
+                        <div>
+                          <h3>{{ inlinePreview.title }}</h3>
+                          <p>{{ inlinePreview.subtitle }}</p>
+                        </div>
+                        <span v-if="inlinePreviewLoading">读取中</span>
+                        <span v-else>L{{ inlinePreview.startLine }} - L{{ inlinePreview.endLine }}</span>
+                      </div>
+                      <pre v-if="inlinePreview.error">{{ inlinePreview.error }}</pre>
+                      <pre v-else><code v-for="line in inlinePreview.lines" :key="line.line">{{ String(line.line).padStart(6, ' ') }}  {{ line.text }}
+</code></pre>
+                    </div>
+                  </template>
+                </div>
+                <div
+                  v-if="activeAnnotationResponseItem && activeAnnotationResponseItem.operations && activeAnnotationResponseItem.operations.length > 0"
+                  class="nested-explorer"
+                >
+                  <div class="nested-title">Operation 列表</div>
+                  <div class="class-explorer">
+                    <template
+                      v-for="item in activeAnnotationResponseItem.operations"
+                      :key="item.name + item.line"
+                    >
+                      <div
+                        class="class-row nested-row"
+                        :class="{ active: activeAnnotationOperation === operationKey(item) }"
+                      >
+                        <div class="class-row-main">
+                          <span class="class-row-title">{{ item.name }}</span>
+                          <span class="class-row-meta">L{{ item.startLine }} - L{{ item.endLine }}</span>
+                        </div>
+                        <button type="button" class="view-button" @click="toggleOperationSnippet(item, 'annotation')">
+                          {{ isInlinePreviewOpen(operationPreviewKey(item, 'annotation')) ? '收起' : '查看' }}
+                        </button>
+                      </div>
+                      <div v-if="isInlinePreviewOpen(operationPreviewKey(item, 'annotation'))" class="inline-preview operation-preview">
+                        <div class="preview-head">
+                          <div>
+                            <h3>{{ inlinePreview.title }}</h3>
+                            <p>{{ inlinePreview.subtitle }}</p>
+                          </div>
+                          <span>L{{ inlinePreview.startLine }} - L{{ inlinePreview.endLine }}</span>
+                        </div>
+                        <pre>{{ inlinePreview.content }}</pre>
+                      </div>
+                    </template>
+                  </div>
                 </div>
                 <div v-if="stageByKey('operationAnnotation').events.length === 0" class="empty">无详细事件</div>
                 <table v-else>
@@ -329,17 +493,71 @@ onMounted(loadLogs);
                 </div>
                 <div v-if="selectedSample.operationVerificationResponses.length === 0" class="empty">无 LLM Response 记录</div>
                 <div v-else class="class-explorer">
-                  <button
+                  <template
                     v-for="item in selectedSample.operationVerificationResponses"
                     :key="item.label + item.line"
-                    type="button"
-                    class="class-row"
-                    :class="{ active: activeVerificationResponse === item.label }"
-                    @click="showStageResponse(item, 'verification')"
                   >
-                    <span class="class-row-title">{{ item.label }}</span>
-                    <span class="class-row-meta">L{{ item.startLine }} - L{{ item.endLine }}</span>
-                  </button>
+                    <div
+                      class="class-row"
+                      :class="{ active: activeVerificationResponse === item.label }"
+                    >
+                      <div class="class-row-main">
+                        <span class="class-row-title">{{ item.label }}</span>
+                        <span class="class-row-meta">L{{ item.startLine }} - L{{ item.endLine }}</span>
+                      </div>
+                      <button type="button" class="view-button" @click="toggleStageResponse(item, 'verification')">
+                        {{ isInlinePreviewOpen(responseKey(item, 'verification')) ? '收起' : '查看' }}
+                      </button>
+                    </div>
+                    <div v-if="isInlinePreviewOpen(responseKey(item, 'verification'))" class="inline-preview">
+                      <div class="preview-head">
+                        <div>
+                          <h3>{{ inlinePreview.title }}</h3>
+                          <p>{{ inlinePreview.subtitle }}</p>
+                        </div>
+                        <span v-if="inlinePreviewLoading">读取中</span>
+                        <span v-else>L{{ inlinePreview.startLine }} - L{{ inlinePreview.endLine }}</span>
+                      </div>
+                      <pre v-if="inlinePreview.error">{{ inlinePreview.error }}</pre>
+                      <pre v-else><code v-for="line in inlinePreview.lines" :key="line.line">{{ String(line.line).padStart(6, ' ') }}  {{ line.text }}
+</code></pre>
+                    </div>
+                  </template>
+                </div>
+                <div
+                  v-if="activeVerificationResponseItem && activeVerificationResponseItem.operations && activeVerificationResponseItem.operations.length > 0"
+                  class="nested-explorer"
+                >
+                  <div class="nested-title">Operation 列表</div>
+                  <div class="class-explorer">
+                    <template
+                      v-for="item in activeVerificationResponseItem.operations"
+                      :key="item.name + item.line"
+                    >
+                      <div
+                        class="class-row nested-row"
+                        :class="{ active: activeVerificationOperation === operationKey(item) }"
+                      >
+                        <div class="class-row-main">
+                          <span class="class-row-title">{{ item.name }}</span>
+                          <span class="class-row-meta">L{{ item.startLine }} - L{{ item.endLine }}</span>
+                        </div>
+                        <button type="button" class="view-button" @click="toggleOperationSnippet(item, 'verification')">
+                          {{ isInlinePreviewOpen(operationPreviewKey(item, 'verification')) ? '收起' : '查看' }}
+                        </button>
+                      </div>
+                      <div v-if="isInlinePreviewOpen(operationPreviewKey(item, 'verification'))" class="inline-preview operation-preview">
+                        <div class="preview-head">
+                          <div>
+                            <h3>{{ inlinePreview.title }}</h3>
+                            <p>{{ inlinePreview.subtitle }}</p>
+                          </div>
+                          <span>L{{ inlinePreview.startLine }} - L{{ inlinePreview.endLine }}</span>
+                        </div>
+                        <pre>{{ inlinePreview.content }}</pre>
+                      </div>
+                    </template>
+                  </div>
                 </div>
                 <div v-if="stageByKey('operationVerification').events.length === 0" class="empty">无详细事件</div>
                 <table v-else>
@@ -450,11 +668,15 @@ onMounted(loadLogs);
 
           <section v-if="linePreview" class="line-preview">
             <div class="preview-head">
-              <h3>原始日志上下文</h3>
+              <div>
+                <h3>{{ linePreview.title || '查看内容' }}</h3>
+                <p v-if="linePreview.subtitle">{{ linePreview.subtitle }}</p>
+              </div>
               <span v-if="previewLoading">读取中</span>
               <span v-else>L{{ linePreview.startLine }} - L{{ linePreview.endLine }}</span>
             </div>
             <pre v-if="linePreview.error">{{ linePreview.error }}</pre>
+            <pre v-else-if="linePreview.content">{{ linePreview.content }}</pre>
             <pre v-else><code v-for="line in linePreview.lines" :key="line.line">{{ String(line.line).padStart(6, ' ') }}  {{ line.text }}
 </code></pre>
           </section>

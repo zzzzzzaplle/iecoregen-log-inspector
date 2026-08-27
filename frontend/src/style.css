@@ -369,6 +369,21 @@ th {
   gap: 8px;
 }
 
+.nested-explorer {
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--soft);
+}
+
+.nested-title {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .class-row {
   width: 100%;
   display: flex;
@@ -389,14 +404,38 @@ th {
   background: var(--accent-soft);
 }
 
+.nested-row {
+  background: #fff;
+}
+
 .class-row-title {
   font-weight: 700;
+}
+
+.class-row-main {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
 }
 
 .class-row-meta {
   color: var(--muted);
   font-size: 12px;
   white-space: nowrap;
+}
+
+.view-button {
+  min-width: 58px;
+  height: 32px;
+  border: 1px solid #12685f;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+}
+
+.view-button:hover {
+  background: #12685f;
 }
 
 .class-chip {
@@ -415,8 +454,28 @@ th {
   background: var(--soft);
 }
 
+.inline-preview {
+  margin-top: -3px;
+  margin-bottom: 8px;
+  border: 1px solid var(--line);
+  border-top: 0;
+  border-radius: 0 0 8px 8px;
+  padding: 12px;
+  background: #eef7f5;
+}
+
+.operation-preview {
+  background: #fff;
+}
+
 .preview-head {
   margin-bottom: 10px;
+}
+
+.preview-head p {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 12px;
 }
 
 .preview-head span {
