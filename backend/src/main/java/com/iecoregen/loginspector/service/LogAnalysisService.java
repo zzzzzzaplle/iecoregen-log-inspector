@@ -5,6 +5,7 @@ import com.iecoregen.loginspector.model.LineEvent;
 import com.iecoregen.loginspector.model.LogAnalysisResponse;
 import com.iecoregen.loginspector.model.LogFileSummary;
 import com.iecoregen.loginspector.model.LogLinesResponse;
+import com.iecoregen.loginspector.model.OperationSnippet;
 import com.iecoregen.loginspector.model.ResponseSnippet;
 import com.iecoregen.loginspector.model.SampleAnalysis;
 import com.iecoregen.loginspector.model.StageAnalysis;
@@ -36,6 +37,7 @@ public class LogAnalysisService {
     private static final Pattern COMPILER_ERROR = Pattern.compile("ERROR in .*\\.java");
     private static final Pattern COMPILER_WARNING = Pattern.compile("WARNING in .*\\.java");
     private static final Pattern PROBLEM_SUMMARY = Pattern.compile("\\d+ problems? \\(\\d+ (?:errors?|warnings?)\\)");
+    private static final Pattern OPERATION_MARKER = Pattern.compile("org\\.eclipse\\.emf\\.ecore\\.impl\\.EOperationImpl@\\S+\\s+\\(name:\\s*([^)]+)\\)");
 
     private static final String ITERABLE_ERROR = "Cannot invoke \"java.lang.Iterable.iterator()\" because \"iterable\" is null";
     private static final String REACTOR = "reactor.util.Loggers -- Using Slf4j logging framework";
@@ -169,9 +171,11 @@ public class LogAnalysisService {
         List<LineEvent> iterableErrors = collectContains(entries, "iterable", ITERABLE_ERROR);
         Integer lastIterableLine = lastLine(iterableErrors);
 
-        Integer effectiveStartLine = lastIterableLine == null
-                ? findFirstContains(entries, ANNOTATING, range.startLine())
+        Integer firstAnnotationLine = findFirstContains(entries, ANNOTATING, range.startLine());
+        Integer retriedAnnotationLine = lastIterableLine == null
+                ? null
                 : findFirstContains(entries, ANNOTATING, lastIterableLine + 1);
+        Integer effectiveStartLine = retriedAnnotationLine != null ? retriedAnnotationLine : firstAnnotationLine;
 
         Integer verifyLine = findFirstContains(entries, VERIFY, effectiveStartLine);
         Integer verificationEndLine = findFirstContains(entries, VERIFICATION_END, verifyLine);
@@ -181,8 +185,16 @@ public class LogAnalysisService {
         Integer workflowDoneLine = findFirstContains(entries, WORKFLOW_DONE, noCompilationErrorLine);
 
         List<LineEvent> exceptions = collectExceptions(entries);
-        List<ResponseSnippet> annotationResponses = collectResponseSnippets(entries, effectiveStartLine, verifyLine);
-        List<ResponseSnippet> verificationResponses = collectResponseSnippets(entries, verifyLine, verificationEndLine);
+        List<ResponseSnippet> annotationResponses = collectResponseSnippets(
+                entries,
+                effectiveStartLine,
+                verifyLine != null ? verifyLine : range.endLine()
+        );
+        List<ResponseSnippet> verificationResponses = collectResponseSnippets(
+                entries,
+                verifyLine,
+                verificationEndLine != null ? verificationEndLine : range.endLine()
+        );
         List<ClassEvent> completionClasses = collectClassEvents(entries, CODE_COMPLETION, generatingCodeLine, codeFixingLine);
         List<ClassEvent> fixingClasses = collectClassEvents(entries, FIXING_CLASS, codeFixingLine, noCompilationErrorLine);
 
@@ -284,7 +296,12 @@ public class LogAnalysisService {
         List<ClassEvent> result = new ArrayList<>();
         for (int index = 0; index < markerEntries.size(); index++) {
             LineEntry markerEntry = markerEntries.get(index);
-            Integer nextMarkerLine = index + 1 < markerEntries.size() ? markerEntries.get(index + 1).lineNumber() : endLine;
+            Integer nextMarkerLine;
+            if (index + 1 < markerEntries.size()) {
+                nextMarkerLine = markerEntries.get(index + 1).lineNumber();
+            } else {
+                nextMarkerLine = endLine;
+            }
             classEvent(markerEntry, pattern)
                     .map(event -> enrichClassEvent(event, filteredEntries, nextMarkerLine, endLine))
                     .ifPresent(result::add);
@@ -301,7 +318,9 @@ public class LogAnalysisService {
     }
 
     private ClassEvent enrichClassEvent(ClassEvent event, List<LineEntry> entries, Integer nextMarkerLine, Integer stageEndLine) {
-        int responseSearchEnd = nextMarkerLine != null ? nextMarkerLine - 1 : (stageEndLine != null ? stageEndLine : event.line());
+        int responseSearchEnd = nextMarkerLine != null
+                ? nextMarkerLine - 1
+                : (stageEndLine != null ? stageEndLine : lastAvailableLine(entries, event.line()));
         Integer responseMarkerLine = findFirstContains(entries, LLM_RESPONSE, event.line());
         if (responseMarkerLine != null && responseMarkerLine > responseSearchEnd) {
             responseMarkerLine = null;
@@ -310,10 +329,17 @@ public class LogAnalysisService {
             return event;
         }
 
-        int responseStartLine = responseMarkerLine + 1;
+        int responseStartLine = responseMarkerLine;
         Integer responseEndLine = findResponseEnd(entries, responseStartLine, responseSearchEnd);
 
         return new ClassEvent(event.name(), event.line(), responseStartLine, responseEndLine);
+    }
+
+    private int lastAvailableLine(List<LineEntry> entries, int fallbackLine) {
+        if (entries.isEmpty()) {
+            return fallbackLine;
+        }
+        return entries.get(entries.size() - 1).lineNumber();
     }
 
     private Integer findResponseEnd(List<LineEntry> entries, int startLine, int maxLine) {
@@ -325,7 +351,7 @@ public class LogAnalysisService {
             if (entry.lineNumber() > maxLine) {
                 break;
             }
-            if (looksLikeLogPrefix(entry.text())) {
+            if (entry.lineNumber() > startLine && looksLikeLogPrefix(entry.text())) {
                 break;
             }
             lastContentLine = entry.lineNumber();
@@ -354,14 +380,87 @@ public class LogAnalysisService {
                     : endLine;
             int responseStartLine = responseContentStartsInline(marker) ? marker.lineNumber() : marker.lineNumber() + 1;
             int responseEndLine = findResponseEnd(entries, responseStartLine, searchEnd);
+            List<OperationSnippet> operations = collectOperationSnippets(entries, responseStartLine, responseEndLine);
             result.add(new ResponseSnippet(
                     "LLM Response" + (index + 1),
                     marker.lineNumber(),
                     responseStartLine,
-                    responseEndLine
+                    responseEndLine,
+                    operations
             ));
         }
         return result;
+    }
+
+    private List<OperationSnippet> collectOperationSnippets(List<LineEntry> entries, int startLine, int endLine) {
+        List<LineEntry> responseEntries = entries.stream()
+                .filter(entry -> entry.lineNumber() >= startLine && entry.lineNumber() <= endLine)
+                .toList();
+
+        List<OperationSnippet> operations = new ArrayList<>();
+        String currentName = null;
+        int currentStartLine = 0;
+        int currentEndLine = 0;
+        StringBuilder currentContent = null;
+
+        for (LineEntry entry : responseEntries) {
+            List<OperationMatch> matches = operationMatches(entry.text());
+            if (matches.isEmpty()) {
+                if (currentContent != null) {
+                    appendContentLine(currentContent, entry.text());
+                    currentEndLine = entry.lineNumber();
+                }
+                continue;
+            }
+
+            if (currentContent != null) {
+                String prefix = entry.text().substring(0, matches.get(0).startIndex());
+                if (!prefix.isBlank()) {
+                    appendContentLine(currentContent, prefix);
+                    currentEndLine = entry.lineNumber();
+                }
+                operations.add(new OperationSnippet(currentName, currentStartLine, currentStartLine, currentEndLine, currentContent.toString()));
+            }
+
+            for (int index = 0; index < matches.size(); index++) {
+                OperationMatch match = matches.get(index);
+                int nextStartIndex = index + 1 < matches.size()
+                        ? matches.get(index + 1).startIndex()
+                        : entry.text().length();
+                currentName = match.name();
+                currentStartLine = entry.lineNumber();
+                currentEndLine = entry.lineNumber();
+                currentContent = new StringBuilder();
+                appendContentLine(currentContent, entry.text().substring(match.startIndex(), nextStartIndex));
+
+                if (index + 1 < matches.size()) {
+                    operations.add(new OperationSnippet(currentName, currentStartLine, currentStartLine, currentEndLine, currentContent.toString()));
+                    currentContent = null;
+                }
+            }
+        }
+
+        if (currentContent != null) {
+            operations.add(new OperationSnippet(currentName, currentStartLine, currentStartLine, currentEndLine, currentContent.toString()));
+        }
+
+        return operations;
+    }
+
+    private List<OperationMatch> operationMatches(String text) {
+        Matcher matcher = OPERATION_MARKER.matcher(text);
+        List<OperationMatch> matches = new ArrayList<>();
+        while (matcher.find()) {
+            matches.add(new OperationMatch(matcher.group(1).trim(), matcher.start()));
+        }
+        return matches;
+    }
+
+    private void appendContentLine(StringBuilder builder, String line) {
+        if (builder.length() > 0) {
+            builder.append('\n');
+        }
+        builder.append(line);
     }
 
     private boolean responseContentStartsInline(LineEntry entry) {
@@ -421,6 +520,9 @@ public class LogAnalysisService {
     }
 
     private record LineEntry(int lineNumber, String text) {
+    }
+
+    private record OperationMatch(String name, int startIndex) {
     }
 
     private record OpenSample(String name, int startIndex, LogFileSummary summary) {
