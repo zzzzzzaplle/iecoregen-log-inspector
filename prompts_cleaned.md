@@ -18,7 +18,14 @@ Finish this task by following the guidelines below.
 You will be given a **Requirement** and a **Class Diagram** in PlantUML. Your task is to annotate every operation listed in **Operations** with a specification.
 
 An operation specification must describe the following sections about the operation:
-«PromptCommons.specificationFormat»
+1. Summary: the summary of functionality;
+2. Algorithm: algorithm or pseudo code;
+3. Related Features: a list of structural or behavior features within this class that shall be accessed;
+4. Related Classes: a list of classes and data types defined in **Class Diagram** that shall be accessed, in the format of `Related Classes: ClsA, CLsB, ...` or `Related Classes: None`;
+5. Input: the input parameters, including the meaning, the format, and the value ranges if necessary;
+6. Output: output value, including the meaning, the format, and the value ranges if necessary;
+7. Pre-condition: the condition that the system and the input must satisfy before the operation is executed;
+8. Post-condition: the condition that the system and the output must satisfy after the operation is executed.
 
 Finish this task by following the guidelines below.
 1. Take the principle of modularization into account.
